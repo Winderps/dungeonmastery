@@ -44,6 +44,14 @@ public class DungeonMasteryCore
 public static Item itemWandDM;
 public static Item itemWandDebugging;
 
+public static Item itemCoinGoldLarge;
+public static Item itemCoinSilverLarge;
+public static Item itemCoinCopperLarge;
+public static Item itemCoinGoldSmall;
+public static Item itemCoinSilverSmall;
+public static Item itemCoinCopperSmall;
+
+
 public static Block blockLimboSand;
 public static Block blockLimboStone;
 	
@@ -70,8 +78,22 @@ public static Block blockBreakablePot;
 		itemWandDM = new ItemWandDM().setUnlocalizedName("itemWandDM").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemWandDM");
 		itemWandDebugging = new ItemWandDebugging().setUnlocalizedName("itemWandDebugging").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemWandDM");
 		
+		itemCoinGoldLarge = new Item().setUnlocalizedName("itemCoinGoldLarge").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemCoinGoldLarge");
+		itemCoinSilverLarge = new Item().setUnlocalizedName("itemCoinSilverLarge").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemCoinSilverLarge");
+		itemCoinCopperLarge = new Item().setUnlocalizedName("itemCoinCopperLarge").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemCoinCopperLarge");
+		itemCoinGoldSmall = new Item().setUnlocalizedName("itemCoinGoldSmall").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemCoinGoldSmall");
+		itemCoinSilverSmall = new Item().setUnlocalizedName("itemCoinSilverSmall").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemCoinSilverSmall");
+		itemCoinCopperSmall = new Item().setUnlocalizedName("itemCoinCopperSmall").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemCoinCopperSmall");
+		
 		GameRegistry.registerItem(itemWandDM, "itemWandDM");
 		GameRegistry.registerItem(itemWandDebugging, "itemWandDebugging");
+		
+		GameRegistry.registerItem(itemCoinGoldLarge, "itemCoinGoldLarge");
+		GameRegistry.registerItem(itemCoinSilverLarge, "itemCoinSilverLarge");
+		GameRegistry.registerItem(itemCoinCopperLarge, "itemCoinCopperLarge");
+		GameRegistry.registerItem(itemCoinGoldSmall, "itemCoinGoldSmall");
+		GameRegistry.registerItem(itemCoinSilverSmall, "itemCoinSilverSmall");
+		GameRegistry.registerItem(itemCoinCopperSmall, "itemCoinCopperSmall");
 	
 		blockLimboSand = new BlockLimboSand().setBlockName("blockLimboSand").setCreativeTab(coreTab).setBlockTextureName(CoreReference.MOD_ID + ":" + "blockLimboSand");
 		blockLimboStone = new BlockLimboStone().setBlockName("blockLimboStone").setCreativeTab(coreTab).setBlockTextureName(CoreReference.MOD_ID + ":" + "blockLimboStone");

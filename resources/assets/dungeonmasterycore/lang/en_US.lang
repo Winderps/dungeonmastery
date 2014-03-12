@@ -14,4 +14,10 @@ tile.blockAltar.name=Altar
 
 item.itemWandDM.name=Dungeon Master's Wand
 item.itemWandDebugging.name=Wand of Debugging
-item.itemFlintAndTinder.name=Flint and Tinder
+
+item.itemCoinGoldLarge.name=Gold Crown
+item.itemCoinSilverLarge.name=Silver Shilling
+item.itemCoinCopperLarge.name=Copper Penny
+item.itemCoinGoldSmall.name=Gold Piece
+item.itemCoinSilverSmall.name=Silver Piece
+item.itemCoinCopperSmall.name=Copper Piece
