@@ -9,6 +9,6 @@ public class BlockBreakablePot extends Block
 
 	public BlockBreakablePot() 
 	{
-		super(Material.rock);
+		super(Material.wood);
 	}
 }

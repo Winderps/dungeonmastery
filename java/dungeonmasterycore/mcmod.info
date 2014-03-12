@@ -7,8 +7,8 @@
   "mcversion": "${1.7.2}",
   "url": "http://www.minecraftforum.net/topic/2382867-172-forge-wip-dungeon-mastery/",
   "updateUrl": "",
-  "authors": ["Fingersome, Cobaltgnawl"],
-  "credits": "Icuownage for contributing ideas and supporting the mod from the start, and all the people who gave positive feedback and constructive criticism on the forums.",
+  "authors": [ "Fingersome", ],
+  "credits": "Cobaltgnawl for all the awesome textures/models he created",
   "logoFile": "DungeonMasteryLogo.png",
   "screenshots": [],
   "dependencies": []
