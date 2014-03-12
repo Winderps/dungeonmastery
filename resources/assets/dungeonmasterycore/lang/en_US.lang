@@ -10,7 +10,9 @@ tile.blockLimboStone.name=Limbo Stone
 tile.blockCorpseSkeleton.name=Corpse
 tile.blockCorpseGrave.name=Grave
 tile.blockCampfire.name=Campfire
+
 tile.blockAltar.name=Altar
+tile.blockAltarBoccob.name=Altar to Boccob
 
 item.itemWandDM.name=Dungeon Master's Wand
 item.itemWandDebugging.name=Wand of Debugging
