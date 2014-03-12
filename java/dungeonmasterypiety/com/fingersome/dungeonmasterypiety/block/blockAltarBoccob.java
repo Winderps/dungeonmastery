@@ -1,9 +1,9 @@
-package com.fingersome.dungeonmasterycore.block;
+package com.fingersome.dungeonmasterypiety.block;
 
 import java.util.Random;
 
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityAltar;
-import com.fingersome.dungeonmasterycore.tileentity.TileEntityAltarBoccob;
+import com.fingersome.dungeonmasterypiety.tileentity.TileEntityAltarBoccob;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

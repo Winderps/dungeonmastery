@@ -13,16 +13,16 @@ import com.fingersome.dungeonmasterycore.block.BlockCorpseGrave;
 import com.fingersome.dungeonmasterycore.block.BlockCorpseSkeleton;
 import com.fingersome.dungeonmasterycore.block.BlockLimboSand;
 import com.fingersome.dungeonmasterycore.block.BlockLimboStone;
-import com.fingersome.dungeonmasterycore.block.blockAltarBoccob;
 import com.fingersome.dungeonmasterycore.gui.GuiHandler;
 import com.fingersome.dungeonmasterycore.item.ItemWandDM;
 import com.fingersome.dungeonmasterycore.item.ItemWandDebugging;
 import com.fingersome.dungeonmasterycore.proxy.CommonProxy;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityAltar;
-import com.fingersome.dungeonmasterycore.tileentity.TileEntityAltarBoccob;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCampfire;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCorpseGrave;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCorpseSkeleton;
+import com.fingersome.dungeonmasterypiety.block.blockAltarBoccob;
+import com.fingersome.dungeonmasterypiety.tileentity.TileEntityAltarBoccob;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;

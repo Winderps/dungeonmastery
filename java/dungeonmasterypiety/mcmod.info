@@ -1,15 +1,15 @@
 [
 {
-  "modid": "dungeonmasterycore",
-  "name": "Dungeon Mastery: Core",
-  "description": "Roll d20!",
+  "modid": "dungeonmasterypiety",
+  "name": "Dungeon Mastery: Piety",
+  "description": "An add-on module for Dungeon Mastery, that adds extra religiosity",
   "version": "${1.0.0}",
   "mcversion": "${1.7.2}",
   "url": "http://www.minecraftforum.net/topic/2382867-172-forge-wip-dungeon-mastery/",
   "updateUrl": "",
   "authors": [ "Fingersome", ],
   "credits": "Cobaltgnawl for all the awesome textures/models he created",
-  "logoFile": "DungeonMasteryCoreLogo.png",
+  "logoFile": "DungeonMasteryPietyLogo.png",
   "screenshots": [],
   "dependencies": []
 }

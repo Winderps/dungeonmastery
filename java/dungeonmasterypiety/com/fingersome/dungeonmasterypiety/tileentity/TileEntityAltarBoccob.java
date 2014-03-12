@@ -1,4 +1,4 @@
-package com.fingersome.dungeonmasterycore.tileentity;
+package com.fingersome.dungeonmasterypiety.tileentity;
 
 import net.minecraft.tileentity.TileEntity;
 

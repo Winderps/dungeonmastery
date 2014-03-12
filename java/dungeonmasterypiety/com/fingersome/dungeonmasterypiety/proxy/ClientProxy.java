@@ -1,4 +1,4 @@
-package com.fingersome.dungeonmasterycore.proxy;
+package com.fingersome.dungeonmasterypiety.proxy;
 
 import com.fingersome.dungeonmasterycore.renderer.RendererAltar;
 import com.fingersome.dungeonmasterycore.renderer.RendererCampfire;
@@ -17,10 +17,7 @@ public class ClientProxy extends CommonProxy
 {
 	public void registerProxies() 
 	{
-		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCampfire.class, new RendererCampfire());
-		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCorpseGrave.class, new RendererCorpseGrave());
-		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCorpseSkeleton.class, new RendererCorpseSkeleton());
-		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAltar.class, new RendererAltar());
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAltarBoccob.class, new RendererAltarBoccob());
 	}
 	
 }
