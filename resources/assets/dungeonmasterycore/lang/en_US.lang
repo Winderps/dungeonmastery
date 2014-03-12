@@ -1,0 +1,17 @@
+itemGroup.dungeonmasterycoretab=Dungeon Mastery: Core
+
+tile.blockBreakableBarrel.name=Barrel
+tile.blockBreakableCrate.name=Crate
+tile.blockBreakablePot.name=Urn
+
+tile.blockLimboSand.name=Limbo Sand
+tile.blockLimboStone.name=Limbo Stone
+
+tile.blockCorpseSkeleton.name=Corpse
+tile.blockCorpseGrave.name=Grave
+tile.blockCampfire.name=Campfire
+tile.blockAltar.name=Altar
+
+item.itemWandDM.name=Dungeon Master's Wand
+item.itemWandDebugging.name=Wand of Debugging
+item.itemFlintAndTinder.name=Flint and Tinder
