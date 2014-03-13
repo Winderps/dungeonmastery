@@ -15,6 +15,7 @@ import com.fingersome.dungeonmasterycore.block.BlockLimboSand;
 import com.fingersome.dungeonmasterycore.block.BlockLimboStone;
 import com.fingersome.dungeonmasterycore.block.blockAltarBoccob;
 import com.fingersome.dungeonmasterycore.block.blockAltarCorellon;
+import com.fingersome.dungeonmasterycore.block.blockAltarNerull;
 import com.fingersome.dungeonmasterycore.gui.GuiHandler;
 import com.fingersome.dungeonmasterycore.item.ItemWandDM;
 import com.fingersome.dungeonmasterycore.item.ItemWandDebugging;
@@ -66,6 +67,7 @@ public static Block blockCampfire;
 public static Block blockAltar;
 public static Block blockAltarBoccob;
 public static Block blockAltarCorellon;
+public static Block blockAltarNerull;
 
 public static Block blockBreakableBarrel;
 public static Block blockBreakableCrate;
@@ -111,6 +113,7 @@ public static Block blockBreakablePot;
 		blockAltar = new BlockAltar().setBlockName("blockAltar").setCreativeTab(coreTab);
 		blockAltarBoccob = new blockAltarBoccob().setBlockName("blockAltarBoccob").setCreativeTab(coreTab);
 		blockAltarCorellon = new blockAltarCorellon().setBlockName("blockAltarCorellon").setCreativeTab(coreTab);
+		blockAltarNerull = new blockAltarNerull().setBlockName("blockAltarNerull").setCreativeTab(coreTab);
 		
 		blockBreakableBarrel = new BlockBreakableBarrel().setBlockName("blockBreakableBarrel").setCreativeTab(coreTab).setBlockTextureName(CoreReference.MOD_ID + ":" + "blockBreakableBarrel");
 		blockBreakableCrate = new BlockBreakableCrate().setBlockName("blockBreakableCrate").setCreativeTab(coreTab).setBlockTextureName(CoreReference.MOD_ID + ":" + "blockBreakableCrate");
@@ -125,6 +128,7 @@ public static Block blockBreakablePot;
 		GameRegistry.registerBlock(blockAltar, "blockAltar");
 		GameRegistry.registerBlock(blockAltarBoccob, "blockAltarBoccob");
 		GameRegistry.registerBlock(blockAltarCorellon, "blockAltarCorellon");
+		GameRegistry.registerBlock(blockAltarNerull, "blockAltarNerull");
 		
 		GameRegistry.registerBlock(blockBreakableBarrel, "blockBreakableBarrel");
 		GameRegistry.registerBlock(blockBreakableCrate, "blockBreakableCrate");

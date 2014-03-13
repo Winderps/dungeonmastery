@@ -14,6 +14,7 @@ tile.blockCampfire.name=Campfire
 tile.blockAltar.name=Altar
 tile.blockAltarBoccob.name=Altar to Boccob
 tile.blockAltarCorellon.name=Altar to Corellon Larethian
+tile.blockAltarNerull.name=Altar to Nerull
 
 item.itemWandDM.name=Dungeon Master's Wand
 item.itemWandDebugging.name=Wand of Debugging
