@@ -1,9 +1,10 @@
-package com.fingersome.dungeonmasterypiety.block;
+package com.fingersome.dungeonmasterycore.block;
 
 import java.util.Random;
 
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityAltar;
-import com.fingersome.dungeonmasterypiety.tileentity.TileEntityAltarBoccob;
+import com.fingersome.dungeonmasterycore.tileentity.TileEntityAltarBoccob;
+import com.fingersome.dungeonmasterycore.tileentity.TileEntityAltarCorellon;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -15,10 +16,10 @@ import net.minecraft.world.World;
 
 
 
-public class blockAltarBoccob extends BlockContainer
+public class blockAltarCorellon extends BlockContainer
 {
 
-	public blockAltarBoccob() 
+	public blockAltarCorellon() 
 	{
 		super(Material.rock);
 		this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 1.0F, 1.0F);
@@ -42,7 +43,7 @@ public class blockAltarBoccob extends BlockContainer
 	@Override
 	public TileEntity createNewTileEntity(World var1, int var2) 
 	{
-		return new TileEntityAltarBoccob();
+		return new TileEntityAltarCorellon();
 	}
 
 }

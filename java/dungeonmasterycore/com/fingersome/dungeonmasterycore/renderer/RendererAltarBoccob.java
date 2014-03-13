@@ -1,4 +1,4 @@
-package com.fingersome.dungeonmasterypiety.renderer;
+package com.fingersome.dungeonmasterycore.renderer;
 
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.tileentity.TileEntity;
@@ -8,8 +8,8 @@ import org.lwjgl.opengl.GL11;
 
 import com.fingersome.dungeonmasterycore.CoreReference;
 import com.fingersome.dungeonmasterycore.model.ModelAltar;
+import com.fingersome.dungeonmasterycore.model.ModelAltarBoccob;
 import com.fingersome.dungeonmasterycore.model.ModelCampfire;
-import com.fingersome.dungeonmasterypiety.model.ModelAltarBoccob;
 
 public class RendererAltarBoccob extends TileEntitySpecialRenderer {
 
