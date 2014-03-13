@@ -13,15 +13,11 @@ import com.fingersome.dungeonmasterycore.block.BlockCorpseGrave;
 import com.fingersome.dungeonmasterycore.block.BlockCorpseSkeleton;
 import com.fingersome.dungeonmasterycore.block.BlockLimboSand;
 import com.fingersome.dungeonmasterycore.block.BlockLimboStone;
-import com.fingersome.dungeonmasterycore.block.blockAltarBoccob;
-import com.fingersome.dungeonmasterycore.block.blockAltarCorellon;
-import com.fingersome.dungeonmasterycore.block.blockAltarNerull;
 import com.fingersome.dungeonmasterycore.gui.GuiHandler;
 import com.fingersome.dungeonmasterycore.item.ItemWandDM;
 import com.fingersome.dungeonmasterycore.item.ItemWandDebugging;
 import com.fingersome.dungeonmasterycore.proxy.CommonProxy;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityAltar;
-import com.fingersome.dungeonmasterycore.tileentity.TileEntityAltarBoccob;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCampfire;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCorpseGrave;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCorpseSkeleton;
@@ -48,7 +44,6 @@ public class DungeonMasteryCore
 	
 public static Item itemWandDM;
 public static Item itemWandDebugging;
-
 public static Item itemCoinGoldLarge;
 public static Item itemCoinSilverLarge;
 public static Item itemCoinCopperLarge;
@@ -56,19 +51,15 @@ public static Item itemCoinGoldSmall;
 public static Item itemCoinSilverSmall;
 public static Item itemCoinCopperSmall;
 
-
 public static Block blockLimboSand;
 public static Block blockLimboStone;
-	
 public static Block blockCorpseSkeleton;
 public static Block blockCorpseGrave;
 public static Block blockCampfire;
-
 public static Block blockAltar;
 public static Block blockAltarBoccob;
 public static Block blockAltarCorellon;
 public static Block blockAltarNerull;
-
 public static Block blockBreakableBarrel;
 public static Block blockBreakableCrate;
 public static Block blockBreakablePot;
@@ -86,7 +77,6 @@ public static Block blockBreakablePot;
 	{
 		itemWandDM = new ItemWandDM().setUnlocalizedName("itemWandDM").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemWandDM");
 		itemWandDebugging = new ItemWandDebugging().setUnlocalizedName("itemWandDebugging").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemWandDM");
-		
 		itemCoinGoldLarge = new Item().setUnlocalizedName("itemCoinGoldLarge").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemCoinGoldLarge");
 		itemCoinSilverLarge = new Item().setUnlocalizedName("itemCoinSilverLarge").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemCoinSilverLarge");
 		itemCoinCopperLarge = new Item().setUnlocalizedName("itemCoinCopperLarge").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemCoinCopperLarge");
@@ -96,7 +86,6 @@ public static Block blockBreakablePot;
 		
 		GameRegistry.registerItem(itemWandDM, "itemWandDM");
 		GameRegistry.registerItem(itemWandDebugging, "itemWandDebugging");
-		
 		GameRegistry.registerItem(itemCoinGoldLarge, "itemCoinGoldLarge");
 		GameRegistry.registerItem(itemCoinSilverLarge, "itemCoinSilverLarge");
 		GameRegistry.registerItem(itemCoinCopperLarge, "itemCoinCopperLarge");
@@ -109,12 +98,7 @@ public static Block blockBreakablePot;
 		blockCorpseSkeleton = new BlockCorpseSkeleton().setBlockName("blockCorpseSkeleton").setCreativeTab(coreTab);
 		blockCorpseGrave = new BlockCorpseGrave().setBlockName("blockCorpseGrave").setCreativeTab(coreTab);
 		blockCampfire = new BlockCampfire().setLightLevel(0.7F).setBlockName("blockCampfire").setCreativeTab(coreTab);
-		
 		blockAltar = new BlockAltar().setBlockName("blockAltar").setCreativeTab(coreTab);
-		blockAltarBoccob = new blockAltarBoccob().setBlockName("blockAltarBoccob").setCreativeTab(coreTab);
-		blockAltarCorellon = new blockAltarCorellon().setBlockName("blockAltarCorellon").setCreativeTab(coreTab);
-		blockAltarNerull = new blockAltarNerull().setBlockName("blockAltarNerull").setCreativeTab(coreTab);
-		
 		blockBreakableBarrel = new BlockBreakableBarrel().setBlockName("blockBreakableBarrel").setCreativeTab(coreTab).setBlockTextureName(CoreReference.MOD_ID + ":" + "blockBreakableBarrel");
 		blockBreakableCrate = new BlockBreakableCrate().setBlockName("blockBreakableCrate").setCreativeTab(coreTab).setBlockTextureName(CoreReference.MOD_ID + ":" + "blockBreakableCrate");
 		blockBreakablePot = new BlockBreakablePot().setBlockName("blockBreakablePot").setCreativeTab(coreTab).setBlockTextureName(CoreReference.MOD_ID + ":" + "blockBreakablePot");
@@ -124,12 +108,7 @@ public static Block blockBreakablePot;
 		GameRegistry.registerBlock(blockCorpseSkeleton, "blockCorpseSkeleton");
 		GameRegistry.registerBlock(blockCorpseGrave, "blockCorpseGrave");
 		GameRegistry.registerBlock(blockCampfire, "blockCampfire");
-		
 		GameRegistry.registerBlock(blockAltar, "blockAltar");
-		GameRegistry.registerBlock(blockAltarBoccob, "blockAltarBoccob");
-		GameRegistry.registerBlock(blockAltarCorellon, "blockAltarCorellon");
-		GameRegistry.registerBlock(blockAltarNerull, "blockAltarNerull");
-		
 		GameRegistry.registerBlock(blockBreakableBarrel, "blockBreakableBarrel");
 		GameRegistry.registerBlock(blockBreakableCrate, "blockBreakableCrate");
 		GameRegistry.registerBlock(blockBreakablePot, "blockBreakablePot");
@@ -143,6 +122,7 @@ public static Block blockBreakablePot;
 		GameRegistry.registerTileEntity(TileEntityCampfire.class, "Campfire");
 		GameRegistry.registerTileEntity(TileEntityCorpseGrave.class, "Grave");
 		GameRegistry.registerTileEntity(TileEntityCorpseSkeleton.class, "Corpse");
+		GameRegistry.registerTileEntity(TileEntityAltar.class, "Altar");
 		
 		
 		proxy.registerProxies();
