@@ -1,23 +1,21 @@
 itemGroup.dungeonmasterycoretab=Dungeon Mastery: Core
 
-tile.blockBreakableBarrel.name=Barrel
-tile.blockBreakableCrate.name=Crate
-tile.blockBreakablePot.name=Urn
-
-tile.blockLimboSand.name=Limbo Sand
-tile.blockLimboStone.name=Limbo Stone
-
-tile.blockCorpseSkeleton.name=Corpse
-tile.blockCorpseGrave.name=Grave
-tile.blockCampfire.name=Campfire
-tile.blockAltar.name=Altar
-
 item.itemWandDM.name=Dungeon Master's Wand
 item.itemWandDebugging.name=Wand of Debugging
-
 item.itemCoinGoldLarge.name=Gold Crown
 item.itemCoinSilverLarge.name=Silver Shilling
 item.itemCoinCopperLarge.name=Copper Penny
 item.itemCoinGoldSmall.name=Gold Piece
 item.itemCoinSilverSmall.name=Silver Piece
 item.itemCoinCopperSmall.name=Copper Piece
+
+tile.blockLimboSand.name=Limbo Sand
+tile.blockLimboStone.name=Limbo Stone
+tile.blockBreakableBarrel.name=Barrel
+tile.blockBreakableCrate.name=Crate
+tile.blockBreakablePot.name=Urn
+tile.blockCorpseSkeleton.name=Corpse
+tile.blockCorpseGrave.name=Grave
+tile.blockCampfire.name=Campfire
+tile.blockAltar.name=Altar
+

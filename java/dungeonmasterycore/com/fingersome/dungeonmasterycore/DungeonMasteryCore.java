@@ -95,23 +95,23 @@ public static Block blockBreakablePot;
 	
 		blockLimboSand = new BlockLimboSand().setBlockName("blockLimboSand").setCreativeTab(coreTab).setBlockTextureName(CoreReference.MOD_ID + ":" + "blockLimboSand");
 		blockLimboStone = new BlockLimboStone().setBlockName("blockLimboStone").setCreativeTab(coreTab).setBlockTextureName(CoreReference.MOD_ID + ":" + "blockLimboStone");
+		blockBreakableBarrel = new BlockBreakableBarrel().setBlockName("blockBreakableBarrel").setCreativeTab(coreTab).setBlockTextureName(CoreReference.MOD_ID + ":" + "blockBreakableBarrel");
+		blockBreakableCrate = new BlockBreakableCrate().setBlockName("blockBreakableCrate").setCreativeTab(coreTab).setBlockTextureName(CoreReference.MOD_ID + ":" + "blockBreakableCrate");
+		blockBreakablePot = new BlockBreakablePot().setBlockName("blockBreakablePot").setCreativeTab(coreTab).setBlockTextureName(CoreReference.MOD_ID + ":" + "blockBreakablePot");
 		blockCorpseSkeleton = new BlockCorpseSkeleton().setBlockName("blockCorpseSkeleton").setCreativeTab(coreTab);
 		blockCorpseGrave = new BlockCorpseGrave().setBlockName("blockCorpseGrave").setCreativeTab(coreTab);
 		blockCampfire = new BlockCampfire().setLightLevel(0.7F).setBlockName("blockCampfire").setCreativeTab(coreTab);
 		blockAltar = new BlockAltar().setBlockName("blockAltar").setCreativeTab(coreTab);
-		blockBreakableBarrel = new BlockBreakableBarrel().setBlockName("blockBreakableBarrel").setCreativeTab(coreTab).setBlockTextureName(CoreReference.MOD_ID + ":" + "blockBreakableBarrel");
-		blockBreakableCrate = new BlockBreakableCrate().setBlockName("blockBreakableCrate").setCreativeTab(coreTab).setBlockTextureName(CoreReference.MOD_ID + ":" + "blockBreakableCrate");
-		blockBreakablePot = new BlockBreakablePot().setBlockName("blockBreakablePot").setCreativeTab(coreTab).setBlockTextureName(CoreReference.MOD_ID + ":" + "blockBreakablePot");
 
 		GameRegistry.registerBlock(blockLimboSand, "blockLimboSand");
 		GameRegistry.registerBlock(blockLimboStone, "blockLimboStone");
+		GameRegistry.registerBlock(blockBreakableBarrel, "blockBreakableBarrel");
+		GameRegistry.registerBlock(blockBreakableCrate, "blockBreakableCrate");
+		GameRegistry.registerBlock(blockBreakablePot, "blockBreakablePot");
 		GameRegistry.registerBlock(blockCorpseSkeleton, "blockCorpseSkeleton");
 		GameRegistry.registerBlock(blockCorpseGrave, "blockCorpseGrave");
 		GameRegistry.registerBlock(blockCampfire, "blockCampfire");
 		GameRegistry.registerBlock(blockAltar, "blockAltar");
-		GameRegistry.registerBlock(blockBreakableBarrel, "blockBreakableBarrel");
-		GameRegistry.registerBlock(blockBreakableCrate, "blockBreakableCrate");
-		GameRegistry.registerBlock(blockBreakablePot, "blockBreakablePot");
 		
 	}
 	
