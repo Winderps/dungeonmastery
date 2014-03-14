@@ -92,7 +92,7 @@ public static Block blockAltarPelor;
 	
 		blockLimboSand = new BlockLimboSand().setBlockName("blockLimboSand").setCreativeTab(coreTab).setBlockTextureName(CoreReference.MOD_ID + ":" + "blockLimboSand");
 		blockLimboStone = new BlockLimboStone().setBlockName("blockLimboStone").setCreativeTab(coreTab).setBlockTextureName(CoreReference.MOD_ID + ":" + "blockLimboStone");
-		blockBreakableBarrel = new BlockBreakableBarrel().setBlockName("blockBreakableBarrel").setCreativeTab(coreTab).setBlockTextureName(CoreReference.MOD_ID + ":" + "blockBreakableBarrel");
+		blockBreakableBarrel = new BlockBreakableBarrel().setBlockName("blockBreakableBarrel").setCreativeTab(coreTab);
 		blockBreakableCrate = new BlockBreakableCrate().setBlockName("blockBreakableCrate").setCreativeTab(coreTab).setBlockTextureName(CoreReference.MOD_ID + ":" + "blockBreakableCrate");
 		blockBreakablePot = new BlockBreakablePot().setBlockName("blockBreakablePot").setCreativeTab(coreTab).setBlockTextureName(CoreReference.MOD_ID + ":" + "blockBreakablePot");
 		blockCorpseSkeleton = new BlockCorpseSkeleton().setBlockName("blockCorpseSkeleton").setCreativeTab(coreTab);
