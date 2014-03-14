@@ -73,47 +73,6 @@ public class GuiCreateCharacterClass extends GuiScreen
 		
 		}
 	
-	/*protected void drawGuiContainerBackgroundLayer(float var1, int var2, int var3) 
-		{
-			int posX = (this.width - xSize) /2;
-			int posY = (this.height - ySize) /2;
-			
-	        drawPlayerOnGui(this.mc, posX + 33, posY + 75, 30, (float) (posX + 51) - this.xSize, (float) (posY + 75 - 50) - this.ySize);
-		}
-
-	 public static void drawPlayerOnGui (Minecraft minecraft, int par1, int par2, int par3, float par4, float par5)
-	    {
-	        GL11.glEnable(GL11.GL_COLOR_MATERIAL);
-	        GL11.glPushMatrix();
-	        GL11.glTranslatef((float) par1, (float) par2, 50.0F);
-	        GL11.glScalef((float) (-par3), (float) par3, (float) par3);
-	        GL11.glRotatef(180.0F, 0.0F, 0.0F, 1.0F);
-	        float f2 = minecraft.thePlayer.renderYawOffset;
-	        float f3 = minecraft.thePlayer.rotationYaw;
-	        float f4 = minecraft.thePlayer.rotationPitch;
-	        par4 -= 19;
-	        GL11.glRotatef(135.0F, 0.0F, 1.0F, 0.0F);
-	        RenderHelper.enableStandardItemLighting();
-	        GL11.glRotatef(-135.0F, 0.0F, 1.0F, 0.0F);
-	        GL11.glRotatef(-((float) Math.atan((double) (par5 / 40.0F))) * 20.0F, 1.0F, 0.0F, 0.0F);
-	        minecraft.thePlayer.renderYawOffset = (float) Math.atan((double) (par4 / 40.0F)) * 20.0F;
-	        minecraft.thePlayer.rotationYaw = (float) Math.atan((double) (par4 / 40.0F)) * 40.0F;
-	        minecraft.thePlayer.rotationPitch = -((float) Math.atan((double) (par5 / 40.0F))) * 20.0F;
-	        minecraft.thePlayer.rotationYawHead = minecraft.thePlayer.rotationYaw;
-	        GL11.glTranslatef(0.0F, minecraft.thePlayer.yOffset, 0.0F);
-	        RenderManager.instance.playerViewY = 180.0F;
-	        RenderManager.instance.renderEntityWithPosYaw(minecraft.thePlayer, 0.0D, 0.0D, 0.0D, 0.0F, 1.0F);
-	        minecraft.thePlayer.renderYawOffset = f2;
-	        minecraft.thePlayer.rotationYaw = f3;
-	        minecraft.thePlayer.rotationPitch = f4;
-	        GL11.glPopMatrix();
-	        RenderHelper.disableStandardItemLighting();
-	        GL11.glDisable(GL12.GL_RESCALE_NORMAL);
-	        OpenGlHelper.setActiveTexture(OpenGlHelper.lightmapTexUnit);
-	        GL11.glDisable(GL11.GL_TEXTURE_2D);
-	        OpenGlHelper.setActiveTexture(OpenGlHelper.defaultTexUnit);
-	    }
-	    */
 
 	public void drawScreen(int i, int j, float f)
 	{
