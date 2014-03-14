@@ -23,16 +23,18 @@ public class GuiCreateCharacterFeats1 extends GuiScreen
 	final int xSize = 176;
 	final int ySize = 222;
 	
+
+	
 	 public GuiCreateCharacterFeats1(EntityPlayer player)
 	    {
 	        
 	    }
-	
+		
 	public void initGui()
 		{
 		int posX = (this.width - xSize) /2;
 		int posY = (this.height - ySize) /2;
-
+		
 		this.buttonList.add(new GuiButton(0, posX - 60, posY + 5, 10, 10, ""));
 		this.buttonList.add(new GuiButton(1, posX - 60, posY + 20, 10, 10, ""));
 		this.buttonList.add(new GuiButton(2, posX - 60, posY + 35, 10, 10, ""));
@@ -105,32 +107,32 @@ public class GuiCreateCharacterFeats1 extends GuiScreen
         //drawGradientRect(20, 20, width - 20, height - 20, 0x60500000, 0xa0803030);
         //drawRect(60, 60, width - 60, height - 60, 0xFF9E9E9E);
         //drawTexturedModalRect();
-        drawCenteredString(fontRendererObj, "Choose your Feats", width / 2, 35, 0xffffff);
-        drawString(fontRendererObj, "Alertness", 220, 70, 0xffffff);
-        drawString(fontRendererObj, "Armor Prof. (Light)", 220, 85, 0xffffff);
-        drawString(fontRendererObj, "Armor Prof. (Med)", 220, 100, 0xffffff);
-        drawString(fontRendererObj, "Armor Prof. (Heavy)", 220, 115, 0xffffff);
-        drawString(fontRendererObj, "Backstabber", 220, 130, 0xffffff);
-        drawString(fontRendererObj, "Blade Opportunist", 220, 145, 0xffffff);
-        drawString(fontRendererObj, "Combat Reflexes", 220, 160, 0xffffff);
-        drawString(fontRendererObj, "Dark Fury", 220, 175, 0xffffff);
-        drawString(fontRendererObj, "Defensive Mobility", 220, 190, 0xffffff);
-        drawString(fontRendererObj, "Distracting Shield", 220, 205, 0xffffff);
-        drawString(fontRendererObj, "Durable", 220, 220, 0xffffff);
-        drawString(fontRendererObj, "Escape Artist", 220, 235, 0xffffff);
+        drawCenteredString(fontRendererObj, "Choose your Feats", width / 2, 		height / 2 - 150, 0xffffff);
+        drawString(fontRendererObj, "Alertness", 				width / 2 - 120, 	height / 2 - 105, 0xffffff);
+        drawString(fontRendererObj, "Armor Prof. (Light)", 		width / 2 - 120, 	height / 2 - 90, 0xffffff);
+        drawString(fontRendererObj, "Armor Prof. (Med)", 		width / 2 - 120, 	height / 2 - 75, 0xffffff);
+        drawString(fontRendererObj, "Armor Prof. (Heavy)", 		width / 2 - 120, 	height / 2 - 60, 0xffffff);
+        drawString(fontRendererObj, "Backstabber", 				width / 2 - 120, 	height / 2 - 45, 0xffffff);
+        drawString(fontRendererObj, "Blade Opportunist", 		width / 2 - 120,	height / 2 - 30, 0xffffff);
+        drawString(fontRendererObj, "Combat Reflexes", 			width / 2 - 120, 	height / 2 - 15, 0xffffff);
+        drawString(fontRendererObj, "Dark Fury", 	 			width / 2 - 120, 	height / 2 - 0, 0xffffff);
+        drawString(fontRendererObj, "Defensive Mobility", 		width / 2 - 120, 	height / 2 + 15, 0xffffff);
+        drawString(fontRendererObj, "Distracting Shield", 		width / 2 - 120, 	height / 2 + 30, 0xffffff);
+        drawString(fontRendererObj, "Durable",				 	width / 2 - 120, 	height / 2 + 45, 0xffffff);
+        drawString(fontRendererObj, "Escape Artist", 			width / 2 - 120, 	height / 2 + 60, 0xffffff);
         
-        drawString(fontRendererObj, "Expanded Spellbook", 440, 70, 0xffffff);
-        drawString(fontRendererObj, "Far Shot", 440, 85, 0xffffff);
-        drawString(fontRendererObj, "Far Throw. (Med)", 440, 100, 0xffffff);
-        drawString(fontRendererObj, "Fast Runner", 440, 115, 0xffffff);
-        drawString(fontRendererObj, "Dark Boon", 440, 130, 0xffffff);
-        drawString(fontRendererObj, "Destiny of the Void", 440, 145, 0xffffff);
-        drawString(fontRendererObj, "Improved Initiative", 440, 160, 0xffffff);
-        drawString(fontRendererObj, "Miasmic Step", 440, 175, 0xffffff);
-        drawString(fontRendererObj, "Jack-of-all-trades", 440, 190, 0xffffff);
-        drawString(fontRendererObj, "Linguist", 440, 205, 0xffffff);
-        drawString(fontRendererObj, "Long-jumper", 440, 220, 0xffffff);
-        drawString(fontRendererObj, "Mounted Combat", 440, 235, 0xffffff);
+        drawString(fontRendererObj, "Expanded Spellbook",		width / 2 + 100, 	height / 2 - 105, 0xffffff);
+        drawString(fontRendererObj, "Far Shot", 				width / 2 + 100, 	height / 2 - 90, 0xffffff);
+        drawString(fontRendererObj, "Far Throw", 				width / 2 + 100, 	height / 2 - 75, 0xffffff);
+        drawString(fontRendererObj, "Fast Runner",		 		width / 2 + 100, 	height / 2 - 60, 0xffffff);
+        drawString(fontRendererObj, "Dark Boon", 				width / 2 + 100, 	height / 2 - 45, 0xffffff);
+        drawString(fontRendererObj, "Destiny of the Void", 		width / 2 + 100, 	height / 2 - 30, 0xffffff);
+        drawString(fontRendererObj, "Improved Initiative", 		width / 2 + 100, 	height / 2 - 15, 0xffffff);
+        drawString(fontRendererObj, "Miasmic Step", 			width / 2 + 100, 	height / 2 - 0, 0xffffff);
+        drawString(fontRendererObj, "Jack-of-all-trades",	 	width / 2 + 100, 	height / 2 + 15, 0xffffff);
+        drawString(fontRendererObj, "Linguist", 				width / 2 + 100, 	height / 2 + 30, 0xffffff);
+        drawString(fontRendererObj, "Long-jumper", 				width / 2 + 100, 	height / 2 + 45, 0xffffff);
+        drawString(fontRendererObj, "Mounted Combat", 			width / 2 + 100, 	height / 2 + 60, 0xffffff);
         super.drawScreen(i, j, f);
 	}
 	
