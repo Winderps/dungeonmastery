@@ -12,7 +12,7 @@ import com.fingersome.dungeonmasterycore.block.BlockCorpseGrave;
 import com.fingersome.dungeonmasterycore.block.BlockCorpseSkeleton;
 import com.fingersome.dungeonmasterycore.block.BlockLimboSand;
 import com.fingersome.dungeonmasterycore.block.BlockLimboStone;
-import com.fingersome.dungeonmasterycore.block.blockAltarPelor;
+import com.fingersome.dungeonmasterycore.block.BlockAltarPelor;
 import com.fingersome.dungeonmasterycore.gui.GuiHandler;
 import com.fingersome.dungeonmasterycore.item.ItemWandDM;
 import com.fingersome.dungeonmasterycore.item.ItemWandDebugging;
@@ -98,7 +98,7 @@ public static Block blockAltarPelor;
 		blockCorpseSkeleton = new BlockCorpseSkeleton().setBlockName("blockCorpseSkeleton").setCreativeTab(coreTab);
 		blockCorpseGrave = new BlockCorpseGrave().setBlockName("blockCorpseGrave").setCreativeTab(coreTab);
 		blockCampfire = new BlockCampfire().setLightLevel(0.7F).setBlockName("blockCampfire").setCreativeTab(coreTab);
-		blockAltarPelor = new blockAltarPelor().setBlockName("blockAltarPelor").setCreativeTab(coreTab);
+		blockAltarPelor = new BlockAltarPelor().setBlockName("blockAltarPelor").setCreativeTab(coreTab);
 
 		GameRegistry.registerBlock(blockLimboSand, "blockLimboSand");
 		GameRegistry.registerBlock(blockLimboStone, "blockLimboStone");
@@ -119,6 +119,7 @@ public static Block blockAltarPelor;
 		GameRegistry.registerTileEntity(TileEntityCampfire.class, "Campfire");
 		GameRegistry.registerTileEntity(TileEntityCorpseGrave.class, "Grave");
 		GameRegistry.registerTileEntity(TileEntityCorpseSkeleton.class, "Corpse");
+		GameRegistry.registerTileEntity(TileEntityCorpseSkeleton.class, "AltarPelor");
 		
 		
 		proxy.registerProxies();

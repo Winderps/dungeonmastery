@@ -9,10 +9,10 @@ import com.fingersome.dungeonmasterycore.tileentity.TileEntityAltarPelor;
 
 
 
-public class blockAltarPelor extends BlockContainer
+public class BlockAltarPelor extends BlockContainer
 {
 
-	public blockAltarPelor() 
+	public BlockAltarPelor() 
 	{
 		super(Material.wood);
 		this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 1.0F, 1.0F);
