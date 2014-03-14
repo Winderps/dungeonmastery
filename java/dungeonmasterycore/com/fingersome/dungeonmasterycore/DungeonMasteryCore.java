@@ -4,7 +4,6 @@ import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-import com.fingersome.dungeonmasterycore.block.BlockAltar;
 import com.fingersome.dungeonmasterycore.block.BlockBreakableBarrel;
 import com.fingersome.dungeonmasterycore.block.BlockBreakableCrate;
 import com.fingersome.dungeonmasterycore.block.BlockBreakablePot;
@@ -13,11 +12,12 @@ import com.fingersome.dungeonmasterycore.block.BlockCorpseGrave;
 import com.fingersome.dungeonmasterycore.block.BlockCorpseSkeleton;
 import com.fingersome.dungeonmasterycore.block.BlockLimboSand;
 import com.fingersome.dungeonmasterycore.block.BlockLimboStone;
+import com.fingersome.dungeonmasterycore.block.blockAltarPelor;
 import com.fingersome.dungeonmasterycore.gui.GuiHandler;
 import com.fingersome.dungeonmasterycore.item.ItemWandDM;
 import com.fingersome.dungeonmasterycore.item.ItemWandDebugging;
 import com.fingersome.dungeonmasterycore.proxy.CommonProxy;
-import com.fingersome.dungeonmasterycore.tileentity.TileEntityAltar;
+import com.fingersome.dungeonmasterycore.tileentity.TileEntityAltarPelor;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCampfire;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCorpseGrave;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCorpseSkeleton;
@@ -53,16 +53,13 @@ public static Item itemCoinCopperSmall;
 
 public static Block blockLimboSand;
 public static Block blockLimboStone;
-public static Block blockCorpseSkeleton;
-public static Block blockCorpseGrave;
-public static Block blockCampfire;
-public static Block blockAltar;
-public static Block blockAltarBoccob;
-public static Block blockAltarCorellon;
-public static Block blockAltarNerull;
 public static Block blockBreakableBarrel;
 public static Block blockBreakableCrate;
 public static Block blockBreakablePot;
+public static Block blockCorpseSkeleton;
+public static Block blockCorpseGrave;
+public static Block blockCampfire;
+public static Block blockAltarPelor;
 	
 	public static CreativeTabs coreTab = new CreativeTabs("dungeonmasterycoretab")
 	{
@@ -101,7 +98,7 @@ public static Block blockBreakablePot;
 		blockCorpseSkeleton = new BlockCorpseSkeleton().setBlockName("blockCorpseSkeleton").setCreativeTab(coreTab);
 		blockCorpseGrave = new BlockCorpseGrave().setBlockName("blockCorpseGrave").setCreativeTab(coreTab);
 		blockCampfire = new BlockCampfire().setLightLevel(0.7F).setBlockName("blockCampfire").setCreativeTab(coreTab);
-		blockAltar = new BlockAltar().setBlockName("blockAltar").setCreativeTab(coreTab);
+		blockAltarPelor = new blockAltarPelor().setBlockName("blockAltarPelor").setCreativeTab(coreTab);
 
 		GameRegistry.registerBlock(blockLimboSand, "blockLimboSand");
 		GameRegistry.registerBlock(blockLimboStone, "blockLimboStone");
@@ -111,7 +108,7 @@ public static Block blockBreakablePot;
 		GameRegistry.registerBlock(blockCorpseSkeleton, "blockCorpseSkeleton");
 		GameRegistry.registerBlock(blockCorpseGrave, "blockCorpseGrave");
 		GameRegistry.registerBlock(blockCampfire, "blockCampfire");
-		GameRegistry.registerBlock(blockAltar, "blockAltar");
+		GameRegistry.registerBlock(blockAltarPelor, "blockAltarPelor");
 		
 	}
 	
@@ -122,7 +119,6 @@ public static Block blockBreakablePot;
 		GameRegistry.registerTileEntity(TileEntityCampfire.class, "Campfire");
 		GameRegistry.registerTileEntity(TileEntityCorpseGrave.class, "Grave");
 		GameRegistry.registerTileEntity(TileEntityCorpseSkeleton.class, "Corpse");
-		GameRegistry.registerTileEntity(TileEntityAltar.class, "Altar");
 		
 		
 		proxy.registerProxies();

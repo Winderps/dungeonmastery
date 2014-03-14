@@ -4,9 +4,9 @@ import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 
-public class ModelAltar extends ModelBase
+public class ModelAltarPelor extends ModelBase
 {
-	ModelRenderer Base;
+    ModelRenderer Base;
     ModelRenderer Foot1;
     ModelRenderer Foot2;
     ModelRenderer Foot3;
@@ -34,7 +34,7 @@ public class ModelAltar extends ModelBase
     ModelRenderer Cloth1;
     ModelRenderer Cloth2;
   
-  public ModelAltar()
+  public ModelAltarPelor()
   {
     textureWidth = 64;
     textureHeight = 32;
@@ -236,35 +236,35 @@ public class ModelAltar extends ModelBase
     Cloth2.render(f5);
   }
   
-  public void renderModel(float f)
+  public void renderModel(float f5)
   {
-	    Base.render(f);
-	    Foot1.render(f);
-	    Foot2.render(f);
-	    Foot3.render(f);
-	    Foot4.render(f);
-	    Pillar1.render(f);
-	    Pillar2.render(f);
-	    Crossbar.render(f);
-	    Platform.render(f);
-	    Support1.render(f);
-	    Support2.render(f);
-	    Support3.render(f);
-	    Support4.render(f);
-	    Surface.render(f);
-	    Spacer1.render(f);
-	    Spacer2.render(f);
-	    Top.render(f);
-	    Ornament1.render(f);
-	    Ornament2.render(f);
-	    Ornament3.render(f);
-	    Ornament4.render(f);
-	    Ornament5.render(f);
-	    Ornament6.render(f);
-	    Ornament7.render(f);
-	    Ornament8.render(f);
-	    Cloth1.render(f);
-	    Cloth2.render(f);
+    Base.render(f5);
+    Foot1.render(f5);
+    Foot2.render(f5);
+    Foot3.render(f5);
+    Foot4.render(f5);
+    Pillar1.render(f5);
+    Pillar2.render(f5);
+    Crossbar.render(f5);
+    Platform.render(f5);
+    Support1.render(f5);
+    Support2.render(f5);
+    Support3.render(f5);
+    Support4.render(f5);
+    Surface.render(f5);
+    Spacer1.render(f5);
+    Spacer2.render(f5);
+    Top.render(f5);
+    Ornament1.render(f5);
+    Ornament2.render(f5);
+    Ornament3.render(f5);
+    Ornament4.render(f5);
+    Ornament5.render(f5);
+    Ornament6.render(f5);
+    Ornament7.render(f5);
+    Ornament8.render(f5);
+    Cloth1.render(f5);
+    Cloth2.render(f5);
   }
   
   private void setRotation(ModelRenderer model, float x, float y, float z)

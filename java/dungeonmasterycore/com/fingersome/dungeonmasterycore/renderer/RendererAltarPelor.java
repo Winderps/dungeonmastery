@@ -7,17 +7,17 @@ import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 
 import com.fingersome.dungeonmasterycore.CoreReference;
-import com.fingersome.dungeonmasterycore.model.ModelAltar;
-import com.fingersome.dungeonmasterycore.model.ModelCampfire;
+import com.fingersome.dungeonmasterycore.model.ModelAltarPelor;
 
-public class RendererAltar extends TileEntitySpecialRenderer {
+public class RendererAltarPelor extends TileEntitySpecialRenderer {
 
-	private ModelAltar model;
+	private ModelAltarPelor model;
 
-	private static final ResourceLocation texture = new ResourceLocation(CoreReference.MOD_ID, "textures/models/TextureAltar.png");
+	private static final ResourceLocation texture = new ResourceLocation(CoreReference.MOD_ID, "textures/models/TextureAltarPelor.png");
 	
-	public RendererAltar(){
-		this.model = new ModelAltar();
+	public RendererAltarPelor()
+	{
+		this.model = new ModelAltarPelor();
 	}
 	
 	public void renderTileEntityAt(TileEntity tileentity, double x, double y, double z, float f) 

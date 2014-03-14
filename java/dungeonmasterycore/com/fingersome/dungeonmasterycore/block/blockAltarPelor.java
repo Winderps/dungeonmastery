@@ -1,25 +1,20 @@
 package com.fingersome.dungeonmasterycore.block;
 
-import java.util.Random;
-
-import com.fingersome.dungeonmasterycore.tileentity.TileEntityAltar;
-
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
+import com.fingersome.dungeonmasterycore.tileentity.TileEntityAltarPelor;
 
 
-public class BlockAltar extends BlockContainer
+
+public class blockAltarPelor extends BlockContainer
 {
 
-	public BlockAltar() 
+	public blockAltarPelor() 
 	{
-		super(Material.rock);
+		super(Material.wood);
 		this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 1.0F, 1.0F);
 	}
 	
@@ -41,7 +36,7 @@ public class BlockAltar extends BlockContainer
 	@Override
 	public TileEntity createNewTileEntity(World var1, int var2) 
 	{
-		return new TileEntityAltar();
+		return new TileEntityAltarPelor();
 	}
 
 }
