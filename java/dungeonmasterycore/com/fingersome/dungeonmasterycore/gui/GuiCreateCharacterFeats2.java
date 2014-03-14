@@ -23,8 +23,7 @@ public class GuiCreateCharacterFeats2 extends GuiScreen
 	final int xSize = 176;
 	final int ySize = 222;
 	
-	int posX = (this.width - xSize) /2;
-	int posY = (this.height - ySize) /2;
+
 	
 	 public GuiCreateCharacterFeats2(EntityPlayer player)
 	    {
@@ -33,6 +32,8 @@ public class GuiCreateCharacterFeats2 extends GuiScreen
 		
 	public void initGui()
 		{
+		int posX = (this.width - xSize) /2;
+		int posY = (this.height - ySize) /2;
 		
 		this.buttonList.add(new GuiButton(0, posX - 60, posY + 5, 10, 10, ""));
 		this.buttonList.add(new GuiButton(1, posX - 60, posY + 20, 10, 10, ""));
@@ -120,18 +121,18 @@ public class GuiCreateCharacterFeats2 extends GuiScreen
         drawString(fontRendererObj, "Shield Prof. (Heavy)", 	width / 2 - 120, 	height / 2 + 45, 0xffffff);
         drawString(fontRendererObj, "Shield Push", 				width / 2 - 120, 	height / 2 + 60, 0xffffff);
         
-        drawString(fontRendererObj, "Skill Focus", 				width / 2 - 140, 	height / 2 - 105, 0xffffff);
-        drawString(fontRendererObj, "Skill Training", 			width / 2 - 140, 	height / 2 - 90, 0xffffff);
-        drawString(fontRendererObj, "Sure Climber", 			width / 2 - 140, 	height / 2 - 75, 0xffffff);
-        drawString(fontRendererObj, "Surprise Knockdown", 		width / 2 - 140, 	height / 2 - 60, 0xffffff);
-        drawString(fontRendererObj, "Toughness", 				width / 2 - 140, 	height / 2 - 45, 0xffffff);
-        drawString(fontRendererObj, "Weapon Focus", 			width / 2 - 140, 	height / 2 - 30, 0xffffff);
-        drawString(fontRendererObj, "Weapon Prof. (Light)", 	width / 2 - 140, 	height / 2 - 15, 0xffffff);
-        drawString(fontRendererObj, "Weapon Prof. (Med)", 		width / 2 - 140, 	height / 2 - 0, 0xffffff);
-        drawString(fontRendererObj, "Weapon Prof. (Martial)", 	width / 2 - 140, 	height / 2 + 15, 0xffffff);
-        drawString(fontRendererObj, "Weapon Prof. (Exotic)", 	width / 2 - 140, 	height / 2 + 30, 0xffffff);
-        drawString(fontRendererObj, "Weapon Prof. (Ranged)", 	width / 2 - 140, 	height / 2 + 45, 0xffffff);
-        drawString(fontRendererObj, "Wintertouched", 			width / 2 - 140, 	height / 2 + 60, 0xffffff);
+        drawString(fontRendererObj, "Skill Focus", 				width / 2 + 100, 	height / 2 - 105, 0xffffff);
+        drawString(fontRendererObj, "Skill Training", 			width / 2 + 100, 	height / 2 - 90, 0xffffff);
+        drawString(fontRendererObj, "Sure Climber", 			width / 2 + 100, 	height / 2 - 75, 0xffffff);
+        drawString(fontRendererObj, "Surprise Knockdown", 		width / 2 + 100, 	height / 2 - 60, 0xffffff);
+        drawString(fontRendererObj, "Toughness", 				width / 2 + 100, 	height / 2 - 45, 0xffffff);
+        drawString(fontRendererObj, "Weapon Focus", 			width / 2 + 100, 	height / 2 - 30, 0xffffff);
+        drawString(fontRendererObj, "Weapon Prof. (Light)", 	width / 2 + 100, 	height / 2 - 15, 0xffffff);
+        drawString(fontRendererObj, "Weapon Prof. (Med)", 		width / 2 + 100, 	height / 2 - 0, 0xffffff);
+        drawString(fontRendererObj, "Weapon Prof. (Martial)", 	width / 2 + 100, 	height / 2 + 15, 0xffffff);
+        drawString(fontRendererObj, "Weapon Prof. (Exotic)", 	width / 2 + 100, 	height / 2 + 30, 0xffffff);
+        drawString(fontRendererObj, "Weapon Prof. (Ranged)", 	width / 2 + 100, 	height / 2 + 45, 0xffffff);
+        drawString(fontRendererObj, "Wintertouched", 			width / 2 + 100, 	height / 2 + 60, 0xffffff);
         super.drawScreen(i, j, f);
 	}
 	
