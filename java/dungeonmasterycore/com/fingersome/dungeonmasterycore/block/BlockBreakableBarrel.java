@@ -25,7 +25,7 @@ public class BlockBreakableBarrel extends Block
 	public void registerIcons(IIconRegister iconregister)
 	{
 		this.blockIcon = iconregister.registerIcon(CoreReference.MOD_ID + ":" + "blockBreakableBarrel");
-		this.topTexture = iconregister.registerIcon(CoreReference.MOD_ID + ":" + "blockBreakableBarrel_top");
+		this.topTexture = iconregister.registerIcon(CoreReference.MOD_ID + ":" + "blockBreakableBarrel" + "_top");
 	}
 	
 	@SideOnly(Side.CLIENT)
