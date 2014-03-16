@@ -3,7 +3,9 @@ package com.fingersome.dungeonmasterycore;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraftforge.common.util.EnumHelper;
 
+import com.fingersome.dungeonmasterycore.block.BlockAltarPelor;
 import com.fingersome.dungeonmasterycore.block.BlockBreakableBarrel;
 import com.fingersome.dungeonmasterycore.block.BlockBreakableCrate;
 import com.fingersome.dungeonmasterycore.block.BlockBreakablePot;
@@ -12,10 +14,10 @@ import com.fingersome.dungeonmasterycore.block.BlockCorpseGrave;
 import com.fingersome.dungeonmasterycore.block.BlockCorpseSkeleton;
 import com.fingersome.dungeonmasterycore.block.BlockLimboSand;
 import com.fingersome.dungeonmasterycore.block.BlockLimboStone;
-import com.fingersome.dungeonmasterycore.block.BlockAltarPelor;
 import com.fingersome.dungeonmasterycore.gui.GuiHandler;
 import com.fingersome.dungeonmasterycore.item.ItemWandDM;
 import com.fingersome.dungeonmasterycore.item.ItemWandDebugging;
+import com.fingersome.dungeonmasterycore.item.ItemWandLimbo;
 import com.fingersome.dungeonmasterycore.proxy.CommonProxy;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityAltarPelor;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCampfire;
@@ -44,6 +46,7 @@ public class DungeonMasteryCore
 	
 public static Item itemWandDM;
 public static Item itemWandDebugging;
+public static Item itemWandLimbo;
 public static Item itemCoinGoldLarge;
 public static Item itemCoinSilverLarge;
 public static Item itemCoinCopperLarge;
@@ -72,8 +75,9 @@ public static Block blockAltarPelor;
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent e)
 	{
-		itemWandDM = new ItemWandDM().setUnlocalizedName("itemWandDM").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemWandDM");
-		itemWandDebugging = new ItemWandDebugging().setUnlocalizedName("itemWandDebugging").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemWandDM");
+		itemWandDM = new ItemWandDM().setUnlocalizedName("itemWandDM").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemWandWhite");
+		itemWandDebugging = new ItemWandDebugging().setUnlocalizedName("itemWandDebugging").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemWandYellow");
+		itemWandLimbo = new Item().setUnlocalizedName("itemWandLimbo").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemWandBlack");
 		itemCoinGoldLarge = new Item().setUnlocalizedName("itemCoinGoldLarge").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemCoinGoldLarge");
 		itemCoinSilverLarge = new Item().setUnlocalizedName("itemCoinSilverLarge").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemCoinSilverLarge");
 		itemCoinCopperLarge = new Item().setUnlocalizedName("itemCoinCopperLarge").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemCoinCopperLarge");
@@ -83,6 +87,7 @@ public static Block blockAltarPelor;
 		
 		GameRegistry.registerItem(itemWandDM, "itemWandDM");
 		GameRegistry.registerItem(itemWandDebugging, "itemWandDebugging");
+		GameRegistry.registerItem(itemWandLimbo, "itemWandLimbo");
 		GameRegistry.registerItem(itemCoinGoldLarge, "itemCoinGoldLarge");
 		GameRegistry.registerItem(itemCoinSilverLarge, "itemCoinSilverLarge");
 		GameRegistry.registerItem(itemCoinCopperLarge, "itemCoinCopperLarge");
@@ -119,7 +124,7 @@ public static Block blockAltarPelor;
 		GameRegistry.registerTileEntity(TileEntityCampfire.class, "Campfire");
 		GameRegistry.registerTileEntity(TileEntityCorpseGrave.class, "Grave");
 		GameRegistry.registerTileEntity(TileEntityCorpseSkeleton.class, "Corpse");
-		GameRegistry.registerTileEntity(TileEntityCorpseSkeleton.class, "AltarPelor");
+		GameRegistry.registerTileEntity(TileEntityAltarPelor.class, "AltarPelor");
 		
 		
 		proxy.registerProxies();
