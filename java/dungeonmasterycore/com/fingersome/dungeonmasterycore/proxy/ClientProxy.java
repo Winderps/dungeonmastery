@@ -1,6 +1,5 @@
 package com.fingersome.dungeonmasterycore.proxy;
 
-import com.fingersome.dungeonmasterycore.renderer.RendererAltarPelor;
 import com.fingersome.dungeonmasterycore.renderer.RendererCampfire;
 import com.fingersome.dungeonmasterycore.renderer.RendererCorpseGrave;
 import com.fingersome.dungeonmasterycore.renderer.RendererCorpseSkeleton;
@@ -18,7 +17,6 @@ public class ClientProxy extends CommonProxy
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCampfire.class, new RendererCampfire());
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCorpseGrave.class, new RendererCorpseGrave());
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCorpseSkeleton.class, new RendererCorpseSkeleton());
-		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAltarPelor.class, new RendererAltarPelor());
 
 	}
 	

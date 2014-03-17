@@ -5,7 +5,6 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;
 
-import com.fingersome.dungeonmasterycore.block.BlockAltarPelor;
 import com.fingersome.dungeonmasterycore.block.BlockBreakableBarrel;
 import com.fingersome.dungeonmasterycore.block.BlockBreakableCrate;
 import com.fingersome.dungeonmasterycore.block.BlockBreakablePot;
@@ -111,7 +110,6 @@ public static final int dimensionIdLimbo = 2;
 		blockCorpseSkeleton = new BlockCorpseSkeleton().setBlockName("blockCorpseSkeleton").setCreativeTab(coreTab);
 		blockCorpseGrave = new BlockCorpseGrave().setBlockName("blockCorpseGrave").setCreativeTab(coreTab);
 		blockCampfire = new BlockCampfire().setLightLevel(0.7F).setBlockName("blockCampfire").setCreativeTab(coreTab);
-		blockAltarPelor = new BlockAltarPelor().setBlockName("blockAltarPelor").setCreativeTab(coreTab);
 
 		GameRegistry.registerBlock(blockLimboSand, "blockLimboSand");
 		GameRegistry.registerBlock(blockLimboStone, "blockLimboStone");
@@ -134,7 +132,6 @@ public static final int dimensionIdLimbo = 2;
 		GameRegistry.registerTileEntity(TileEntityCampfire.class, "Campfire");
 		GameRegistry.registerTileEntity(TileEntityCorpseGrave.class, "Grave");
 		GameRegistry.registerTileEntity(TileEntityCorpseSkeleton.class, "Corpse");
-		GameRegistry.registerTileEntity(TileEntityAltarPelor.class, "AltarPelor");
 		
 		
 		proxy.registerProxies();
