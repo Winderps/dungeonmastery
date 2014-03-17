@@ -13,7 +13,7 @@ public class RendererCorpseGrave extends TileEntitySpecialRenderer {
 
 	private ModelCorpseGrave model;
 
-	private static final ResourceLocation texture = new ResourceLocation(CoreReference.MOD_ID, "textures/models/TextureCorpseGrave.png");
+	private static final ResourceLocation texture = new ResourceLocation(CoreReference.MOD_ID, "textures/model/TextureCorpseGrave.png");
 	
 	public RendererCorpseGrave()
 	{

@@ -13,7 +13,7 @@ public class RendererCampfire extends TileEntitySpecialRenderer {
 
 	private ModelCampfire model;
 
-	private static final ResourceLocation texture = new ResourceLocation(CoreReference.MOD_ID, "textures/models/TextureCampfire.png");
+	private static final ResourceLocation texture = new ResourceLocation(CoreReference.MOD_ID, "textures/model/TextureCampfire.png");
 	
 	public RendererCampfire(){
 		this.model = new ModelCampfire();

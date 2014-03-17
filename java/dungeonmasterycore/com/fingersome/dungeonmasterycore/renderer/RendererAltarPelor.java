@@ -13,7 +13,7 @@ public class RendererAltarPelor extends TileEntitySpecialRenderer {
 
 	private ModelAltarPelor model;
 
-	private static final ResourceLocation texture = new ResourceLocation(CoreReference.MOD_ID, "textures/models/TextureAltarPelor.png");
+	private static final ResourceLocation texture = new ResourceLocation(CoreReference.MOD_ID, "textures/model/TextureAltarPelor.png");
 	
 	public RendererAltarPelor()
 	{

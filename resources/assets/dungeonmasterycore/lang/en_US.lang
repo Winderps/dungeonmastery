@@ -2,6 +2,7 @@ itemGroup.dungeonmasterycoretab=Dungeon Mastery: Core
 
 item.itemWandDM.name=Dungeon Master's Wand
 item.itemWandDebugging.name=Wand of Debugging
+item.itemWandLimbo.name=Limbo Wand
 item.itemCoinGoldLarge.name=Gold Crown
 item.itemCoinSilverLarge.name=Silver Shilling
 item.itemCoinCopperLarge.name=Copper Penny
@@ -11,6 +12,7 @@ item.itemCoinCopperSmall.name=Copper Piece
 
 tile.blockLimboSand.name=Limbo Sand
 tile.blockLimboStone.name=Limbo Stone
+tile.blockWorldStone.name=Worldstone
 tile.blockBreakableBarrel.name=Barrel
 tile.blockBreakableCrate.name=Crate
 tile.blockBreakablePot.name=Urn

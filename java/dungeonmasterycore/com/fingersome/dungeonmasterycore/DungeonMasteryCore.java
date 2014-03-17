@@ -14,6 +14,8 @@ import com.fingersome.dungeonmasterycore.block.BlockCorpseGrave;
 import com.fingersome.dungeonmasterycore.block.BlockCorpseSkeleton;
 import com.fingersome.dungeonmasterycore.block.BlockLimboSand;
 import com.fingersome.dungeonmasterycore.block.BlockLimboStone;
+import com.fingersome.dungeonmasterycore.block.BlockWorldStone;
+import com.fingersome.dungeonmasterycore.block.BlockWorldTeleporter;
 import com.fingersome.dungeonmasterycore.gui.GuiHandler;
 import com.fingersome.dungeonmasterycore.item.ItemWandDM;
 import com.fingersome.dungeonmasterycore.item.ItemWandDebugging;
@@ -56,6 +58,8 @@ public static Item itemCoinCopperSmall;
 
 public static Block blockLimboSand;
 public static Block blockLimboStone;
+public static Block blockWorldStone;
+public static Block blockWorldTeleporter;
 public static Block blockBreakableBarrel;
 public static Block blockBreakableCrate;
 public static Block blockBreakablePot;
@@ -63,6 +67,8 @@ public static Block blockCorpseSkeleton;
 public static Block blockCorpseGrave;
 public static Block blockCampfire;
 public static Block blockAltarPelor;
+
+public static final int dimensionIdLimbo = 2;
 	
 	public static CreativeTabs coreTab = new CreativeTabs("dungeonmasterycoretab")
 	{
@@ -97,6 +103,8 @@ public static Block blockAltarPelor;
 	
 		blockLimboSand = new BlockLimboSand().setBlockName("blockLimboSand").setCreativeTab(coreTab).setBlockTextureName(CoreReference.MOD_ID + ":" + "blockLimboSand");
 		blockLimboStone = new BlockLimboStone().setBlockName("blockLimboStone").setCreativeTab(coreTab).setBlockTextureName(CoreReference.MOD_ID + ":" + "blockLimboStone");
+		blockWorldTeleporter = new BlockWorldTeleporter().setBlockName("blockWorldTeleporter").setBlockTextureName(CoreReference.MOD_ID + ":" + "blockWorldTeleporter");
+		blockWorldStone = new BlockWorldStone().setBlockName("blockWorldStone").setCreativeTab(coreTab).setBlockTextureName(CoreReference.MOD_ID + ":" + "blockWorldStone");
 		blockBreakableBarrel = new BlockBreakableBarrel().setBlockName("blockBreakableBarrel").setCreativeTab(coreTab);
 		blockBreakableCrate = new BlockBreakableCrate().setBlockName("blockBreakableCrate").setCreativeTab(coreTab).setBlockTextureName(CoreReference.MOD_ID + ":" + "blockBreakableCrate");
 		blockBreakablePot = new BlockBreakablePot().setBlockName("blockBreakablePot").setCreativeTab(coreTab).setBlockTextureName(CoreReference.MOD_ID + ":" + "blockBreakablePot");
@@ -107,6 +115,8 @@ public static Block blockAltarPelor;
 
 		GameRegistry.registerBlock(blockLimboSand, "blockLimboSand");
 		GameRegistry.registerBlock(blockLimboStone, "blockLimboStone");
+		GameRegistry.registerBlock(blockWorldStone, "blockWorldStone");
+		GameRegistry.registerBlock(blockWorldTeleporter, "blockWorldTeleporter");
 		GameRegistry.registerBlock(blockBreakableBarrel, "blockBreakableBarrel");
 		GameRegistry.registerBlock(blockBreakableCrate, "blockBreakableCrate");
 		GameRegistry.registerBlock(blockBreakablePot, "blockBreakablePot");
