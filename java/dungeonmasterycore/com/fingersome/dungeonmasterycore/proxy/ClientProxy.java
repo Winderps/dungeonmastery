@@ -3,7 +3,6 @@ package com.fingersome.dungeonmasterycore.proxy;
 import com.fingersome.dungeonmasterycore.renderer.RendererCampfire;
 import com.fingersome.dungeonmasterycore.renderer.RendererCorpseGrave;
 import com.fingersome.dungeonmasterycore.renderer.RendererCorpseSkeleton;
-import com.fingersome.dungeonmasterycore.tileentity.TileEntityAltarPelor;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCampfire;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCorpseGrave;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCorpseSkeleton;
