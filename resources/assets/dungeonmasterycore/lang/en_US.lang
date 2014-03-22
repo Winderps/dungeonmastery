@@ -3,15 +3,22 @@ itemGroup.dungeonmasterycoretab=Dungeon Mastery: Core
 item.itemWandDM.name=Dungeon Master's Wand
 item.itemWandDebugging.name=Wand of Debugging
 item.itemWandLimbo.name=Limbo Wand
+
 item.itemWeaponDagger.name=Iron Dagger
 item.itemWeaponRapier.name=Iron Rapier
+item.itemWeaponScimitar.name=Iron Scimitar
 item.itemWeaponShortsword.name=Iron Shortsword
-item.itemWeaponBroadsword.name=Iron Broadsword
+item.itemWeaponBastardsword.name=Iron Bastardsword
 item.itemWeaponLongsword.name=Iron Longsword
 item.itemWeaponGreatsword.name=Iron Greatsword
+
+item.itemAstralDiamondLarge.name=Large Astral Diamond
+item.itemCoinPlatinumLarge.name=Platinum Denar
 item.itemCoinGoldLarge.name=Gold Crown
 item.itemCoinSilverLarge.name=Silver Shilling
 item.itemCoinCopperLarge.name=Copper Penny
+item.itemAstralDiamondSmall.name=Small Astral Diamond
+item.itemCoinPlatinumSmall.name=Platinum Piece
 item.itemCoinGoldSmall.name=Gold Piece
 item.itemCoinSilverSmall.name=Silver Piece
 item.itemCoinCopperSmall.name=Copper Piece
