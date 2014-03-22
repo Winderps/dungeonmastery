@@ -5,6 +5,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;
 
+import com.fingersome.dungeonmasterycore.block.BlockBackpack;
 import com.fingersome.dungeonmasterycore.block.BlockBreakableBarrel;
 import com.fingersome.dungeonmasterycore.block.BlockBreakableCrate;
 import com.fingersome.dungeonmasterycore.block.BlockBreakablePot;
@@ -20,6 +21,7 @@ import com.fingersome.dungeonmasterycore.item.ItemWandDM;
 import com.fingersome.dungeonmasterycore.item.ItemWandDebugging;
 import com.fingersome.dungeonmasterycore.item.ItemWandLimbo;
 import com.fingersome.dungeonmasterycore.proxy.CommonProxy;
+import com.fingersome.dungeonmasterycore.tileentity.TileEntityBackpack;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCampfire;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCorpseGrave;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCorpseSkeleton;
@@ -43,11 +45,10 @@ public class DungeonMasteryCore
 	
 	@SidedProxy (clientSide="com.fingersome.dungeonmasterycore.proxy.ClientProxy", serverSide="com.fingersome.dungeonmasterycore.proxy.ServerProxy")
 	public static CommonProxy proxy;
-	
+
 public static Item itemWandDM;
 public static Item itemWandDebugging;
 public static Item itemWandLimbo;
-
 public static Item itemWeaponDagger;
 public static Item itemWeaponRapier;
 public static Item itemWeaponScimitar;
@@ -55,7 +56,6 @@ public static Item itemWeaponShortsword;
 public static Item itemWeaponBastardsword;
 public static Item itemWeaponLongsword;
 public static Item itemWeaponGreatsword;
-
 public static Item itemAstralDiamondLarge;
 public static Item itemCoinPlatinumLarge;
 public static Item itemCoinGoldLarge;
@@ -77,6 +77,7 @@ public static Block blockBreakablePot;
 public static Block blockCorpseSkeleton;
 public static Block blockCorpseGrave;
 public static Block blockCampfire;
+public static Block blockBackpack;
 
 public static final int dimensionIdLimbo = 2;
 	
@@ -94,7 +95,6 @@ public static final int dimensionIdLimbo = 2;
 		itemWandDM = new ItemWandDM().setUnlocalizedName("itemWandDM").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemWandWhite");
 		itemWandDebugging = new ItemWandDebugging().setUnlocalizedName("itemWandDebugging").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemWandYellow");
 		itemWandLimbo = new Item().setUnlocalizedName("itemWandLimbo").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemWandBlack");
-		
 		itemWeaponDagger = new Item().setUnlocalizedName("itemWeaponDagger").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemWeaponDagger");
 		itemWeaponRapier = new Item().setUnlocalizedName("itemWeaponRapier").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemWeaponRapier");
 		itemWeaponScimitar = new Item().setUnlocalizedName("itemWeaponScimitar").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemWeaponScimitar");
@@ -102,7 +102,6 @@ public static final int dimensionIdLimbo = 2;
 		itemWeaponBastardsword = new Item().setUnlocalizedName("itemWeaponBastardsword").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemWeaponBastardsword");
 		itemWeaponLongsword = new Item().setUnlocalizedName("itemWeaponLongsword").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemWeaponLongsword");
 		itemWeaponGreatsword = new Item().setUnlocalizedName("itemWeaponGreatsword").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemWeaponGreatsword");
-		
 		itemAstralDiamondLarge = new Item().setUnlocalizedName("itemAstralDiamondLarge").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemAstralDiamondLarge");
 		itemCoinPlatinumLarge = new Item().setUnlocalizedName("itemCoinPlatinumLarge").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemCoinPlatinumLarge");
 		itemCoinGoldLarge = new Item().setUnlocalizedName("itemCoinGoldLarge").setCreativeTab(coreTab).setTextureName(CoreReference.MOD_ID + ":" + "itemCoinGoldLarge");
@@ -117,7 +116,6 @@ public static final int dimensionIdLimbo = 2;
 		GameRegistry.registerItem(itemWandDM, "itemWandDM");
 		GameRegistry.registerItem(itemWandDebugging, "itemWandDebugging");
 		GameRegistry.registerItem(itemWandLimbo, "itemWandLimbo");
-		
 		GameRegistry.registerItem(itemWeaponDagger, "itemWeaponDagger");
 		GameRegistry.registerItem(itemWeaponRapier, "itemWeaponRapier");
 		GameRegistry.registerItem(itemWeaponScimitar, "itemWeaponScimitar");
@@ -125,7 +123,6 @@ public static final int dimensionIdLimbo = 2;
 		GameRegistry.registerItem(itemWeaponBastardsword, "itemWeaponBastardsword");
 		GameRegistry.registerItem(itemWeaponLongsword, "itemWeaponLongsword");
 		GameRegistry.registerItem(itemWeaponGreatsword, "itemWeaponGreatsword");
-		
 		GameRegistry.registerItem(itemAstralDiamondLarge, "itemAstralDiamondLarge");
 		GameRegistry.registerItem(itemCoinPlatinumLarge, "itemCoinPlatinumLarge");
 		GameRegistry.registerItem(itemCoinGoldLarge, "itemCoinGoldLarge");
@@ -147,7 +144,8 @@ public static final int dimensionIdLimbo = 2;
 		blockCorpseSkeleton = new BlockCorpseSkeleton().setBlockName("blockCorpseSkeleton").setCreativeTab(coreTab);
 		blockCorpseGrave = new BlockCorpseGrave().setBlockName("blockCorpseGrave").setCreativeTab(coreTab);
 		blockCampfire = new BlockCampfire().setLightLevel(0.7F).setBlockName("blockCampfire").setCreativeTab(coreTab);
-
+		blockBackpack = new BlockBackpack().setBlockName("blockBackpack").setCreativeTab(coreTab);
+		
 		GameRegistry.registerBlock(blockLimboSand, "blockLimboSand");
 		GameRegistry.registerBlock(blockLimboStone, "blockLimboStone");
 		GameRegistry.registerBlock(blockWorldStone, "blockWorldStone");
@@ -158,7 +156,7 @@ public static final int dimensionIdLimbo = 2;
 		GameRegistry.registerBlock(blockCorpseSkeleton, "blockCorpseSkeleton");
 		GameRegistry.registerBlock(blockCorpseGrave, "blockCorpseGrave");
 		GameRegistry.registerBlock(blockCampfire, "blockCampfire");
-		
+		GameRegistry.registerBlock(blockBackpack, "blockBackpack");
 	}
 	
 	@EventHandler
@@ -168,6 +166,7 @@ public static final int dimensionIdLimbo = 2;
 		GameRegistry.registerTileEntity(TileEntityCampfire.class, "Campfire");
 		GameRegistry.registerTileEntity(TileEntityCorpseGrave.class, "Grave");
 		GameRegistry.registerTileEntity(TileEntityCorpseSkeleton.class, "Corpse");
+		GameRegistry.registerTileEntity(TileEntityBackpack.class, "Backpack");
 		
 		
 		proxy.registerProxies();

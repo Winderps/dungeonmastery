@@ -29,6 +29,7 @@ public class GuiHandler implements IGuiHandler
 		case 2: return new ContainerDummy(player);
 		case 3: return new ContainerDummy(player);
 		case 4: return new ContainerDummy(player);
+		case 5: return new ContainerDummy(player);
 		}
 	}
 
@@ -40,9 +41,10 @@ public class GuiHandler implements IGuiHandler
 		default: return null;
 		case 0: return new GuiCreateCharacterRace(player);
 		case 1: return new GuiCreateCharacterClass(player);
-		case 2: return new GuiCreateCharacterSkills(player);
-		case 3: return new GuiCreateCharacterFeats1(player);
-		case 4: return new GuiCreateCharacterFeats2(player);
+		case 2: return new GuiCreateCharacterAttributes(player);
+		case 3: return new GuiCreateCharacterSkills(player);
+		case 4: return new GuiCreateCharacterFeats1(player);
+		case 5: return new GuiCreateCharacterFeats2(player);
 		}
 		
 	}
