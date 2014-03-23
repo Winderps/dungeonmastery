@@ -28,8 +28,6 @@ public class RendererBackpack extends TileEntitySpecialRenderer {
 			GL11.glPushMatrix();
 			GL11.glTranslatef((float)d + 0.5F, (float)d1 + 1.5F, (float)d2 + 0.5F);
 
-			//Sets Orientation
-
 			if(meta == 0) {GL11.glRotatef(180, 0.0F, 1.0F, 0.0F);}
 			if(meta == 1) {GL11.glRotatef(90, 0.0F, 1.0F, 0.0F);}
 			if(meta == 2) {GL11.glRotatef(0, 0.0F, 1.0F, 0.0F);}

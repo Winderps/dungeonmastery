@@ -90,8 +90,5 @@ public class DungeonMasteryCore
 	{
 		new GuiHandler();
 	}
-	
-//ignore frustrated comments pertaining to backpack render
-//i need to remember to take breaks ^^;;
-	
+
 }

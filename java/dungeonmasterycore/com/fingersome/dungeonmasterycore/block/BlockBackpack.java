@@ -28,7 +28,7 @@ public class BlockBackpack extends BlockContainer
 	public BlockBackpack() 
 	{
 		super(Material.cloth);
-		this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 0.9F, 1.0F);
+		this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 1.0F, 1.0F);
 	}
 	
 	public int getRenderType()
@@ -50,13 +50,10 @@ public class BlockBackpack extends BlockContainer
     {
         int l = MathHelper.floor_double((double)(entity.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;
         
-        //south
+        //sets metadata of block based on player position
         if (l == 0)	{world.setBlockMetadataWithNotify(x, y, z, 0, 2);}
-        //
         if (l == 1) {world.setBlockMetadataWithNotify(x, y, z, 1, 2);}
-        //
         if (l == 2) {world.setBlockMetadataWithNotify(x, y, z, 2, 2);}
-        //
         if (l == 3) {world.setBlockMetadataWithNotify(x, y, z, 3, 2);}
     }
 
