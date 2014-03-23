@@ -34,7 +34,7 @@ public class ItemList
     
     private static boolean isInitialized = false;
     
-    public static void preInit(FMLPreInitializationEvent e)
+    public static void preInit(FMLPreInitializationEvent event)
     {
         if (!isInitialized)
         {

@@ -8,6 +8,7 @@ import org.lwjgl.opengl.GL11;
 
 import com.fingersome.dungeonmasterycore.lib.References;
 import com.fingersome.dungeonmasterycore.model.ModelBackpack;
+import com.fingersome.dungeonmasterycore.tileentity.TileEntityBackpack;
 
 public class RendererBackpack extends TileEntitySpecialRenderer {
 
@@ -19,20 +20,30 @@ public class RendererBackpack extends TileEntitySpecialRenderer {
 		this.model = new ModelBackpack();
 	}
 	
-	public void renderTileEntityAt(TileEntity tileentity, double x, double y, double z, float f) 
-	{
-		GL11.glPushMatrix();
-		GL11.glTranslatef((float)x + 0.5F,(float)y + 1.5F, (float)z + 0.5F);
-		GL11.glRotatef(180, 0F, 0F, 1F);
-		this.bindTexture(texture);
-		
-		GL11.glPushMatrix();
-		this.model.renderModel(0.0625F);
-		
-		GL11.glPopMatrix();
-		GL11.glPopMatrix();
-		
-		
-	}
+		@Override
+		public void renderTileEntityAt(TileEntity tileentity, double d, double d1, double d2, float f) 
+		{
+			int meta = tileentity.blockMetadata;
+			this.bindTexture(texture);
+			GL11.glPushMatrix();
+			GL11.glTranslatef((float)d + 0.5F, (float)d1 + 1.5F, (float)d2 + 0.5F);
+
+			//Sets Orientation
+
+			if(meta == 1 || meta == 3)
+			{
+			GL11.glRotatef(0, 0.0F, 1.0F, 0.0F);
+			}
+
+			else
+			{
+			GL11.glRotatef(90, 0.0F, 1.0F, 0.0F);
+			}
+			GL11.glScalef(1.0F, -1F, -1F);
+
+			ModelBackpack.renderModel(0.0625F);
+			GL11.glPopMatrix();
+			
+		}
 
 }

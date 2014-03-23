@@ -58,16 +58,16 @@ public class DungeonMasteryCore
 	
 	
 	@EventHandler
-	public void preInit(FMLPreInitializationEvent e)
+	public void preInit(FMLPreInitializationEvent event)
 	{
 		
-		ItemList.preInit(e);
-		BlockList.preInit(e);	
+		ItemList.preInit(event);
+		BlockList.preInit(event);	
 		
 	}
 	
 	@EventHandler
-	public void init(FMLInitializationEvent e)
+	public void init(FMLInitializationEvent event)
 	{
 		
 		GameRegistry.registerTileEntity(TileEntityCampfire.class, "Campfire");
@@ -91,6 +91,7 @@ public class DungeonMasteryCore
 		new GuiHandler();
 	}
 	
-
+//ignore frustrated comments pertaining to backpack render
+//i need to remember to take breaks ^^;;
 	
 }

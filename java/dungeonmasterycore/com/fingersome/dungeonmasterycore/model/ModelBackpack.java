@@ -6,15 +6,15 @@ import net.minecraft.entity.Entity;
 
 public class ModelBackpack extends ModelBase
 {
-    ModelRenderer Backpack;
-    ModelRenderer PocketFront1;
-    ModelRenderer PocketFront2;
-    ModelRenderer PocketFront3;
-    ModelRenderer PocketTop;
-    ModelRenderer PocketLeft;
-    ModelRenderer PocketRight;
-    ModelRenderer StrapLeft;
-    ModelRenderer StrapRight;
+    static ModelRenderer Backpack;
+    static ModelRenderer PocketFront1;
+    static ModelRenderer PocketFront2;
+    static ModelRenderer PocketFront3;
+    static ModelRenderer PocketTop;
+    static ModelRenderer PocketLeft;
+    static ModelRenderer PocketRight;
+    static ModelRenderer StrapLeft;
+    static ModelRenderer StrapRight;
   
   public ModelBackpack()
   {
@@ -93,7 +93,7 @@ public class ModelBackpack extends ModelBase
     StrapRight.render(f5);
   }
   
-  public void renderModel(float f5)
+  public static void renderModel(float f5)
   {
     Backpack.render(f5);
     PocketFront1.render(f5);
