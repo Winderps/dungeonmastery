@@ -11,6 +11,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -44,35 +45,22 @@ public class BlockBackpack extends BlockContainer
 	{
 		return false;
 	}
-	 
+	
+	public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack itemstack)
+    {
+        int l = MathHelper.floor_double((double)(entity.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;
+        
+        if (l == 0)	{world.setBlockMetadataWithNotify(x, y, z, 1, 2);}
+        if (l == 1) {world.setBlockMetadataWithNotify(x, y, z, 2, 2);}
+        if (l == 2) {world.setBlockMetadataWithNotify(x, y, z, 3, 2);}
+        if (l == 3) {world.setBlockMetadataWithNotify(x, y, z, 4, 2);}
+    }
+
+	
 	@Override
 	public TileEntity createNewTileEntity(World var1, int var2) 
 	{
 		return new TileEntityBackpack();
 	}
-	
-	public void onBlockPlacedBy(World par1World, int par2, int par3, int par4, EntityLiving par5EntityLiving)
-	{
 
-	int p = MathHelper.floor_double((double)((par5EntityLiving.rotationYaw * 4F) / 360F) + 0.5D) & 3;
-
-	byte byte0 = 0;
-
-	if (p == 0){byte0 = 4;}
-
-	if (p == 1){byte0 = 3;}
-
-	if (p == 2){byte0 = 2;}
-
-	if (p == 3){byte0 = 1;}
-	par1World.setBlockMetadataWithNotify(par2, par3, par4, byte0, 2);
-
-
-
-	if(!this.canBlockStay(par1World, par2, par3, par4))
-	  {
-
-	par1World.setBlock(par2, par3, par4, null, 0, 2);
-	}
-	}
 }
