@@ -30,15 +30,11 @@ public class RendererBackpack extends TileEntitySpecialRenderer {
 
 			//Sets Orientation
 
-			if(meta == 1 || meta == 3)
-			{
-			GL11.glRotatef(0, 0.0F, 1.0F, 0.0F);
-			}
-
-			else
-			{
-			GL11.glRotatef(90, 0.0F, 1.0F, 0.0F);
-			}
+			if(meta == 0) {GL11.glRotatef(180, 0.0F, 1.0F, 0.0F);}
+			if(meta == 1) {GL11.glRotatef(90, 0.0F, 1.0F, 0.0F);}
+			if(meta == 2) {GL11.glRotatef(0, 0.0F, 1.0F, 0.0F);}
+			if(meta == 3) {GL11.glRotatef(270, 0.0F, 1.0F, 0.0F);}
+			
 			GL11.glScalef(1.0F, -1F, -1F);
 
 			ModelBackpack.renderModel(0.0625F);
