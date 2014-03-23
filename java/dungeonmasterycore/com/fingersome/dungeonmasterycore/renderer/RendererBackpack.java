@@ -6,14 +6,14 @@ import net.minecraft.util.ResourceLocation;
 
 import org.lwjgl.opengl.GL11;
 
-import com.fingersome.dungeonmasterycore.CoreReference;
+import com.fingersome.dungeonmasterycore.lib.References;
 import com.fingersome.dungeonmasterycore.model.ModelBackpack;
 
 public class RendererBackpack extends TileEntitySpecialRenderer {
 
 	private ModelBackpack model;
 
-	private static final ResourceLocation texture = new ResourceLocation(CoreReference.MOD_ID, "textures/model/TextureBackpack.png");
+	private static final ResourceLocation texture = new ResourceLocation(References.MOD_ID, "textures/model/TextureBackpack.png");
 	
 	public RendererBackpack(){
 		this.model = new ModelBackpack();

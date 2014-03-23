@@ -37,12 +37,12 @@ public class BlockWorldTeleporter
 		byte b = 0;
 		byte b1 = 0;
 		
-		if(world.getBlock(x-1, y, z) == DungeonMasteryCore.blockWorldStone || world.getBlock(x+1, y, z) == DungeonMasteryCore.blockWorldStone)
+		if(world.getBlock(x-1, y, z) == BlockList.blockWorldStone || world.getBlock(x+1, y, z) == BlockList.blockWorldStone)
 		{
 			b = 1;
 		}
 		
-		if(world.getBlock(x, y, z-1) == DungeonMasteryCore.blockWorldStone || world.getBlock(x, y, z+1) == DungeonMasteryCore.blockWorldStone)
+		if(world.getBlock(x, y, z-1) == BlockList.blockWorldStone || world.getBlock(x, y, z+1) == BlockList.blockWorldStone)
 		{
 			b1 = 1;
 		}

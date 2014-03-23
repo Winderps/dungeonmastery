@@ -16,13 +16,13 @@ import net.minecraft.world.World;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL12;
 
-import com.fingersome.dungeonmasterycore.CoreReference;
 import com.fingersome.dungeonmasterycore.DungeonMasteryCore;
+import com.fingersome.dungeonmasterycore.lib.References;
 
 public class GuiCreateCharacterRace extends GuiScreen 
 {
-	final int xSize = 176;
-	final int ySize = 222;
+	final int xSize = 305;
+	final int ySize = 286;
 	
 	 public GuiCreateCharacterRace(EntityPlayer player)
 	    {
@@ -44,8 +44,8 @@ public class GuiCreateCharacterRace extends GuiScreen
 		this.buttonList.add(new GuiButton(7, posX - 60, posY + 145, 100, 20, "Tiefling"));
 		this.buttonList.add(new GuiButton(8, posX - 60, posY + 165, 100, 20, "Dragonborn"));
 		this.buttonList.add(new GuiButton(9, posX - 60, posY + 185, 100, 20, "Warforged"));
-		this.buttonList.add(new GuiButton(10, posX + 160, posY + 215, 100, 20, "Next"));
 		
+		this.buttonList.add(new GuiButton(17, posX + 10, posY + 245, 100, 20, "Next"));
 		}
 
 	protected void actionPerformed(GuiButton button)

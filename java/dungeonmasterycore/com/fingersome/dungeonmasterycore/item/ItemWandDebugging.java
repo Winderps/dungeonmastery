@@ -5,14 +5,14 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-import com.fingersome.dungeonmasterycore.CoreReference;
+import com.fingersome.dungeonmasterycore.lib.References;
 
 public class ItemWandDebugging extends Item
 {
 
 	public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer player)
 	{
-		player.openGui(CoreReference.MOD_ID, 2, world, (int)player.posX, (int)player.posY, (int)player.posZ);
+		player.openGui(References.MOD_ID, 2, world, (int)player.posX, (int)player.posY, (int)player.posZ);
 		return itemstack;
 	}
 	

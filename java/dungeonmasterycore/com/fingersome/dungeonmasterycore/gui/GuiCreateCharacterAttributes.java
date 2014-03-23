@@ -15,13 +15,13 @@ import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL12;
 
-import com.fingersome.dungeonmasterycore.CoreReference;
 import com.fingersome.dungeonmasterycore.DungeonMasteryCore;
+import com.fingersome.dungeonmasterycore.lib.References;
 
 public class GuiCreateCharacterAttributes extends GuiScreen 
 {
 
-	ResourceLocation texture = new ResourceLocation(CoreReference.MOD_ID.toLowerCase(), "textures/gui/GuiCharacterCreationAtrributes.png");
+	ResourceLocation texture = new ResourceLocation(References.MOD_ID.toLowerCase(), "textures/gui/GuiCharacterCreationAtrributes.png");
 
 	final int xSize = 305;
 	final int ySize = 286;

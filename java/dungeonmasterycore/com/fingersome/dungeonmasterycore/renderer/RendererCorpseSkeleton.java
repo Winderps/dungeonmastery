@@ -6,7 +6,7 @@ import net.minecraft.util.ResourceLocation;
 
 import org.lwjgl.opengl.GL11;
 
-import com.fingersome.dungeonmasterycore.CoreReference;
+import com.fingersome.dungeonmasterycore.lib.References;
 import com.fingersome.dungeonmasterycore.model.ModelCampfire;
 import com.fingersome.dungeonmasterycore.model.ModelCorpseSkeleton;
 
@@ -14,7 +14,7 @@ public class RendererCorpseSkeleton extends TileEntitySpecialRenderer {
 
 	private ModelCorpseSkeleton model;
 
-	private static final ResourceLocation texture = new ResourceLocation(CoreReference.MOD_ID, "textures/model/TextureCorpseSkeleton.png");
+	private static final ResourceLocation texture = new ResourceLocation(References.MOD_ID, "textures/model/TextureCorpseSkeleton.png");
 	
 	public RendererCorpseSkeleton()
 	{

@@ -3,9 +3,9 @@ package com.fingersome.dungeonmasterycore.gui;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
 
-import com.fingersome.dungeonmasterycore.CoreReference;
 import com.fingersome.dungeonmasterycore.DungeonMasteryCore;
 import com.fingersome.dungeonmasterycore.container.ContainerDummy;
+import com.fingersome.dungeonmasterycore.lib.References;
 
 import cpw.mods.fml.common.network.IGuiHandler;
 import cpw.mods.fml.common.network.NetworkRegistry;

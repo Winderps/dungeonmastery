@@ -15,13 +15,13 @@ import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL12;
 
-import com.fingersome.dungeonmasterycore.CoreReference;
 import com.fingersome.dungeonmasterycore.DungeonMasteryCore;
+import com.fingersome.dungeonmasterycore.lib.References;
 
 public class GuiCreateCharacterSkills extends GuiScreen 
 {
-	final int xSize = 176;
-	final int ySize = 222;
+	final int xSize = 305;
+	final int ySize = 286;
 	
 	 public GuiCreateCharacterSkills(EntityPlayer player)
 	    {
@@ -49,9 +49,10 @@ public class GuiCreateCharacterSkills extends GuiScreen
 		this.buttonList.add(new GuiButton(13, posX + 160, posY + 85, 100, 20, "Religion"));
 		this.buttonList.add(new GuiButton(14, posX + 160, posY + 105, 100, 20, "Stealth"));
 		this.buttonList.add(new GuiButton(15, posX + 160, posY + 125, 100, 20, "Streetwise"));
-		this.buttonList.add(new GuiButton(16, posX + 160, posY + 145, 100, 20, "Thievery"));		
-		this.buttonList.add(new GuiButton(17, posX + 160, posY + 215, 100, 20, "Next"));
-		this.buttonList.add(new GuiButton(18, posX - 60, posY + 215, 100, 20, "Back"));
+		this.buttonList.add(new GuiButton(16, posX + 160, posY + 145, 100, 20, "Thievery"));	
+
+		this.buttonList.add(new GuiButton(17, posX + 10, posY + 245, 100, 20, "Next"));
+		this.buttonList.add(new GuiButton(18, posX + 195, posY + 245, 100, 20, "Back"));
 		
 		}
 

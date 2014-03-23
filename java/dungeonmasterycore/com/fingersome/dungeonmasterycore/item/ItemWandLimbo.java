@@ -1,6 +1,6 @@
 package com.fingersome.dungeonmasterycore.item;
 
-import com.fingersome.dungeonmasterycore.CoreReference;
+import com.fingersome.dungeonmasterycore.lib.References;
 
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
