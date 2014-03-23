@@ -22,6 +22,7 @@ item.itemCoinPlatinumSmall.name=Platinum Piece
 item.itemCoinGoldSmall.name=Gold Piece
 item.itemCoinSilverSmall.name=Silver Piece
 item.itemCoinCopperSmall.name=Copper Piece
+item.itemBlockBackpack.name=Backpack
 
 tile.blockLimboSand.name=Limbo Sand
 tile.blockLimboStone.name=Limbo Stone

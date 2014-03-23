@@ -30,6 +30,7 @@ public class ItemList
 	public static Item itemCoinGoldSmall;
 	public static Item itemCoinSilverSmall;
 	public static Item itemCoinCopperSmall;
+	public static Item itemBlockBackpack;
     
     private static boolean isInitialized = false;
     
@@ -57,6 +58,7 @@ public class ItemList
     		itemCoinGoldSmall = new Item().setUnlocalizedName("itemCoinGoldSmall").setCreativeTab(DungeonMasteryCore.coreTab).setTextureName(References.MOD_ID + ":" + "itemCoinGoldSmall");
     		itemCoinSilverSmall = new Item().setUnlocalizedName("itemCoinSilverSmall").setCreativeTab(DungeonMasteryCore.coreTab).setTextureName(References.MOD_ID + ":" + "itemCoinSilverSmall");
     		itemCoinCopperSmall = new Item().setUnlocalizedName("itemCoinCopperSmall").setCreativeTab(DungeonMasteryCore.coreTab).setTextureName(References.MOD_ID + ":" + "itemCoinCopperSmall");
+    		itemBlockBackpack = new Item().setUnlocalizedName("itemBlockBackpack").setCreativeTab(DungeonMasteryCore.coreTab).setTextureName(References.MOD_ID + ":" + "itemBlockBackpack");
     		
     		GameRegistry.registerItem(itemWandDM, "itemWandDM");
     		GameRegistry.registerItem(itemWandDebugging, "itemWandDebugging");
@@ -78,6 +80,7 @@ public class ItemList
     		GameRegistry.registerItem(itemCoinGoldSmall, "itemCoinGoldSmall");
     		GameRegistry.registerItem(itemCoinSilverSmall, "itemCoinSilverSmall");
     		GameRegistry.registerItem(itemCoinCopperSmall, "itemCoinCopperSmall");
+    		GameRegistry.registerItem(itemBlockBackpack, "itemBlockBackpack");
             
             isInitialized = true;
         }

@@ -34,7 +34,7 @@ public static Block blockBackpack;
     		blockCorpseSkeleton = new BlockCorpseSkeleton().setBlockName("blockCorpseSkeleton").setCreativeTab(DungeonMasteryCore.coreTab);
     		blockCorpseGrave = new BlockCorpseGrave().setBlockName("blockCorpseGrave").setCreativeTab(DungeonMasteryCore.coreTab);
     		blockCampfire = new BlockCampfire().setLightLevel(0.7F).setBlockName("blockCampfire").setCreativeTab(DungeonMasteryCore.coreTab);
-    		blockBackpack = new BlockBackpack().setBlockName("blockBackpack").setCreativeTab(DungeonMasteryCore.coreTab);
+    		blockBackpack = new BlockBackpack().setBlockName("blockBackpack");
     		
     		GameRegistry.registerBlock(blockLimboSand, "blockLimboSand");
     		GameRegistry.registerBlock(blockLimboStone, "blockLimboStone");

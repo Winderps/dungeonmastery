@@ -47,11 +47,12 @@ public class DungeonMasteryCore
 	public static CommonProxy proxy;
 
 	public static final int dimensionIdLimbo = 2;
+	
 	public static CreativeTabs coreTab = new CreativeTabs("dungeonmasterycoretab")
 	{
 		public Item getTabIconItem() 
 		{
-			return ItemList.itemWandDM;
+			return ItemList.itemBlockBackpack;
 		}		
 	};
 	
