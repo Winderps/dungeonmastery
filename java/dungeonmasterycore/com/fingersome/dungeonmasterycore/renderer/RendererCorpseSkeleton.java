@@ -10,7 +10,8 @@ import com.fingersome.dungeonmasterycore.lib.References;
 import com.fingersome.dungeonmasterycore.model.ModelCampfire;
 import com.fingersome.dungeonmasterycore.model.ModelCorpseSkeleton;
 
-public class RendererCorpseSkeleton extends TileEntitySpecialRenderer {
+public class RendererCorpseSkeleton extends TileEntitySpecialRenderer 
+{
 
 	private ModelCorpseSkeleton model;
 

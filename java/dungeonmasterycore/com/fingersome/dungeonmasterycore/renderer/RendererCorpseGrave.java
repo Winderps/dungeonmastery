@@ -9,7 +9,8 @@ import org.lwjgl.opengl.GL11;
 import com.fingersome.dungeonmasterycore.lib.References;
 import com.fingersome.dungeonmasterycore.model.ModelCorpseGrave;
 
-public class RendererCorpseGrave extends TileEntitySpecialRenderer {
+public class RendererCorpseGrave extends TileEntitySpecialRenderer 
+{
 
 	private ModelCorpseGrave model;
 

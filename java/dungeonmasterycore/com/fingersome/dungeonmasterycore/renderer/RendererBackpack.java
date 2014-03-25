@@ -10,7 +10,8 @@ import com.fingersome.dungeonmasterycore.lib.References;
 import com.fingersome.dungeonmasterycore.model.ModelBackpack;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityBackpack;
 
-public class RendererBackpack extends TileEntitySpecialRenderer {
+public class RendererBackpack extends TileEntitySpecialRenderer 
+{
 
 	private ModelBackpack model;
 

@@ -21,31 +21,32 @@ import com.fingersome.dungeonmasterycore.lib.References;
 
 public class GuiCreateCharacterRace extends GuiScreen 
 {
-	final int xSize = 305;
-	final int ySize = 286;
+	final int xSize = 256;
+	final int ySize = 256;
+	
+	public final ResourceLocation texture = new ResourceLocation(com.fingersome.dungeonmasterycore.lib.References.MOD_ID, "textures/gui/GuiCharacterCreationRace.png");
 	
 	 public GuiCreateCharacterRace(EntityPlayer player)
 	    {
-	        
+	    
 	    }
 	
 	public void initGui()
 		{
-		int posX = (this.width - xSize) /2;
-		int posY = (this.height - ySize) /2;
-
-		this.buttonList.add(new GuiButton(0, posX - 60, posY + 5, 100, 20, "Human"));
-		this.buttonList.add(new GuiButton(1, posX - 60, posY + 25, 100, 20, "Elf"));
-		this.buttonList.add(new GuiButton(2, posX - 60, posY + 45, 100, 20, "Half-Elf"));
-		this.buttonList.add(new GuiButton(3, posX - 60, posY + 65, 100, 20, "Dwarf"));
-		this.buttonList.add(new GuiButton(4, posX - 60, posY + 85, 100, 20, "Gnome"));
-		this.buttonList.add(new GuiButton(5, posX - 60, posY + 105, 100, 20, "Halfling"));
-		this.buttonList.add(new GuiButton(6, posX - 60, posY + 125, 100, 20, "Half-Orc"));		
-		this.buttonList.add(new GuiButton(7, posX - 60, posY + 145, 100, 20, "Tiefling"));
-		this.buttonList.add(new GuiButton(8, posX - 60, posY + 165, 100, 20, "Dragonborn"));
-		this.buttonList.add(new GuiButton(9, posX - 60, posY + 185, 100, 20, "Warforged"));
+		int posX = (width - xSize) /2;
+		int posY = (height - ySize) /2;
 		
-		this.buttonList.add(new GuiButton(17, posX + 10, posY + 245, 100, 20, "Next"));
+		this.buttonList.add(new GuiButton(0, posX + 10, posY + 60, 100, 20, "Human"));
+		this.buttonList.add(new GuiButton(1, posX + 10, posY + 80, 100, 20, "Elf"));
+		this.buttonList.add(new GuiButton(2, posX + 10, posY + 100, 100, 20, "Dwarf"));
+		this.buttonList.add(new GuiButton(3, posX + 10, posY + 120, 100, 20, "Halfling"));
+		this.buttonList.add(new GuiButton(4, posX + 10, posY + 140, 100, 20, "Gnome"));
+		this.buttonList.add(new GuiButton(5, posX + 10, posY + 160, 100, 20, "Tiefling"));
+		this.buttonList.add(new GuiButton(5, posX + 10, posY + 180, 100, 20, "Half-Elf"));
+		this.buttonList.add(new GuiButton(5, posX + 10, posY + 200, 100, 20, "Half-Orc"));
+		this.buttonList.add(new GuiButton(5, posX + 10, posY + 220, 100, 20, "Warforged"));
+		
+		this.buttonList.add(new GuiButton(18, posX + 145, posY + 230, 100, 20, "Next"));
 		}
 
 	protected void actionPerformed(GuiButton button)
@@ -72,56 +73,20 @@ public class GuiCreateCharacterRace extends GuiScreen
 		
 		}
 	
-	/*protected void drawGuiContainerBackgroundLayer(float var1, int var2, int var3) 
-		{
-			int posX = (this.width - xSize) /2;
-			int posY = (this.height - ySize) /2;
-			
-	        drawPlayerOnGui(this.mc, posX + 33, posY + 75, 30, (float) (posX + 51) - this.xSize, (float) (posY + 75 - 50) - this.ySize);
-		}
-
-	 public static void drawPlayerOnGui (Minecraft minecraft, int par1, int par2, int par3, float par4, float par5)
-	    {
-	        GL11.glEnable(GL11.GL_COLOR_MATERIAL);
-	        GL11.glPushMatrix();
-	        GL11.glTranslatef((float) par1, (float) par2, 50.0F);
-	        GL11.glScalef((float) (-par3), (float) par3, (float) par3);
-	        GL11.glRotatef(180.0F, 0.0F, 0.0F, 1.0F);
-	        float f2 = minecraft.thePlayer.renderYawOffset;
-	        float f3 = minecraft.thePlayer.rotationYaw;
-	        float f4 = minecraft.thePlayer.rotationPitch;
-	        par4 -= 19;
-	        GL11.glRotatef(135.0F, 0.0F, 1.0F, 0.0F);
-	        RenderHelper.enableStandardItemLighting();
-	        GL11.glRotatef(-135.0F, 0.0F, 1.0F, 0.0F);
-	        GL11.glRotatef(-((float) Math.atan((double) (par5 / 40.0F))) * 20.0F, 1.0F, 0.0F, 0.0F);
-	        minecraft.thePlayer.renderYawOffset = (float) Math.atan((double) (par4 / 40.0F)) * 20.0F;
-	        minecraft.thePlayer.rotationYaw = (float) Math.atan((double) (par4 / 40.0F)) * 40.0F;
-	        minecraft.thePlayer.rotationPitch = -((float) Math.atan((double) (par5 / 40.0F))) * 20.0F;
-	        minecraft.thePlayer.rotationYawHead = minecraft.thePlayer.rotationYaw;
-	        GL11.glTranslatef(0.0F, minecraft.thePlayer.yOffset, 0.0F);
-	        RenderManager.instance.playerViewY = 180.0F;
-	        RenderManager.instance.renderEntityWithPosYaw(minecraft.thePlayer, 0.0D, 0.0D, 0.0D, 0.0F, 1.0F);
-	        minecraft.thePlayer.renderYawOffset = f2;
-	        minecraft.thePlayer.rotationYaw = f3;
-	        minecraft.thePlayer.rotationPitch = f4;
-	        GL11.glPopMatrix();
-	        RenderHelper.disableStandardItemLighting();
-	        GL11.glDisable(GL12.GL_RESCALE_NORMAL);
-	        OpenGlHelper.setActiveTexture(OpenGlHelper.lightmapTexUnit);
-	        GL11.glDisable(GL11.GL_TEXTURE_2D);
-	        OpenGlHelper.setActiveTexture(OpenGlHelper.defaultTexUnit);
-	    }
-	    */
-
 	public void drawScreen(int i, int j, float f)
 	{
         drawDefaultBackground();
-        //drawGradientRect(20, 20, width - 20, height - 20, 0x60500000, 0xa0803030);
-        //drawRect(60, 60, width - 60, height - 60, 0xFF9E9E9E);
-        //drawTexturedModalRect();
-        drawCenteredString(fontRendererObj, "Choose a Race", width / 2, 35, 0xffffff);
+        
+        drawDefaultBackground();
+        Minecraft.getMinecraft().getTextureManager().bindTexture(texture);   
+		int posX = (width - xSize) /2;
+		int posY = (height - ySize) /2;
+		
+        drawTexturedModalRect(posX, posY, 0, 0, xSize, ySize);
+        
+        drawCenteredString(fontRendererObj, "Choose your Race", width / 2, height / 2 - 119, 0xFFFFFF);
+      
         super.drawScreen(i, j, f);
 	}
-	
+
 }

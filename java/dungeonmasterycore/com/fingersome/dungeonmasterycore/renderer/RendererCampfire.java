@@ -9,7 +9,8 @@ import org.lwjgl.opengl.GL11;
 import com.fingersome.dungeonmasterycore.lib.References;
 import com.fingersome.dungeonmasterycore.model.ModelCampfire;
 
-public class RendererCampfire extends TileEntitySpecialRenderer {
+public class RendererCampfire extends TileEntitySpecialRenderer 
+{
 
 	private ModelCampfire model;
 
