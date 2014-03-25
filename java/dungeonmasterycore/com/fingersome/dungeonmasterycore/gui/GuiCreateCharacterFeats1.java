@@ -21,7 +21,7 @@ import com.fingersome.dungeonmasterycore.lib.References;
 public class GuiCreateCharacterFeats1 extends GuiScreen 
 {
 
-	public final ResourceLocation texture = new ResourceLocation(com.fingersome.dungeonmasterycore.lib.References.MOD_ID, "textures/gui/GuiCharacterCreationFeats.png");
+	public final ResourceLocation texture = new ResourceLocation(com.fingersome.dungeonmasterycore.lib.References.MOD_ID, "textures/gui/GuiCharacterCreationClassFeats.png");
 	
 	final int xSize = 256;
 	final int ySize = 256;
@@ -38,18 +38,18 @@ public class GuiCreateCharacterFeats1 extends GuiScreen
 		int posY = (this.height - ySize) /2;
 		
 
-		this.buttonList.add(new GuiButton(1, posX + 50, posY + 32, 10, 10, ""));
-		this.buttonList.add(new GuiButton(2, posX + 50, posY + 47, 10, 10, ""));
-		this.buttonList.add(new GuiButton(3, posX + 50, posY + 62, 10, 10, ""));
-		this.buttonList.add(new GuiButton(4, posX + 50, posY + 77, 10, 10, ""));
-		this.buttonList.add(new GuiButton(5, posX + 50, posY + 92, 10, 10, ""));
-		this.buttonList.add(new GuiButton(6, posX + 50, posY + 107, 10, 10, ""));		
-		this.buttonList.add(new GuiButton(7, posX + 50, posY + 122, 10, 10, ""));
-		this.buttonList.add(new GuiButton(8, posX + 50, posY + 137, 10, 10, ""));
-		this.buttonList.add(new GuiButton(6, posX + 50, posY + 152, 10, 10, ""));		
-		this.buttonList.add(new GuiButton(7, posX + 50, posY + 167, 10, 10, ""));
-		this.buttonList.add(new GuiButton(0, posX + 50, posY + 182, 10, 10, ""));
+		this.buttonList.add(new GuiButton(1, posX + 10, posY + 32, 120, 15, "Alertness"));
+		this.buttonList.add(new GuiButton(2, posX + 10, posY + 48, 120, 15, "Armor Prof. (Light)"));
+		this.buttonList.add(new GuiButton(3, posX + 10, posY + 64, 120, 15, "Armor Prof. (Med)"));
+		this.buttonList.add(new GuiButton(4, posX + 10, posY + 80, 120, 15, "Armor Prof. (Heavy)"));
+		this.buttonList.add(new GuiButton(5, posX + 10, posY + 96, 120, 15, "Backstabber"));
+		this.buttonList.add(new GuiButton(6, posX + 10, posY + 112, 120, 15, "Blade Opportunist"));		
+		this.buttonList.add(new GuiButton(7, posX + 10, posY + 128, 120, 15, "Combat Reflexes"));
+		this.buttonList.add(new GuiButton(8, posX + 10, posY + 144, 120, 15, "Dark Boon"));
+		this.buttonList.add(new GuiButton(6, posX + 10, posY + 160, 120, 15, "Dark Fury"));		
+		this.buttonList.add(new GuiButton(7, posX + 10, posY + 176, 120, 15, "Defensive Mobility"));
 
+		
 		this.buttonList.add(new GuiButton(18, posX + 145, posY + 200, 20, 20, ">"));
 		
 		this.buttonList.add(new GuiButton(17, posX + 10, posY + 230, 100, 20, "Back"));
@@ -100,18 +100,6 @@ public class GuiCreateCharacterFeats1 extends GuiScreen
         drawTexturedModalRect(posX, posY, 0, 0, xSize, ySize);
         
         drawCenteredString(fontRendererObj, "Choose your Feats", width / 2, height / 2 - 119, 0xFFFFFF);
-
-        drawString(fontRendererObj, "Alertness", 				width / 2 - 50, 	height / 2 - 95, 0xffffff);
-        drawString(fontRendererObj, "Armor Prof. (Light)", 		width / 2 - 50, 	height / 2 - 80, 0xffffff);
-        drawString(fontRendererObj, "Armor Prof. (Med)", 		width / 2 - 50, 	height / 2 - 65, 0xffffff);
-        drawString(fontRendererObj, "Armor Prof. (Heavy)", 		width / 2 - 50, 	height / 2 - 50, 0xffffff);
-        drawString(fontRendererObj, "Backstabber", 				width / 2 - 50, 	height / 2 - 35, 0xffffff);
-        drawString(fontRendererObj, "Blade Opportunist", 		width / 2 - 50,		height / 2 - 20, 0xffffff);
-        drawString(fontRendererObj, "Combat Reflexes", 			width / 2 - 50, 	height / 2 - 5, 0xffffff);
-        drawString(fontRendererObj, "Dark Fury", 	 			width / 2 - 50, 	height / 2 + 10, 0xffffff);
-        drawString(fontRendererObj, "Defensive Mobility", 		width / 2 - 50, 	height / 2 + 25, 0xffffff);
-        drawString(fontRendererObj, "Distracting Shield", 		width / 2 - 50, 	height / 2 + 40, 0xffffff);
-        drawString(fontRendererObj, "Durable",				 	width / 2 - 50, 	height / 2 + 55, 0xffffff);
 
         super.drawScreen(i, j, f);
 	}

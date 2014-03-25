@@ -12,7 +12,7 @@ public class ItemWandDebugging extends Item
 
 	public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer player)
 	{
-		player.openGui(References.MOD_ID, 3, world, (int)player.posX, (int)player.posY, (int)player.posZ);
+		player.openGui(References.MOD_ID, 0, world, (int)player.posX, (int)player.posY, (int)player.posZ);
 		return itemstack;
 	}
 	

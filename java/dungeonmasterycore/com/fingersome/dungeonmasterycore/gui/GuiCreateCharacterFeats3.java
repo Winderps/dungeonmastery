@@ -21,7 +21,7 @@ import com.fingersome.dungeonmasterycore.lib.References;
 public class GuiCreateCharacterFeats3 extends GuiScreen 
 {
 
-	public final ResourceLocation texture = new ResourceLocation(com.fingersome.dungeonmasterycore.lib.References.MOD_ID, "textures/gui/GuiCharacterCreationFeats.png");
+	public final ResourceLocation texture = new ResourceLocation(com.fingersome.dungeonmasterycore.lib.References.MOD_ID, "textures/gui/GuiCharacterCreationClassFeats.png");
 	
 	final int xSize = 256;
 	final int ySize = 256;
@@ -38,9 +38,9 @@ public class GuiCreateCharacterFeats3 extends GuiScreen
 		int posY = (this.height - ySize) /2;
 		
 
-		this.buttonList.add(new GuiButton(1, posX + 50, posY + 32, 10, 10, ""));
-		this.buttonList.add(new GuiButton(2, posX + 50, posY + 47, 10, 10, ""));
-		this.buttonList.add(new GuiButton(3, posX + 50, posY + 62, 10, 10, ""));
+		this.buttonList.add(new GuiButton(1, posX + 10, posY + 32, 120, 15, "Long-Jumper"));
+		this.buttonList.add(new GuiButton(2, posX + 10, posY + 48, 120, 15, "Miasmic Step"));
+		this.buttonList.add(new GuiButton(3, posX + 10, posY + 64, 120, 15, "Mounted Combat"));
 
 		this.buttonList.add(new GuiButton(17, posX + 90, posY + 200, 20, 20, "<"));
 		
@@ -92,10 +92,6 @@ public class GuiCreateCharacterFeats3 extends GuiScreen
         drawTexturedModalRect(posX, posY, 0, 0, xSize, ySize);
         
         drawCenteredString(fontRendererObj, "Choose your Feats", width / 2, height / 2 - 119, 0xFFFFFF);
-
-        drawString(fontRendererObj, "Linguist", 				width / 2 - 50, 	height / 2 - 95, 0xffffff);
-        drawString(fontRendererObj, "Long-jumper", 				width / 2 - 50, 	height / 2 - 80, 0xffffff);
-        drawString(fontRendererObj, "Mounted Combat", 			width / 2 - 50, 	height / 2 - 65, 0xffffff);
 
         super.drawScreen(i, j, f);
 	}

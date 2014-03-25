@@ -47,6 +47,7 @@ public class DungeonMasteryCore
 	public static CommonProxy proxy;
 
 	public static final int dimensionIdLimbo = 2;
+	public static final int dimensionIdUnderdark = 3;
 	
 	public static CreativeTabs coreTab = new CreativeTabs("dungeonmasterycoretab")
 	{

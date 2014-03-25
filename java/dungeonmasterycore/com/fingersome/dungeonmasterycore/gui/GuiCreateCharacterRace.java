@@ -85,7 +85,8 @@ public class GuiCreateCharacterRace extends GuiScreen
         drawTexturedModalRect(posX, posY, 0, 0, xSize, ySize);
         
         drawCenteredString(fontRendererObj, "Choose your Race", width / 2, height / 2 - 119, 0xFFFFFF);
-      
+        drawString(fontRendererObj, "Choose Name", width / 2 - 105, height / 2 - 91, 0xFFFFFF);
+        
         super.drawScreen(i, j, f);
 	}
 
