@@ -4,10 +4,10 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
 
 
-public class ContainerDummy extends Container 
+public class ContainerCreateCharacterClass extends Container 
 {
 
-	public ContainerDummy(EntityPlayer player)
+	public ContainerCreateCharacterClass(EntityPlayer player)
 	{
 		
 	}

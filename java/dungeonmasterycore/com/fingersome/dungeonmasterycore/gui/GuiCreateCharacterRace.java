@@ -2,6 +2,7 @@ package com.fingersome.dungeonmasterycore.gui;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
+import net.minecraft.client.gui.GuiLabel;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.renderer.InventoryEffectRenderer;
 import net.minecraft.client.renderer.OpenGlHelper;
@@ -30,7 +31,7 @@ public class GuiCreateCharacterRace extends GuiScreen
 	    {
 	    
 	    }
-	
+	 
 	public void initGui()
 		{
 		int posX = (width - xSize) /2;
@@ -49,7 +50,7 @@ public class GuiCreateCharacterRace extends GuiScreen
 		this.buttonList.add(new GuiButton(20, posX + 145, posY + 230, 100, 20, "Next"));
 		}
 
-	protected void actionPerformed(GuiButton button, World world, EntityPlayer player)
+	protected void actionPerformed(GuiButton button, EntityPlayer player, World world, int x, int y, int z)
 		{
 			switch(button.id)
 			{
@@ -62,8 +63,8 @@ public class GuiCreateCharacterRace extends GuiScreen
 			case 6: 
 			case 7: 
 			case 8: 
-
-			case 20: //player.openGui(References.MOD_ID, 1, world, (int)player.posX, (int)player.posY, (int)player.posZ); 
+				
+			case 20: player.openGui(DungeonMasteryCore.instance, 1, world, x, y, z);
 			}
 		}
 	
@@ -72,6 +73,8 @@ public class GuiCreateCharacterRace extends GuiScreen
 		return false;
 		
 		}
+
+	
 	
 	public void drawScreen(int i, int j, float f)
 	{
@@ -86,6 +89,7 @@ public class GuiCreateCharacterRace extends GuiScreen
         
         drawCenteredString(fontRendererObj, "Choose your Race", width / 2, height / 2 - 119, 0xFFFFFF);
         drawString(fontRendererObj, "Choose Name", width / 2 - 105, height / 2 - 91, 0xFFFFFF);
+        
         super.drawScreen(i, j, f);
 	}
 	

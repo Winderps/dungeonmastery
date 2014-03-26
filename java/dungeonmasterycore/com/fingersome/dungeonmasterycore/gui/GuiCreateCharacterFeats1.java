@@ -25,11 +25,10 @@ public class GuiCreateCharacterFeats1 extends GuiScreen
 	
 	final int xSize = 256;
 	final int ySize = 256;
-
+	
 	
 	 public GuiCreateCharacterFeats1(EntityPlayer player)
 	    {
-	        
 	    }
 		
 	public void initGui()
