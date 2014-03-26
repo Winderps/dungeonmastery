@@ -21,7 +21,6 @@ public class RendererBackpack extends TileEntitySpecialRenderer
 		this.model = new ModelBackpack();
 	}
 	
-		@Override
 		public void renderTileEntityAt(TileEntity tileentity, double d, double d1, double d2, float f) 
 		{
 			int meta = tileentity.blockMetadata;

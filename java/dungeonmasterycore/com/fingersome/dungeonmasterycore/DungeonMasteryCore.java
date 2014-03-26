@@ -81,13 +81,13 @@ public class DungeonMasteryCore
 	}
 	
 	@EventHandler
-	public void postInit(FMLPostInitializationEvent e)
+	public void postInit(FMLPostInitializationEvent event)
 	{
 
 	}
 	
 	@EventHandler
-	public void load(FMLPostInitializationEvent e)
+	public void load(FMLPostInitializationEvent event)
 	{
 		new GuiHandler();
 	}

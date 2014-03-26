@@ -2,6 +2,7 @@ package com.fingersome.dungeonmasterycore.block;
 
 import java.util.Random;
 
+import com.fingersome.dungeonmasterycore.lib.References;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityBackpack;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCampfire;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCorpseSkeleton;
@@ -12,6 +13,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -57,11 +59,15 @@ public class BlockBackpack extends BlockContainer
         if (l == 3) {world.setBlockMetadataWithNotify(x, y, z, 3, 2);}
     }
 
-	
-	@Override
 	public TileEntity createNewTileEntity(World var1, int var2) 
 	{
 		return new TileEntityBackpack();
 	}
 
+	public void registerIcons(IIconRegister icon)
+	{
+		this.blockIcon = icon.registerIcon(References.MOD_ID + ":" + "backpack");
+	}
+	
+	
 }

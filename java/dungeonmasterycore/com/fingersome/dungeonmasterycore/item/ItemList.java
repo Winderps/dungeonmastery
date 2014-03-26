@@ -58,7 +58,7 @@ public class ItemList
     		itemCoinGoldSmall = new Item().setUnlocalizedName("itemCoinGoldSmall").setCreativeTab(DungeonMasteryCore.coreTab).setTextureName(References.MOD_ID + ":" + "itemCoinGoldSmall");
     		itemCoinSilverSmall = new Item().setUnlocalizedName("itemCoinSilverSmall").setCreativeTab(DungeonMasteryCore.coreTab).setTextureName(References.MOD_ID + ":" + "itemCoinSilverSmall");
     		itemCoinCopperSmall = new Item().setUnlocalizedName("itemCoinCopperSmall").setCreativeTab(DungeonMasteryCore.coreTab).setTextureName(References.MOD_ID + ":" + "itemCoinCopperSmall");
-    		itemBlockBackpack = new Item().setUnlocalizedName("itemBlockBackpack").setCreativeTab(DungeonMasteryCore.coreTab).setTextureName(References.MOD_ID + ":" + "itemBlockBackpack");
+    		itemBlockBackpack = new Item().setUnlocalizedName("itemBlockBackpack").setCreativeTab(DungeonMasteryCore.coreTab);
     		
     		GameRegistry.registerItem(itemWandDM, "itemWandDM");
     		GameRegistry.registerItem(itemWandDebugging, "itemWandDebugging");

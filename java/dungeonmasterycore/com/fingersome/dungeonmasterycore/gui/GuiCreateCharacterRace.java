@@ -42,14 +42,14 @@ public class GuiCreateCharacterRace extends GuiScreen
 		this.buttonList.add(new GuiButton(3, posX + 10, posY + 120, 100, 20, "Halfling"));
 		this.buttonList.add(new GuiButton(4, posX + 10, posY + 140, 100, 20, "Gnome"));
 		this.buttonList.add(new GuiButton(5, posX + 10, posY + 160, 100, 20, "Tiefling"));
-		this.buttonList.add(new GuiButton(5, posX + 10, posY + 180, 100, 20, "Half-Elf"));
-		this.buttonList.add(new GuiButton(5, posX + 10, posY + 200, 100, 20, "Half-Orc"));
-		this.buttonList.add(new GuiButton(5, posX + 10, posY + 220, 100, 20, "Warforged"));
+		this.buttonList.add(new GuiButton(6, posX + 10, posY + 180, 100, 20, "Half-Elf"));
+		this.buttonList.add(new GuiButton(7, posX + 10, posY + 200, 100, 20, "Half-Orc"));
+		this.buttonList.add(new GuiButton(8, posX + 10, posY + 220, 100, 20, "Warforged"));
 		
-		this.buttonList.add(new GuiButton(18, posX + 145, posY + 230, 100, 20, "Next"));
+		this.buttonList.add(new GuiButton(20, posX + 145, posY + 230, 100, 20, "Next"));
 		}
 
-	protected void actionPerformed(GuiButton button)
+	protected void actionPerformed(GuiButton button, World world, EntityPlayer player)
 		{
 			switch(button.id)
 			{
@@ -62,8 +62,8 @@ public class GuiCreateCharacterRace extends GuiScreen
 			case 6: 
 			case 7: 
 			case 8: 
-			case 9: 
-			case 10: 
+
+			case 20: //player.openGui(References.MOD_ID, 1, world, (int)player.posX, (int)player.posY, (int)player.posZ); 
 			}
 		}
 	
@@ -86,8 +86,41 @@ public class GuiCreateCharacterRace extends GuiScreen
         
         drawCenteredString(fontRendererObj, "Choose your Race", width / 2, height / 2 - 119, 0xFFFFFF);
         drawString(fontRendererObj, "Choose Name", width / 2 - 105, height / 2 - 91, 0xFFFFFF);
-        
         super.drawScreen(i, j, f);
 	}
-
+	
+/*	
+	public static void drawPlayerOnGui (Minecraft par0Minecraft, int par1, int par2, int par3, float par4, float par5)
+    {
+        GL11.glEnable(GL11.GL_COLOR_MATERIAL);
+        GL11.glPushMatrix();
+        GL11.glTranslatef((float) par1, (float) par2, 50.0F);
+        GL11.glScalef((float) (-par3), (float) par3, (float) par3);
+        GL11.glRotatef(180.0F, 0.0F, 0.0F, 1.0F);
+        float f2 = par0Minecraft.thePlayer.renderYawOffset;
+        float f3 = par0Minecraft.thePlayer.rotationYaw;
+        float f4 = par0Minecraft.thePlayer.rotationPitch;
+        par4 -= 19;
+        GL11.glRotatef(135.0F, 0.0F, 1.0F, 0.0F);
+        RenderHelper.enableStandardItemLighting();
+        GL11.glRotatef(-135.0F, 0.0F, 1.0F, 0.0F);
+        GL11.glRotatef(-((float) Math.atan((double) (par5 / 40.0F))) * 20.0F, 1.0F, 0.0F, 0.0F);
+        par0Minecraft.thePlayer.renderYawOffset = (float) Math.atan((double) (par4 / 40.0F)) * 20.0F;
+        par0Minecraft.thePlayer.rotationYaw = (float) Math.atan((double) (par4 / 40.0F)) * 40.0F;
+        par0Minecraft.thePlayer.rotationPitch = -((float) Math.atan((double) (par5 / 40.0F))) * 20.0F;
+        par0Minecraft.thePlayer.rotationYawHead = par0Minecraft.thePlayer.rotationYaw;
+        GL11.glTranslatef(0.0F, par0Minecraft.thePlayer.yOffset, 0.0F);
+        RenderManager.instance.playerViewY = 180.0F;
+        RenderManager.instance.renderEntityWithPosYaw(par0Minecraft.thePlayer, 0.0D, 0.0D, 0.0D, 0.0F, 1.0F);
+        par0Minecraft.thePlayer.renderYawOffset = f2;
+        par0Minecraft.thePlayer.rotationYaw = f3;
+        par0Minecraft.thePlayer.rotationPitch = f4;
+        GL11.glPopMatrix();
+        RenderHelper.disableStandardItemLighting();
+        GL11.glDisable(GL12.GL_RESCALE_NORMAL);
+        OpenGlHelper.setActiveTexture(OpenGlHelper.lightmapTexUnit);
+        GL11.glDisable(GL11.GL_TEXTURE_2D);
+        OpenGlHelper.setActiveTexture(OpenGlHelper.defaultTexUnit);
+    }
+    */
 }
