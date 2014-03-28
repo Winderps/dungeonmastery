@@ -4,6 +4,12 @@ item.itemWandDM.name=Dungeon Master's Wand
 item.itemWandDebugging.name=Wand of Debugging
 item.itemWandLimbo.name=Limbo Wand
 
+item.itemShieldBuckler.name=Iron Buckler
+item.itemShieldHeater.name=Iron Heater Shield
+item.itemShieldRound.name=Iron Round Shield
+item.itemShieldSpider.name=Iron Spider Shield
+item.itemShieldTower.name=Iron Tower Shield
+
 item.itemWeaponDagger.name=Iron Dagger
 item.itemWeaponRapier.name=Iron Rapier
 item.itemWeaponScimitar.name=Iron Scimitar
