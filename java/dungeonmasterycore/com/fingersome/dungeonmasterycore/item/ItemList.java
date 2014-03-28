@@ -13,6 +13,11 @@ public class ItemList
 	public static Item itemWandDM;
 	public static Item itemWandDebugging;
 	public static Item itemWandLimbo;
+	public static Item itemShieldBuckler;
+	public static Item itemShieldHeater;
+	public static Item itemShieldRound;
+	public static Item itemShieldSpider;
+	public static Item itemShieldTower;
 	public static Item itemWeaponDagger;
 	public static Item itemWeaponRapier;
 	public static Item itemWeaponScimitar;
@@ -41,6 +46,11 @@ public class ItemList
         	itemWandDM = new ItemWandDM().setUnlocalizedName("itemWandDM").setCreativeTab(DungeonMasteryCore.coreTab).setTextureName(References.MOD_ID + ":" + "itemWandWhite");
     		itemWandDebugging = new ItemWandDebugging().setUnlocalizedName("itemWandDebugging").setCreativeTab(DungeonMasteryCore.coreTab).setTextureName(References.MOD_ID + ":" + "itemWandYellow");
     		itemWandLimbo = new Item().setUnlocalizedName("itemWandLimbo").setCreativeTab(DungeonMasteryCore.coreTab).setTextureName(References.MOD_ID + ":" + "itemWandBlack");
+    		itemShieldBuckler = new Item().setUnlocalizedName("itemShieldBuckler").setCreativeTab(DungeonMasteryCore.coreTab).setTextureName(References.MOD_ID + ":" + "itemShieldBuckler");
+    		itemShieldHeater = new Item().setUnlocalizedName("itemShieldHeater").setCreativeTab(DungeonMasteryCore.coreTab).setTextureName(References.MOD_ID + ":" + "itemShieldHeater");
+    		itemShieldRound = new Item().setUnlocalizedName("itemShieldRound").setCreativeTab(DungeonMasteryCore.coreTab).setTextureName(References.MOD_ID + ":" + "itemShieldRound");
+    		itemShieldSpider = new Item().setUnlocalizedName("itemShieldSpider").setCreativeTab(DungeonMasteryCore.coreTab).setTextureName(References.MOD_ID + ":" + "itemShieldSpider");
+    		itemShieldTower = new Item().setUnlocalizedName("itemShieldTower").setCreativeTab(DungeonMasteryCore.coreTab).setTextureName(References.MOD_ID + ":" + "itemShieldTower");
     		itemWeaponDagger = new Item().setUnlocalizedName("itemWeaponDagger").setCreativeTab(DungeonMasteryCore.coreTab).setTextureName(References.MOD_ID + ":" + "itemWeaponDagger");
     		itemWeaponRapier = new Item().setUnlocalizedName("itemWeaponRapier").setCreativeTab(DungeonMasteryCore.coreTab).setTextureName(References.MOD_ID + ":" + "itemWeaponRapier");
     		itemWeaponScimitar = new Item().setUnlocalizedName("itemWeaponScimitar").setCreativeTab(DungeonMasteryCore.coreTab).setTextureName(References.MOD_ID + ":" + "itemWeaponScimitar");
@@ -63,6 +73,11 @@ public class ItemList
     		GameRegistry.registerItem(itemWandDM, "itemWandDM");
     		GameRegistry.registerItem(itemWandDebugging, "itemWandDebugging");
     		GameRegistry.registerItem(itemWandLimbo, "itemWandLimbo");
+    		GameRegistry.registerItem(itemShieldBuckler, "itemShieldBuckler");
+    		GameRegistry.registerItem(itemShieldHeater, "itemShieldHeater");
+    		GameRegistry.registerItem(itemShieldRound, "itemShieldRound");
+    		GameRegistry.registerItem(itemShieldSpider, "itemShieldSpider");
+    		GameRegistry.registerItem(itemShieldTower, "itemShieldTower");
     		GameRegistry.registerItem(itemWeaponDagger, "itemWeaponDagger");
     		GameRegistry.registerItem(itemWeaponRapier, "itemWeaponRapier");
     		GameRegistry.registerItem(itemWeaponScimitar, "itemWeaponScimitar");
