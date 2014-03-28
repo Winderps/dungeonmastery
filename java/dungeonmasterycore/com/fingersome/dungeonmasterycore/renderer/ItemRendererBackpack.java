@@ -18,18 +18,19 @@ public class ItemRendererBackpack implements IItemRenderer
 		model = new ModelBackpack();
 	}
 	
-	public boolean handleRenderType(ItemStack item, ItemRenderType type) 
+	@Override
+	public boolean handleRenderType(ItemStack item, ItemRenderType type)
 	{
-		return true;
+		return type == ItemRenderType.EQUIPPED_FIRST_PERSON;
 	}
 
-
+	@Override
 	public boolean shouldUseRenderHelper(ItemRenderType type, ItemStack item, ItemRendererHelper helper) 
 	{
 		return true;
 	}
 
-
+	@Override
 	public void renderItem(ItemRenderType type, ItemStack item, Object... data) 
 	{
 		render.renderTileEntityAt(new TileEntityBackpack(), 0.0D, 0.0D, 0.0D, 0.0F);
