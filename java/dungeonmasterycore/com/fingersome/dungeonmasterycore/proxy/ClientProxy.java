@@ -7,7 +7,7 @@ import net.minecraftforge.client.MinecraftForgeClient;
 
 import com.fingersome.dungeonmasterycore.block.BlockBackpack;
 import com.fingersome.dungeonmasterycore.block.BlockList;
-import com.fingersome.dungeonmasterycore.block.ItemBlockBackpack;
+import com.fingersome.dungeonmasterycore.item.ItemBlockBackpack;
 import com.fingersome.dungeonmasterycore.item.ItemList;
 import com.fingersome.dungeonmasterycore.renderer.ItemRendererBackpack;
 import com.fingersome.dungeonmasterycore.renderer.RendererBackpack;
