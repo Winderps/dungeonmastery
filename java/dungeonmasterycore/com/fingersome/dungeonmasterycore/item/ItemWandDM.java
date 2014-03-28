@@ -15,10 +15,13 @@ public class ItemWandDM extends Item
 	
 	public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer player)
 	{
-		player.setInvisible(true);
-	
+		if(player.isInvisible() == true) {player.setInvisible(false);}
+		else player.setInvisible(true);
+		
+		System.out.println("Poof!");
 		return itemstack;
 	}
+	
 	
 }
 
