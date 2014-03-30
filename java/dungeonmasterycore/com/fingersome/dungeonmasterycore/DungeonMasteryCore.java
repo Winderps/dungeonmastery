@@ -3,6 +3,7 @@ package com.fingersome.dungeonmasterycore;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraftforge.client.MinecraftForgeClient;
 import net.minecraftforge.common.util.EnumHelper;
 
 import com.fingersome.dungeonmasterycore.block.BlockBackpack;
@@ -21,6 +22,7 @@ import com.fingersome.dungeonmasterycore.item.ItemWandDebugging;
 import com.fingersome.dungeonmasterycore.item.ItemWandLimbo;
 import com.fingersome.dungeonmasterycore.lib.References;
 import com.fingersome.dungeonmasterycore.proxy.CommonProxy;
+import com.fingersome.dungeonmasterycore.renderer.RendererGreatsword;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityBackpack;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCampfire;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCorpseGrave;
@@ -53,7 +55,7 @@ public class DungeonMasteryCore
 	{
 		public Item getTabIconItem() 
 		{
-			return ItemList.itemBlockBackpack;
+			return ItemList.itemWandDM;
 		}		
 	};
 	
@@ -83,7 +85,7 @@ public class DungeonMasteryCore
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event)
 	{
-
+		MinecraftForgeClient.registerItemRenderer(ItemList.itemWeaponGreatsword, new RendererGreatsword());
 	}
 	
 	@EventHandler

@@ -25,7 +25,7 @@ public class GuiCreateCharacterRace extends GuiScreen
 	final int xSize = 256;
 	final int ySize = 256;
 	
-	public final ResourceLocation texture = new ResourceLocation(com.fingersome.dungeonmasterycore.lib.References.MOD_ID, "textures/gui/GuiCharacterCreationRace.png");
+	public final ResourceLocation texture = new ResourceLocation(com.fingersome.dungeonmasterycore.lib.References.MOD_ID, "textures/gui/creation/GuiCharacterCreationRace.png");
 	
 	 public GuiCreateCharacterRace(EntityPlayer player)
 	    {

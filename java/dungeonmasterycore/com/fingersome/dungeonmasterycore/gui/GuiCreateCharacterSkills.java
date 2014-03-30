@@ -21,7 +21,7 @@ import com.fingersome.dungeonmasterycore.lib.References;
 public class GuiCreateCharacterSkills extends GuiScreen 
 {
 	
-	public final ResourceLocation texture = new ResourceLocation(com.fingersome.dungeonmasterycore.lib.References.MOD_ID, "textures/gui/GuiCharacterCreationBackground.png");
+	public final ResourceLocation texture = new ResourceLocation(com.fingersome.dungeonmasterycore.lib.References.MOD_ID, "textures/gui/creation/GuiCharacterCreationBackground.png");
 	
 	final int xSize = 256;
 	final int ySize = 256;
