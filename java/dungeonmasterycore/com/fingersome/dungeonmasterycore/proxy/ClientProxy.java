@@ -8,11 +8,11 @@ import net.minecraftforge.client.MinecraftForgeClient;
 import com.fingersome.dungeonmasterycore.block.BlockBackpack;
 import com.fingersome.dungeonmasterycore.block.BlockList;
 import com.fingersome.dungeonmasterycore.item.ItemList;
-import com.fingersome.dungeonmasterycore.renderer.RendererBackpack;
+import com.fingersome.dungeonmasterycore.renderer.RendererBlockBackpack;
 import com.fingersome.dungeonmasterycore.renderer.RendererCampfire;
 import com.fingersome.dungeonmasterycore.renderer.RendererCorpseGrave;
 import com.fingersome.dungeonmasterycore.renderer.RendererCorpseSkeleton;
-import com.fingersome.dungeonmasterycore.renderer.RendererGreatsword;
+import com.fingersome.dungeonmasterycore.renderer.RendererItemGreatsword;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityBackpack;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCampfire;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCorpseGrave;
@@ -28,7 +28,7 @@ public class ClientProxy extends CommonProxy
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCampfire.class, new RendererCampfire());
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCorpseGrave.class, new RendererCorpseGrave());
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCorpseSkeleton.class, new RendererCorpseSkeleton());
-		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityBackpack.class, new RendererBackpack());
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityBackpack.class, new RendererBlockBackpack());
 		
 	}
 	

@@ -10,14 +10,14 @@ import com.fingersome.dungeonmasterycore.lib.References;
 import com.fingersome.dungeonmasterycore.model.ModelBackpack;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityBackpack;
 
-public class RendererBackpack extends TileEntitySpecialRenderer 
+public class RendererBlockBackpack extends TileEntitySpecialRenderer 
 {
 
 	private ModelBackpack model;
 
 	private static final ResourceLocation texture = new ResourceLocation(References.MOD_ID, "textures/model/TextureBackpack.png");
 	
-	public RendererBackpack(){
+	public RendererBlockBackpack(){
 		this.model = new ModelBackpack();
 	}
 	

@@ -3,23 +3,23 @@ package com.fingersome.dungeonmasterycore.renderer;
 import org.lwjgl.opengl.GL11;
 
 import com.fingersome.dungeonmasterycore.lib.References;
-import com.fingersome.dungeonmasterycore.model.ModelGreatsword;
+import com.fingersome.dungeonmasterycore.model.ModelDagger;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.IItemRenderer;
 
-public class RendererGreatsword implements IItemRenderer
+public class RendererItemDagger implements IItemRenderer
 {
 	
-	private ModelGreatsword greatsword;
+	private ModelDagger dagger;
 	
-	private static final ResourceLocation texture = new ResourceLocation(References.MOD_ID, "textures/model/TextureGreatsword.png");
+	private static final ResourceLocation texture = new ResourceLocation(References.MOD_ID, "textures/model/TextureDagger.png");
 	
-	public RendererGreatsword() 
+	public RendererItemDagger() 
 	{
-		greatsword = new ModelGreatsword();
+		dagger = new ModelDagger();
 	}
 
 
@@ -57,7 +57,7 @@ public class RendererGreatsword implements IItemRenderer
 			
 			Minecraft.getMinecraft().renderEngine.bindTexture(texture);
 			
-			greatsword.renderModel(.0625F);
+			dagger.renderModel(.0625F);
 			GL11.glPopMatrix();
 		}
 		
@@ -70,7 +70,7 @@ public class RendererGreatsword implements IItemRenderer
 			
 			Minecraft.getMinecraft().renderEngine.bindTexture(texture);
 			
-			this.greatsword.renderModel(.0625F);
+			dagger.renderModel(.0625F);
 			GL11.glPopMatrix();
 		}
 
