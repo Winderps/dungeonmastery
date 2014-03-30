@@ -26,6 +26,10 @@ import com.fingersome.dungeonmasterycore.renderer.RendererItemBackpack;
 import com.fingersome.dungeonmasterycore.renderer.RendererItemBastardsword;
 import com.fingersome.dungeonmasterycore.renderer.RendererItemDagger;
 import com.fingersome.dungeonmasterycore.renderer.RendererItemGreatsword;
+import com.fingersome.dungeonmasterycore.renderer.RendererItemLongsword;
+import com.fingersome.dungeonmasterycore.renderer.RendererItemRapier;
+import com.fingersome.dungeonmasterycore.renderer.RendererItemScimitar;
+import com.fingersome.dungeonmasterycore.renderer.RendererItemShortsword;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityBackpack;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCampfire;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCorpseGrave;
@@ -89,9 +93,13 @@ public class DungeonMasteryCore
 	public void postInit(FMLPostInitializationEvent event)
 	{
 		MinecraftForgeClient.registerItemRenderer(ItemList.itemBlockBackpack, new RendererItemBackpack());
-		MinecraftForgeClient.registerItemRenderer(ItemList.itemWeaponGreatsword, new RendererItemGreatsword());
-		MinecraftForgeClient.registerItemRenderer(ItemList.itemWeaponBastardsword, new RendererItemBastardsword());
 		MinecraftForgeClient.registerItemRenderer(ItemList.itemWeaponDagger, new RendererItemDagger());
+		MinecraftForgeClient.registerItemRenderer(ItemList.itemWeaponShortsword, new RendererItemShortsword());
+		MinecraftForgeClient.registerItemRenderer(ItemList.itemWeaponLongsword, new RendererItemLongsword());
+		MinecraftForgeClient.registerItemRenderer(ItemList.itemWeaponBastardsword, new RendererItemBastardsword());
+		MinecraftForgeClient.registerItemRenderer(ItemList.itemWeaponGreatsword, new RendererItemGreatsword());
+		MinecraftForgeClient.registerItemRenderer(ItemList.itemWeaponRapier, new RendererItemRapier());
+		MinecraftForgeClient.registerItemRenderer(ItemList.itemWeaponScimitar, new RendererItemScimitar());
 
 	}
 	

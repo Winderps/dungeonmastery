@@ -3,7 +3,7 @@ package com.fingersome.dungeonmasterycore.renderer;
 import org.lwjgl.opengl.GL11;
 
 import com.fingersome.dungeonmasterycore.lib.References;
-import com.fingersome.dungeonmasterycore.model.ModelDagger;
+import com.fingersome.dungeonmasterycore.model.ModelScimitar;
 import com.fingersome.dungeonmasterycore.model.ModelShortsword;
 
 import net.minecraft.client.Minecraft;
@@ -11,16 +11,16 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.IItemRenderer;
 
-public class RendererItemDagger implements IItemRenderer
+public class RendererItemScimitar implements IItemRenderer
 {
 	
-	private ModelShortsword dagger;
+	private ModelScimitar scimitar;
 	
-	private static final ResourceLocation texture = new ResourceLocation(References.MOD_ID, "textures/model/TextureShortsword.png");
+	private static final ResourceLocation texture = new ResourceLocation(References.MOD_ID, "textures/model/TextureScimitar.png");
 	
-	public RendererItemDagger() 
+	public RendererItemScimitar() 
 	{
-		dagger = new ModelShortsword();
+		scimitar = new ModelScimitar();
 	}
 
 
@@ -58,7 +58,7 @@ public class RendererItemDagger implements IItemRenderer
 			
 			Minecraft.getMinecraft().renderEngine.bindTexture(texture);
 			
-			dagger.renderModel(.0625F);
+			scimitar.renderModel(.0625F);
 			GL11.glPopMatrix();
 		}
 		
@@ -71,7 +71,7 @@ public class RendererItemDagger implements IItemRenderer
 			
 			Minecraft.getMinecraft().renderEngine.bindTexture(texture);
 			
-			dagger.renderModel(.0625F);
+			scimitar.renderModel(.0625F);
 			GL11.glPopMatrix();
 		}
 

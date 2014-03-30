@@ -70,7 +70,7 @@ public class RendererItemGreatsword implements IItemRenderer
 			
 			Minecraft.getMinecraft().renderEngine.bindTexture(texture);
 			
-			this.greatsword.renderModel(.0625F);
+			greatsword.renderModel(.0625F);
 			GL11.glPopMatrix();
 		}
 

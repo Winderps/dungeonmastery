@@ -3,24 +3,25 @@ package com.fingersome.dungeonmasterycore.renderer;
 import org.lwjgl.opengl.GL11;
 
 import com.fingersome.dungeonmasterycore.lib.References;
+import com.fingersome.dungeonmasterycore.model.ModelBastardsword;
 import com.fingersome.dungeonmasterycore.model.ModelDagger;
-import com.fingersome.dungeonmasterycore.model.ModelShortsword;
+import com.fingersome.dungeonmasterycore.model.ModelLongsword;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.IItemRenderer;
 
-public class RendererItemDagger implements IItemRenderer
+public class RendererItemLongsword implements IItemRenderer
 {
 	
-	private ModelShortsword dagger;
+	private ModelLongsword longsword;
 	
-	private static final ResourceLocation texture = new ResourceLocation(References.MOD_ID, "textures/model/TextureShortsword.png");
+	private static final ResourceLocation texture = new ResourceLocation(References.MOD_ID, "textures/model/TextureLongsword.png");
 	
-	public RendererItemDagger() 
+	public RendererItemLongsword() 
 	{
-		dagger = new ModelShortsword();
+		longsword = new ModelLongsword();
 	}
 
 
@@ -52,26 +53,26 @@ public class RendererItemDagger implements IItemRenderer
 		case EQUIPPED: 
 		{
 			GL11.glPushMatrix();
-			GL11.glScalef(1.5F, 1.5F, 1.5F);
+			GL11.glScalef(2F, 2F, 2F);
 			GL11.glRotatef(200, 1F, 0F, 1F);
 			GL11.glTranslatef(0.001F, -1.2F, 0.2F);
 			
 			Minecraft.getMinecraft().renderEngine.bindTexture(texture);
 			
-			dagger.renderModel(.0625F);
+			longsword.renderModel(.0625F);
 			GL11.glPopMatrix();
 		}
 		
 		case EQUIPPED_FIRST_PERSON:
 		{
 			GL11.glPushMatrix();
-			GL11.glScalef(1.5F, 1.5F, 1.5F);
+			GL11.glScalef(2F, 2F, 2F);
 			GL11.glRotatef(200, 1F, 0F, 1F);
 			GL11.glTranslatef(0.001F, -1.2F, 0.2F);
 			
 			Minecraft.getMinecraft().renderEngine.bindTexture(texture);
 			
-			dagger.renderModel(.0625F);
+			longsword.renderModel(.0625F);
 			GL11.glPopMatrix();
 		}
 

@@ -3,24 +3,24 @@ package com.fingersome.dungeonmasterycore.renderer;
 import org.lwjgl.opengl.GL11;
 
 import com.fingersome.dungeonmasterycore.lib.References;
-import com.fingersome.dungeonmasterycore.model.ModelDagger;
-import com.fingersome.dungeonmasterycore.model.ModelShortsword;
+import com.fingersome.dungeonmasterycore.model.ModelGreatsword;
+import com.fingersome.dungeonmasterycore.model.ModelRapier;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.IItemRenderer;
 
-public class RendererItemDagger implements IItemRenderer
+public class RendererItemRapier implements IItemRenderer
 {
 	
-	private ModelShortsword dagger;
+	private ModelRapier rapier;
 	
-	private static final ResourceLocation texture = new ResourceLocation(References.MOD_ID, "textures/model/TextureShortsword.png");
+	private static final ResourceLocation texture = new ResourceLocation(References.MOD_ID, "textures/model/TextureRapier.png");
 	
-	public RendererItemDagger() 
+	public RendererItemRapier() 
 	{
-		dagger = new ModelShortsword();
+		rapier = new ModelRapier();
 	}
 
 
@@ -58,7 +58,7 @@ public class RendererItemDagger implements IItemRenderer
 			
 			Minecraft.getMinecraft().renderEngine.bindTexture(texture);
 			
-			dagger.renderModel(.0625F);
+			rapier.renderModel(.0625F);
 			GL11.glPopMatrix();
 		}
 		
@@ -71,7 +71,7 @@ public class RendererItemDagger implements IItemRenderer
 			
 			Minecraft.getMinecraft().renderEngine.bindTexture(texture);
 			
-			dagger.renderModel(.0625F);
+			rapier.renderModel(.0625F);
 			GL11.glPopMatrix();
 		}
 
