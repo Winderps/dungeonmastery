@@ -1,4 +1,4 @@
-package com.fingersome.dungeonmasterycore.gui;
+package com.fingersome.dungeonmasterycore.client.gui;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;

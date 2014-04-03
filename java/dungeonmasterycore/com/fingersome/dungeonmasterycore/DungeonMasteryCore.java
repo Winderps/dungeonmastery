@@ -1,9 +1,15 @@
 package com.fingersome.dungeonmasterycore;
 
+import java.io.File;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.MinecraftForgeClient;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.util.EnumHelper;
 
 import com.fingersome.dungeonmasterycore.block.BlockBackpack;
@@ -15,12 +21,15 @@ import com.fingersome.dungeonmasterycore.block.BlockLimboStone;
 import com.fingersome.dungeonmasterycore.block.BlockList;
 import com.fingersome.dungeonmasterycore.block.BlockWorldStone;
 import com.fingersome.dungeonmasterycore.block.BlockWorldTeleporter;
-import com.fingersome.dungeonmasterycore.gui.GuiHandler;
+import com.fingersome.dungeonmasterycore.client.gui.GuiHandler;
+import com.fingersome.dungeonmasterycore.event.EventHandlerEntity;
 import com.fingersome.dungeonmasterycore.item.ItemList;
 import com.fingersome.dungeonmasterycore.item.ItemWandDM;
 import com.fingersome.dungeonmasterycore.item.ItemWandDebugging;
 import com.fingersome.dungeonmasterycore.item.ItemWandLimbo;
 import com.fingersome.dungeonmasterycore.lib.References;
+import com.fingersome.dungeonmasterycore.network.EventHandlerNetwork;
+import com.fingersome.dungeonmasterycore.network.PacketPipeline;
 import com.fingersome.dungeonmasterycore.proxy.CommonProxy;
 import com.fingersome.dungeonmasterycore.renderer.RendererItemBackpack;
 import com.fingersome.dungeonmasterycore.renderer.RendererItemBastardsword;
@@ -35,6 +44,7 @@ import com.fingersome.dungeonmasterycore.tileentity.TileEntityCampfire;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCorpseGrave;
 import com.fingersome.dungeonmasterycore.tileentity.TileEntityCorpseSkeleton;
 
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -42,6 +52,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid = References.MOD_ID, name = References.MOD_NAME, version = References.VERSION)
@@ -66,21 +77,52 @@ public class DungeonMasteryCore
 		}		
 	};
 	
+	public EventHandlerNetwork networkEventHandler;
+	public EventHandlerEntity entityEventHandler;
+	public File modDir;
+
+	public static final PacketPipeline packetPipeline = new PacketPipeline();
+	public static final Logger logger = LogManager.getLogger("DungeonMasteryCore");
+	public static final int GuiCharacterInventory = 6;
 	
+
 	@EventHandler
-	public void preInit(FMLPreInitializationEvent event)
+	public void preInit(FMLPreInitializationEvent event) 
 	{
+		event.getModMetadata().version = References.VERSION;
+		modDir = event.getModConfigurationDirectory();		
+
+		try 
+		{
+			Config.initialize(event.getSuggestedConfigurationFile());
+		} catch (Exception exception) {
+			DungeonMasteryCore.logger.error("BAUBLES has a problem loading it's configuration");
+		} finally {
+			if (Config.config!=null) Config.save();
+		}
+
+		entityEventHandler = new EventHandlerEntity();
+
+		MinecraftForge.EVENT_BUS.register(entityEventHandler);
+		FMLCommonHandler.instance().bus().register(new EventHandlerNetwork());
+		proxy.registerHandlers();
+
+		/////////////////////
+
+		Config.save();
 		
 		ItemList.preInit(event);
-		BlockList.preInit(event);	
-		
+		BlockList.preInit(event);
 	}
-	
+
 	@EventHandler
-	public void init(FMLInitializationEvent event)
+	public void init(FMLInitializationEvent event) 
 	{
-		
-		GameRegistry.registerTileEntity(TileEntityCampfire.class, "Campfire");
+		packetPipeline.initialise();
+		NetworkRegistry.INSTANCE.registerGuiHandler(instance, proxy);
+  		proxy.registerKeyBindings();
+  		
+  		GameRegistry.registerTileEntity(TileEntityCampfire.class, "Campfire");
 		GameRegistry.registerTileEntity(TileEntityCorpseGrave.class, "Grave");
 		GameRegistry.registerTileEntity(TileEntityCorpseSkeleton.class, "Corpse");
 		GameRegistry.registerTileEntity(TileEntityBackpack.class, "Backpack");
@@ -88,10 +130,12 @@ public class DungeonMasteryCore
 		
 		proxy.registerProxies();
 	}
-	
+
 	@EventHandler
-	public void postInit(FMLPostInitializationEvent event)
+	public void postInit(FMLPostInitializationEvent event) 
 	{
+		packetPipeline.postInitialise();
+		
 		MinecraftForgeClient.registerItemRenderer(ItemList.itemBlockBackpack, new RendererItemBackpack());
 		MinecraftForgeClient.registerItemRenderer(ItemList.itemWeaponDagger, new RendererItemDagger());
 		MinecraftForgeClient.registerItemRenderer(ItemList.itemWeaponShortsword, new RendererItemShortsword());
@@ -108,5 +152,6 @@ public class DungeonMasteryCore
 	{
 		new GuiHandler();
 	}
+	
 
 }

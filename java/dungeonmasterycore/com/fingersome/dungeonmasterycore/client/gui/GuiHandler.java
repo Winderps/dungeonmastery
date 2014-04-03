@@ -1,9 +1,10 @@
-package com.fingersome.dungeonmasterycore.gui;
+package com.fingersome.dungeonmasterycore.client.gui;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
 
 import com.fingersome.dungeonmasterycore.DungeonMasteryCore;
+import com.fingersome.dungeonmasterycore.container.ContainerCharacterInventory;
 import com.fingersome.dungeonmasterycore.container.ContainerCreateCharacterAttributes;
 import com.fingersome.dungeonmasterycore.container.ContainerCreateCharacterClass;
 import com.fingersome.dungeonmasterycore.container.ContainerCreateCharacterFeats1;
@@ -36,6 +37,8 @@ public class GuiHandler implements IGuiHandler
 		case 4: return new ContainerCreateCharacterFeats1		(player);
 		case 5: return new ContainerCreateCharacterFeats2		(player);
 		case 6: return new ContainerCreateCharacterFeats3		(player);
+		case 7: return new ContainerCharacterInventory		(null, false, player);
+
 		}
 	}
 
@@ -52,6 +55,8 @@ public class GuiHandler implements IGuiHandler
 		case 4: return new GuiCreateCharacterFeats1		(player);
 		case 5: return new GuiCreateCharacterFeats2		(player);
 		case 6: return new GuiCreateCharacterFeats3		(player);
+		case 7: return new GuiCharacterInventory		(player);
+		
 		}
 		
 	}
