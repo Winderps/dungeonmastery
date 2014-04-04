@@ -10,6 +10,10 @@ public class ModelRapier extends ModelBase
     ModelRenderer Guard;
     ModelRenderer Blade;
     ModelRenderer Suba;
+    ModelRenderer Guard1;
+    ModelRenderer Guard2;
+    ModelRenderer Guard3;
+    ModelRenderer Guard4;
   
   public ModelRapier()
   {
@@ -40,6 +44,30 @@ public class ModelRapier extends ModelBase
       Suba.setTextureSize(64, 32);
       Suba.mirror = true;
       setRotation(Suba, 0F, 0F, 0F);
+      Guard1 = new ModelRenderer(this, 16, 0);
+      Guard1.addBox(0F, 0F, 0F, 1, 1, 5);
+      Guard1.setRotationPoint(2F, 18F, -2F);
+      Guard1.setTextureSize(64, 32);
+      Guard1.mirror = true;
+      setRotation(Guard1, 0F, 0F, 0F);
+      Guard2 = new ModelRenderer(this, 16, 0);
+      Guard2.addBox(0F, 0F, 0F, 1, 3, 5);
+      Guard2.setRotationPoint(3F, 19F, -2F);
+      Guard2.setTextureSize(64, 32);
+      Guard2.mirror = true;
+      setRotation(Guard2, 0F, 0F, 0F);
+      Guard3 = new ModelRenderer(this, 16, 0);
+      Guard3.addBox(0F, 0F, 0F, 1, 1, 3);
+      Guard3.setRotationPoint(2F, 22F, -1F);
+      Guard3.setTextureSize(64, 32);
+      Guard3.mirror = true;
+      setRotation(Guard3, 0F, 0F, 0F);
+      Guard4 = new ModelRenderer(this, 16, 0);
+      Guard4.addBox(0F, 0F, 0F, 2, 1, 3);
+      Guard4.setRotationPoint(0F, 23F, -1F);
+      Guard4.setTextureSize(64, 32);
+      Guard4.mirror = true;
+      setRotation(Guard4, 0F, 0F, 0F);
   }
   
   public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5)
@@ -50,6 +78,11 @@ public class ModelRapier extends ModelBase
     Guard.render(f5);
     Blade.render(f5);
     Suba.render(f5);
+    Blade.render(f5);
+    Guard1.render(f5);
+    Guard2.render(f5);
+    Guard3.render(f5);
+    Guard4.render(f5);
   }
   
   public void renderModel(float f5)
@@ -58,6 +91,11 @@ public class ModelRapier extends ModelBase
     Guard.render(f5);
     Blade.render(f5);
     Suba.render(f5);
+    Blade.render(f5);
+    Guard1.render(f5);
+    Guard2.render(f5);
+    Guard3.render(f5);
+    Guard4.render(f5);
   }
   
   private void setRotation(ModelRenderer model, float x, float y, float z)

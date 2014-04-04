@@ -14,13 +14,13 @@ import net.minecraftforge.client.IItemRenderer;
 public class RendererItemDagger implements IItemRenderer
 {
 	
-	private ModelShortsword dagger;
+	private ModelDagger dagger;
 	
 	private static final ResourceLocation texture = new ResourceLocation(References.MOD_ID, "textures/model/TextureShortsword.png");
 	
 	public RendererItemDagger() 
 	{
-		dagger = new ModelShortsword();
+		dagger = new ModelDagger();
 	}
 
 
@@ -52,7 +52,7 @@ public class RendererItemDagger implements IItemRenderer
 		case EQUIPPED: 
 		{
 			GL11.glPushMatrix();
-			GL11.glScalef(1.5F, 1.5F, 1.5F);
+			GL11.glScalef(2.0F, 2.0F, 2.0F);
 			GL11.glRotatef(200, 1F, 0F, 1F);
 			GL11.glTranslatef(0.001F, -1.2F, 0.2F);
 			
@@ -65,7 +65,7 @@ public class RendererItemDagger implements IItemRenderer
 		case EQUIPPED_FIRST_PERSON:
 		{
 			GL11.glPushMatrix();
-			GL11.glScalef(1.5F, 1.5F, 1.5F);
+			GL11.glScalef(2.0F, 2.0F, 2.0F);
 			GL11.glRotatef(200, 1F, 0F, 1F);
 			GL11.glTranslatef(0.001F, -1.2F, 0.2F);
 			

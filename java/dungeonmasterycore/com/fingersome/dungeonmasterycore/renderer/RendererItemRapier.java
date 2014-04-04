@@ -52,7 +52,7 @@ public class RendererItemRapier implements IItemRenderer
 		case EQUIPPED: 
 		{
 			GL11.glPushMatrix();
-			GL11.glScalef(1.5F, 1.5F, 1.5F);
+			GL11.glScalef(1.8F, 1.8F, 1.8F);
 			GL11.glRotatef(200, 1F, 0F, 1F);
 			GL11.glTranslatef(0.001F, -1.2F, 0.2F);
 			
@@ -65,7 +65,7 @@ public class RendererItemRapier implements IItemRenderer
 		case EQUIPPED_FIRST_PERSON:
 		{
 			GL11.glPushMatrix();
-			GL11.glScalef(1.5F, 1.5F, 1.5F);
+			GL11.glScalef(1.8F, 1.8F, 1.8F);
 			GL11.glRotatef(200, 1F, 0F, 1F);
 			GL11.glTranslatef(0.001F, -1.2F, 0.2F);
 			
