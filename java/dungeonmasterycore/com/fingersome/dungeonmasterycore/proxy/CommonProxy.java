@@ -12,10 +12,6 @@ import cpw.mods.fml.common.network.IGuiHandler;
 public class CommonProxy implements IGuiHandler 
 {
 
-	public com.fingersome.dungeonmasterycore.event.KeyHandler keyHandler;
-
-	public void registerHandlers() {}
-
 
 	@Override
 	public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) 
@@ -37,9 +33,6 @@ public class CommonProxy implements IGuiHandler
 	{
 		return null;
 	}
-
-
-	public void registerKeyBindings() {}
 
 
 	public void registerProxies() 

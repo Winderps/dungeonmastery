@@ -134,14 +134,5 @@ public class GuiCharacterInventory extends InventoryEffectRenderer
             this.mc.displayGuiScreen(new GuiStats(this, this.mc.thePlayer.getStatFileWriter()));
         }
     }
-
-	@Override
-	protected void keyTyped(char par1, int par2) {
-		if (par2 == DungeonMasteryCore.proxy.keyHandler.key.getKeyCode())
-        {
-            this.mc.thePlayer.closeScreen();
-        }
-		super.keyTyped(par1, par2);
-	}
     
 }

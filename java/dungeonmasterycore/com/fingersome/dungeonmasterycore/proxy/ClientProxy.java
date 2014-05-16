@@ -12,7 +12,6 @@ import com.fingersome.dungeonmasterycore.DungeonMasteryCore;
 import com.fingersome.dungeonmasterycore.block.BlockBackpack;
 import com.fingersome.dungeonmasterycore.block.BlockList;
 import com.fingersome.dungeonmasterycore.client.gui.GuiCharacterInventory;
-import com.fingersome.dungeonmasterycore.event.KeyHandler;
 import com.fingersome.dungeonmasterycore.item.ItemList;
 import com.fingersome.dungeonmasterycore.renderer.RendererBlockBackpack;
 import com.fingersome.dungeonmasterycore.renderer.RendererCampfire;
@@ -31,16 +30,6 @@ import cpw.mods.fml.common.FMLCommonHandler;
 public class ClientProxy extends CommonProxy
 {
 		
-	@Override
-	public void registerHandlers() {}
-
-	@Override
-	public void registerKeyBindings() 
-	{
-		keyHandler = new KeyHandler();
-		FMLCommonHandler.instance().bus().register(keyHandler);
-	}
-
 	@Override
 	public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) 
 	{

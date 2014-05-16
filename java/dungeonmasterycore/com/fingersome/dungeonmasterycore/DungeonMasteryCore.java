@@ -22,14 +22,11 @@ import com.fingersome.dungeonmasterycore.block.BlockList;
 import com.fingersome.dungeonmasterycore.block.BlockWorldStone;
 import com.fingersome.dungeonmasterycore.block.BlockWorldTeleporter;
 import com.fingersome.dungeonmasterycore.client.gui.GuiHandler;
-import com.fingersome.dungeonmasterycore.event.EventHandlerEntity;
 import com.fingersome.dungeonmasterycore.item.ItemList;
 import com.fingersome.dungeonmasterycore.item.ItemWandDM;
 import com.fingersome.dungeonmasterycore.item.ItemWandDebugging;
 import com.fingersome.dungeonmasterycore.item.ItemWandLimbo;
 import com.fingersome.dungeonmasterycore.lib.References;
-import com.fingersome.dungeonmasterycore.network.EventHandlerNetwork;
-import com.fingersome.dungeonmasterycore.network.PacketPipeline;
 import com.fingersome.dungeonmasterycore.proxy.CommonProxy;
 import com.fingersome.dungeonmasterycore.renderer.RendererItemBackpack;
 import com.fingersome.dungeonmasterycore.renderer.RendererItemBastardsword;
@@ -77,12 +74,11 @@ public class DungeonMasteryCore
 		}		
 	};
 	
-	public EventHandlerNetwork networkEventHandler;
-	public EventHandlerEntity entityEventHandler;
+
 	public File modDir;
 
-	public static final PacketPipeline packetPipeline = new PacketPipeline();
 	public static final Logger logger = LogManager.getLogger("DungeonMasteryCore");
+	
 	public static final int GuiCharacterInventory = 6;
 	
 
@@ -101,11 +97,6 @@ public class DungeonMasteryCore
 			if (Config.config!=null) Config.save();
 		}
 
-		entityEventHandler = new EventHandlerEntity();
-
-		MinecraftForge.EVENT_BUS.register(entityEventHandler);
-		FMLCommonHandler.instance().bus().register(new EventHandlerNetwork());
-		proxy.registerHandlers();
 
 		/////////////////////
 
@@ -118,9 +109,7 @@ public class DungeonMasteryCore
 	@EventHandler
 	public void init(FMLInitializationEvent event) 
 	{
-		packetPipeline.initialise();
 		NetworkRegistry.INSTANCE.registerGuiHandler(instance, proxy);
-  		proxy.registerKeyBindings();
   		
   		GameRegistry.registerTileEntity(TileEntityCampfire.class, "Campfire");
 		GameRegistry.registerTileEntity(TileEntityCorpseGrave.class, "Grave");
@@ -134,7 +123,6 @@ public class DungeonMasteryCore
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) 
 	{
-		packetPipeline.postInitialise();
 		
 		MinecraftForgeClient.registerItemRenderer(ItemList.itemBlockBackpack, new RendererItemBackpack());
 		MinecraftForgeClient.registerItemRenderer(ItemList.itemWeaponDagger, new RendererItemDagger());
