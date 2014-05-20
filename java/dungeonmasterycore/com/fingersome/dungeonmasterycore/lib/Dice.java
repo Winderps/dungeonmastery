@@ -4,11 +4,11 @@ public class Dice
 {  
    private int d2;   	// Instance variable for d2  
    private int d4;   	// Instance variable for d3
-   private int d6;		// Instance variable for d3
-   private int d8;		// Instance variable for d3
-   private int d10;		// Instance variable for d3
-   private int d12;		// Instance variable for d3
-   private int d20;		// Instance variable for d3
+   private int d6;		// Instance variable for d6
+   private int d8;		// Instance variable for d8
+   private int d10;		// Instance variable for d10
+   private int d12;		// Instance variable for d12
+   private int d20;		// Instance variable for d20
    private int sum;    	// Instance variable to hold sum of dice thrown
      
    
