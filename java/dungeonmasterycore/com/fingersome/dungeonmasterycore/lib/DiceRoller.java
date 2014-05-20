@@ -9,10 +9,10 @@ public class DiceRoller
 	public int dicerolled = 2;	//dummy number of dice thrown
 	public int mod = 1;
 	   
-	public int getValue() // Return final roll as integer
+//	public int getValue() // Return final roll as integer
 		{  
 //			int value = d20 * dicerolled + mod ;
     
-			return value;  
+//			return value;  
 		}
 }
