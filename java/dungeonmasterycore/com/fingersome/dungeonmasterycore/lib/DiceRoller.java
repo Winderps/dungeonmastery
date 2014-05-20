@@ -12,7 +12,7 @@ public class DiceRoller
 //	public int getValue() // Return final roll as integer
 		{  
 //			int value = d20 * dicerolled + mod ;
-    
+			
 //			return value;  
 		}
 }

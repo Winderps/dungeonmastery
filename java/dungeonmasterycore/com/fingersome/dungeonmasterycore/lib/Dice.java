@@ -10,6 +10,7 @@ public class Dice
    private int d12;		// Instance variable for d12
    private int d20;		// Instance variable for d20
    private int sum;    	// Instance variable to hold sum of dice thrown
+   private int diceValue; // Value of the dice rolled
      
    
    
@@ -18,6 +19,12 @@ public class Dice
         rolld20();  // Calls the roll() method to roll the dice.  
    }  
      
+   public int diceRoll(int diceSides, int modifier){
+	   diceValue = (int)(Math.random()*diceSides)+modifier;
+	   
+	   return diceValue;
+   }
+   
    public int getValue() // Return the value of the thrown die  
    {  
         return d20;  
@@ -59,6 +66,8 @@ public class Dice
    {  
         d20 = (int)(Math.random()*20) + 1; 
    }   
+
+
 		     
 }    
    
