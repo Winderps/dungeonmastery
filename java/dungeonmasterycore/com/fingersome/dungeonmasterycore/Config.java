@@ -15,7 +15,6 @@ public class Config
 {
 
 	public static Configuration config;
-	public static Item itemRing;
 
 	public static void initialize(File file)
     {

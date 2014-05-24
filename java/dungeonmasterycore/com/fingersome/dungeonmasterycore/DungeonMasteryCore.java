@@ -6,8 +6,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import net.minecraft.block.Block;
+import net.minecraft.command.ICommandManager;
+import net.minecraft.command.ServerCommandManager;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.server.MinecraftServer;
 import net.minecraftforge.client.MinecraftForgeClient;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.util.EnumHelper;
@@ -22,6 +25,7 @@ import com.fingersome.dungeonmasterycore.block.BlockList;
 import com.fingersome.dungeonmasterycore.block.BlockWorldStone;
 import com.fingersome.dungeonmasterycore.block.BlockWorldTeleporter;
 import com.fingersome.dungeonmasterycore.client.gui.GuiHandler;
+import com.fingersome.dungeonmasterycore.command.CommandTest;
 import com.fingersome.dungeonmasterycore.item.ItemList;
 import com.fingersome.dungeonmasterycore.item.ItemWandDM;
 import com.fingersome.dungeonmasterycore.item.ItemWandDebugging;
@@ -49,6 +53,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -81,6 +86,21 @@ public class DungeonMasteryCore
 	
 	public static final int GuiCharacterInventory = 6;
 	
+	 @EventHandler
+     public void serverStart(FMLServerStartingEvent event)
+     {
+		 MinecraftServer server = MinecraftServer.getServer();
+         // Get's the current server instance
+		 
+		 ICommandManager command = server.getCommandManager();
+		// Get's the Command manager for the server, but it's in a form we cannot use.
+		 
+		 ServerCommandManager manager = (ServerCommandManager) command;
+		// Turns the useless to us ICommandManager into a now useful ServerCommandManager
+		 
+		 manager.registerCommand(new CommandTest());
+		// Registers the command
+     }
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) 
