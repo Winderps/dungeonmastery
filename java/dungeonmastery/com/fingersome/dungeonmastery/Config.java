@@ -30,4 +30,9 @@ public class Config
         config.save();
     }	
 	
+	public static void load()
+	{
+		
+	}
+	
 }

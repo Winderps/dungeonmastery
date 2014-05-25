@@ -33,13 +33,6 @@ public class ClientProxy extends CommonProxy
 	@Override
 	public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) 
 	{
-		if (world instanceof WorldClient) 
-		{
-			switch (ID) 
-			{
-				case DungeonMastery.GuiCharacterInventory: return new GuiCharacterInventory(player);
-			}
-		}
 		return null;
 	}
 

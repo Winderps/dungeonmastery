@@ -13,6 +13,7 @@ import net.minecraft.item.Item;
 import net.minecraft.server.MinecraftServer;
 import net.minecraftforge.client.MinecraftForgeClient;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.common.util.EnumHelper;
 
 import com.fingersome.dungeonmastery.block.BlockBackpack;
@@ -68,8 +69,11 @@ public class DungeonMastery
 	@SidedProxy (clientSide="com.fingersome.dungeonmasterycore.proxy.ClientProxy", serverSide="com.fingersome.dungeonmasterycore.proxy.ServerProxy")
 	public static CommonProxy proxy;
 
+	public static Config config;
+	
 	public static final int dimensionIdLimbo = 2;
 	public static final int dimensionIdUnderdark = 3;
+	public static final int dimensionIdOuterplanes = 4;
 	
 	public static CreativeTabs coreTab = new CreativeTabs("dungeonmasterycoretab")
 	{
@@ -79,12 +83,6 @@ public class DungeonMastery
 		}		
 	};
 	
-
-	public File modDir;
-
-	public static final Logger logger = LogManager.getLogger("DungeonMasteryCore");
-	
-	public static final int GuiCharacterInventory = 6;
 	
 	 @EventHandler
      public void serverStart(FMLServerStartingEvent event)
@@ -105,25 +103,22 @@ public class DungeonMastery
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) 
 	{
-		event.getModMetadata().version = References.VERSION;
-		modDir = event.getModConfigurationDirectory();		
-
-		try 
-		{
-			Config.initialize(event.getSuggestedConfigurationFile());
-		} catch (Exception exception) {
-			DungeonMastery.logger.error("BAUBLES has a problem loading it's configuration");
-		} finally {
-			if (Config.config!=null) Config.save();
-		}
-
-
-		/////////////////////
-
-		Config.save();
-		
 		ItemList.preInit(event);
 		BlockList.preInit(event);
+		
+		config = new Config();
+		config.load();
+		
+		/**
+		BackpackBlocks.register();
+		BackpackItems.register();
+		BackpackEntities.register();
+		BackpackTileEntities.register();
+		**/
+		
+		proxy.registerProxies();
+		
+		config.save();
 	}
 
 	@EventHandler
@@ -137,7 +132,6 @@ public class DungeonMastery
 		GameRegistry.registerTileEntity(TileEntityBackpack.class, "Backpack");
 		
 		
-		proxy.registerProxies();
 	}
 
 	@EventHandler
