@@ -1,38 +1,17 @@
 package com.fingersome.dungeonmastery.proxy;
 
-import com.fingersome.dungeonmastery.DungeonMastery;
-import com.fingersome.dungeonmastery.container.ContainerCharacterInventory;
-
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.world.World;
-import cpw.mods.fml.common.network.IGuiHandler;
-
-
-
-public class CommonProxy implements IGuiHandler 
+public class CommonProxy 
 {
 
-
-	@Override
-	public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) 
+	public void initSounds() 
+	
 	{
-		return null;
+		// TODO Auto-generated method stub
+		
 	}
 
-	@Override
-	public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) 
-	{
-		return null;
-	}
-
-	public World getClientWorld() 
-	{
-		return null;
-	}
-
-
-	public void registerProxies() 
-	{
+	public void initRenderers() {
+		// TODO Auto-generated method stub
 		
 	}
 
