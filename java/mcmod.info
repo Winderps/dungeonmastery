@@ -1,0 +1,18 @@
+[
+{
+  "modid" : "dungeonmastery_mod",
+  "name" : "Dungeon Mastery",
+  "version" : "1.0.1",
+  "credits" : "Textures by Gnawl, special thanks to Copygirl and VSWE",
+  "authorList": [
+    "Fingersome"
+  ],
+  "description": "Roll D20!",
+  "url" : "http://courses.vswe.se/?course=3&lecture=23",
+  "updateUrl" : "",
+  "logoFile" : "DungeonMastery.png",
+  "parent" : "",
+  "screenshots": [
+  ]
+}
+]

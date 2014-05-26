@@ -19,7 +19,9 @@ public class DungeonMastery
 	@Instance(Reference.MOD_ID)
 	public static DungeonMastery instance;
 
-	@SidedProxy(clientSide = "com.fingersome.dungeonmastery.proxy.ClientProxy", serverSide = "com.fingersome.dungeonmastery.proxy.CommonProxy")
+	@SidedProxy(clientSide = "com.fingersome.dungeonmastery.proxy.ClientProxy", 
+				serverSide = "com.fingersome.dungeonmastery.proxy.CommonProxy")
+	
 	public static CommonProxy proxy;
 
 	
@@ -27,7 +29,7 @@ public class DungeonMastery
 	public void preInit(FMLPreInitializationEvent event) 
 	{
 		ConfigHandler.init(event.getSuggestedConfigurationFile());
-		System.out.println(ConfigHandler.SOME_TEXT_VALUE);
+		System.out.println(ConfigHandler.DEBUG_TEXT_VALUE);
 		
 		proxy.initSounds();
 		proxy.initRenderers();
