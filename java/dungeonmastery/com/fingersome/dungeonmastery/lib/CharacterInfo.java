@@ -21,8 +21,8 @@ public static final String STAT_CATAGORY_TRAITS = "CHARACTER TRAITS";
 	public static String STAT_TRAIT_RACE;
 	public static String[] STAT_TRAIT_CREATURETYPES = {"Ancient", "Animal","Aberrant", "Celestial", "Construct", "Dragon", 
 														"Elemental", "Fey", "Fiend", "Giant", "Humanoid", 
-														"Magical Beast", "Monstrous", "Ooze", "Outsider", "Plant", 
-														"Undead", "Vermin"};
+														"Magical Beast", "Monstrous Creature", "Ooze", "Outsider", 
+														"Plant", "Undead", "Vermin"};
 	public static String STAT_TRAIT_CREATURETYPE;
 	
 	public static final String[] STAT_TRAIT_CLASSES = {"Fighter", "Rogue", "Ranger", "Monk", "Warlord", "Bard",
@@ -78,10 +78,15 @@ public static final String STAT_CATAGORY_DEFENSES = "DEFENSES";
 	public static int STAT_DEFENSE_RESIST_NECROTIC;
 	public static int STAT_DEFENSE_RESIST_ARCANE;
 	public static int STAT_DEFENSE_RESIST_NATURE;
+	public static int STAT_DEFENSE_RESIST_PSYCHIC;
+	public static int STAT_DEFENSE_RESIST_PHYSICAL;
 	
 public static final String STAT_CATAGORY_SKILLS = "SKILLS";
 	
 	public static final int STAT_SKILL_DEFAULT = 0;
+	public static final int STAT_SKILL_TRAINING_BONUS = 5;
+	public static boolean STAT_SKILL_TRAINED;
+	public static boolean STAT_SKILL_TRAINED_DEFAULT = false;
 	
 	public static int STAT_SKILL_ACROBATICS;
 	public static int STAT_SKILL_AGILITY;
