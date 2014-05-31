@@ -9,17 +9,18 @@ import net.minecraft.item.Item;
 
 public class Blocks
 {
-	public static BlockBarrel BlockLimboStone;
-	
+	public static BlockBarrel BlockBarrel;
+	public static BlockLimboStone BlockLimbostone;
 	
 	public static void Init()
 	{
-	//Initialize blocks
-		BlockLimboStone = new BlockBarrel(Material.rock);
+		BlockBarrel = new BlockBarrel(Material.wood);
+		GameRegistry.registerBlock(BlockBarrel, BlockInfo.BLOCK_BARREL_UNLOCALIZED);
 		
-	//Register blocks
-		GameRegistry.registerBlock(BlockLimboStone, BlockInfo.BLOCK_LIMBOSTONE_UNLOCALIZED);
-	
+		BlockLimbostone = new BlockLimboStone(Material.rock);
+		GameRegistry.registerBlock(BlockLimbostone, BlockInfo.BLOCK_LIMBOSTONE_UNLOCALIZED);
+		
+		
 	}
 	
 }

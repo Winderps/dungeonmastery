@@ -29,9 +29,12 @@ public static final String STAT_CATAGORY_TRAITS = "CHARACTER TRAITS";
 														"Wizard", "Sorcerer", "Druid", "Warlock", "Cleric", "Paladin"};
 	public static String STAT_TRAIT_CLASS;
 	
-	public static final int STAT_TRAIT_ALIGNMENT_DEFAULT = 0;
-	public static final int STAT_TRAIT_ALIGNMENT_MIN = -100;
-	public static final int STAT_TRAIT_ALIGNMENT_MAX = 100;
+	public static final int STAT_TRAIT_ALIGNMENT_MORAL_DEFAULT = 0;
+	public static final int STAT_TRAIT_ALIGNMENT_MORAL_MIN = -100;
+	public static final int STAT_TRAIT_ALIGNMENT_MORAL_MAX = 100;
+	public static final int STAT_TRAIT_ALIGNMENT_LEGAL_DEFAULT = 0;
+	public static final int STAT_TRAIT_ALIGNMENT_LEGAL_MIN = -100;
+	public static final int STAT_TRAIT_ALIGNMENT_LEGAL_MAX = 100;
 	
 	
 public static final String STAT_CATAGORY_ABILITY = "ABILITY SCORES";

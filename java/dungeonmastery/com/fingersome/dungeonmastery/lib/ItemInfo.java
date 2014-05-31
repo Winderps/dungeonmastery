@@ -5,7 +5,7 @@ import net.minecraftforge.common.config.Property;
 public class ItemInfo
 {
 
-public static final String TEXTURE_LOCATION = "src/main/resources/assets/dungeonmastery/textures/items";
+public static final String TEXTURE_LOCATION = "assets/dungeonmastery/textures/items";
 
 public static final String ITEM_CATAGORY_ITEM 			= "ITEMS";
 	
