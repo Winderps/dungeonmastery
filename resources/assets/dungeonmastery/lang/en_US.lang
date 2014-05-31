@@ -1,28 +1,12 @@
 itemGroup.dungeonmasterycoretab=Dungeon Mastery: Core
 
 item.itemWandDM.name=Dungeon Master's Wand
-item.itemWandDebugging.name=Wand of Debugging
-item.itemWandLimbo.name=Limbo Wand
-
-item.itemShieldBuckler.name=Iron Buckler
-item.itemShieldHeater.name=Iron Heater Shield
-item.itemShieldRound.name=Iron Round Shield
-item.itemShieldSpider.name=Iron Spider Shield
-item.itemShieldTower.name=Iron Tower Shield
-
-item.itemWeaponDagger.name=Iron Dagger
-item.itemWeaponRapier.name=Iron Rapier
-item.itemWeaponScimitar.name=Iron Scimitar
-item.itemWeaponShortsword.name=Iron Shortsword
-item.itemWeaponBastardsword.name=Iron Bastardsword
-item.itemWeaponLongsword.name=Iron Longsword
-item.itemWeaponGreatsword.name=Iron Greatsword
 
 item.itemAstralDiamondLarge.name=Large Astral Diamond
-item.itemCoinPlatinumLarge.name=Platinum Denar
-item.itemCoinGoldLarge.name=Gold Crown
-item.itemCoinSilverLarge.name=Silver Shilling
-item.itemCoinCopperLarge.name=Copper Penny
+item.itemCoinPlatinumLarge.name=Platinum Coin
+item.itemCoinGoldLarge.name=Gold Coin
+item.itemCoinSilverLarge.name=Silver Coin
+item.itemCoinCopperLarge.name=Copper Coin
 item.itemAstralDiamondSmall.name=Small Astral Diamond
 item.itemCoinPlatinumSmall.name=Platinum Piece
 item.itemCoinGoldSmall.name=Gold Piece
@@ -39,5 +23,4 @@ tile.blockBreakablePot.name=Urn
 tile.blockCorpseSkeleton.name=Corpse
 tile.blockCorpseGrave.name=Grave
 tile.blockCampfire.name=Campfire
-tile.blockBackpack.name=Backpack
 

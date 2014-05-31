@@ -1,6 +1,6 @@
 package com.fingersome.dungeonmastery.lib;
 
-public class Reference 
+public class ModInfo 
 {
 	public static final String MOD_ID = "mod_DungeonMastery";
 	public static final String NAME = "Dungeon Mastery";
