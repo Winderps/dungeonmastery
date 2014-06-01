@@ -1,6 +1,6 @@
 package com.fingersome.dungeonmastery.block;
 
-import com.fingersome.dungeonmastery.TileEntity.TileEntityBlockBarrel;
+import com.fingersome.dungeonmastery.tileentity.TileEntityBlockBarrel;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;

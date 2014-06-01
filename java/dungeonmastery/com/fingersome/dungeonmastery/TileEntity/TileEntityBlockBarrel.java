@@ -1,4 +1,4 @@
-package com.fingersome.dungeonmastery.TileEntity;
+package com.fingersome.dungeonmastery.tileentity;
 
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
