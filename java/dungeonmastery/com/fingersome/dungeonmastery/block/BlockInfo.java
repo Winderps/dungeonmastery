@@ -8,12 +8,20 @@ public static final String TEXTURE_LOCATION = "assets/dungeonmastery/textures/bl
 	public static final String BLOCK_CATAGORY_BLOCK 		= "GENERAL BLOCKS";
 	
 	public static final String BLOCK_CATAGORY_DECORATIVE 	= "DECORATIVE";
-	public static final String BLOCK_LIMBOSTONE_UNLOCALIZED			= "blockLimboStone";
+	public static final String BLOCK_LIMBOSTONE_UNLOCALIZED		= "blockLimboStone";
+	public static final String BLOCK_LIMBOSAND_UNLOCALIZED		= "blockLimboSand";
 	public static final String BLOCK_CATAGORY_STORAGE 		= "STORAGE";
 	public static final String BLOCK_BARREL_UNLOCALIZED			= "blockBarrel";
 	public static final String ICON_BARREL_TOP					= "blockBarrel_Top";
 	public static final String ICON_BARREL_SIDE					= "blockBarrel_Side";
 	public static final String TILE_BARREL_KEY					= "tileEntityBarrel";
+	public static final String BLOCK_POT_UNLOCALIZED			= "blockPot";
+	public static final String ICON_POT_TOP						= "blockPot_Top";
+	public static final String ICON_POT_BOTTOM					= "blockPot_Bottom";
+	public static final String ICON_POT_SIDE					= "blockPot_Side";
+	public static final String TILE_POT_KEY						= "tileEntityPot";
+	public static final String BLOCK_CRATE_UNLOCALIZED			= "blockCrate";
+	public static final String TILE_CRATE_KEY					= "tileEntityBarrel";
 	public static final String BLOCK_CATAGORY_MISC		 	= "MISC";
 
 	
