@@ -12,12 +12,24 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class ItemList
 {
-	public static Item ItemWandDM; 
+	public static Item ItemWandBuild; 
+	public static Item ItemWandZones;
+	public static Item ItemWandMonster; 
+	public static Item ItemWandNPC;  
 	
 	public static void Init()
 	{
-		ItemWandDM = new ItemWandDM();
-		GameRegistry.registerItem(ItemWandDM, ItemInfo.ITEM_WANDDM_UNLOCALIZED, ModInfo.MOD_ID);
+		ItemWandBuild = new ItemWandBuild();
+		GameRegistry.registerItem(ItemWandBuild, ItemInfo.ITEM_WANDBUILD_UNLOCALIZED, ModInfo.MOD_ID);
+		
+		ItemWandZones = new ItemWandZones();
+		GameRegistry.registerItem(ItemWandZones, ItemInfo.ITEM_WANDZONES_UNLOCALIZED, ModInfo.MOD_ID);
+		
+		ItemWandMonster = new ItemWandMonster();
+		GameRegistry.registerItem(ItemWandMonster, ItemInfo.ITEM_WANDMONSTER_UNLOCALIZED, ModInfo.MOD_ID);
+		
+		ItemWandNPC = new ItemWandNPC();
+		GameRegistry.registerItem(ItemWandNPC, ItemInfo.ITEM_WANDNPC_UNLOCALIZED, ModInfo.MOD_ID);
 	}
 	
 }

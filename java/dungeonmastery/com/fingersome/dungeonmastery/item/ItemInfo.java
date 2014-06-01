@@ -10,8 +10,11 @@ public static final String TEXTURE_LOCATION = "assets/dungeonmastery/textures/it
 public static final String ITEM_CATAGORY_ITEM 			= "ITEMS";
 	
 	public static final String ITEM_CATAGORY_TOOLS 			= "DM TOOLS";	
-		public static final String ITEM_WANDDM_UNLOCALIZED			= "itemWandDM";
-		public static final String ITEM_WANDDM_ICON					= "itemWandYellow";
+		public static final String ITEM_WANDBUILD_UNLOCALIZED			= "itemWandBuild";
+		public static final String ITEM_WANDZONES_UNLOCALIZED			= "itemWandZones";
+		public static final String ITEM_WANDMONSTER_UNLOCALIZED			= "itemWandMonster";
+		public static final String ITEM_WANDNPC_UNLOCALIZED				= "itemWandNPC";
+		
 		
 	public static final String ITEM_CATAGORY_EQUIPMENT 		= "PLAYER EQUIPMENT";
 	public static final String ITEM_CATAGORY_CONSUMABLES	= "CONSUMABLES";

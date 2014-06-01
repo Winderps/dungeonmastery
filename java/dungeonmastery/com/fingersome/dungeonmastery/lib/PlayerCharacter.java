@@ -1,6 +1,6 @@
 package com.fingersome.dungeonmastery.lib;
 
-import com.fingersome.dungeonmastery.item.ItemWandDM;
+import com.fingersome.dungeonmastery.item.ItemWandZones;
 
 import net.minecraft.entity.player.EntityPlayer;
 
