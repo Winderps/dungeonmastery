@@ -57,13 +57,13 @@ public class ItemWandBuild extends Item
 	public void addInformation(ItemStack itemstack, EntityPlayer player, List info, boolean useExtraInformation)
 	{
 		if(itemstack.getItemDamage() == 0)
-			{info.add("? Mode");}
+			{info.add("Town Mode");}
 		else if (itemstack.getItemDamage() == 1)
-			{info.add("?? Mode");}
+			{info.add("Dungeon Mode");}
 		else if (itemstack.getItemDamage() == 2)
-			{info.add("??? Mode");}	
+			{info.add("Object Mode");}	
 		else if (itemstack.getItemDamage() == 3)
-			{info.add("???? Mode");}
+			{info.add("Restore Mode");}
 	}
 
 	
