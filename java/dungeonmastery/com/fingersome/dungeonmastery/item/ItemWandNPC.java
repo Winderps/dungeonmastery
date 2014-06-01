@@ -25,7 +25,7 @@ public class ItemWandNPC extends Item
 		setCreativeTab(CreativeTabs.tabTools);
 		setMaxStackSize(1);
 		setUnlocalizedName(ItemInfo.ITEM_WANDNPC_UNLOCALIZED);
-		setTextureName(ItemInfo.ITEM_WANDNPC_UNLOCALIZED);
+		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_WANDNPC_UNLOCALIZED);
 	}
 
 	@SideOnly(Side.CLIENT)

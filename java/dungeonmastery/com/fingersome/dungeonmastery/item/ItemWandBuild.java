@@ -25,7 +25,7 @@ public class ItemWandBuild extends Item
 		setCreativeTab(CreativeTabs.tabTools);
 		setMaxStackSize(1);
 		setUnlocalizedName(ItemInfo.ITEM_WANDBUILD_UNLOCALIZED);
-		setTextureName(ItemInfo.ITEM_WANDBUILD_UNLOCALIZED);
+		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_WANDBUILD_UNLOCALIZED);
 	}
 
 	@SideOnly(Side.CLIENT)

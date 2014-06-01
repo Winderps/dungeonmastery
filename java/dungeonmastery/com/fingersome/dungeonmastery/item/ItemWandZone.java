@@ -25,13 +25,7 @@ public class ItemWandZone extends Item
 		setCreativeTab(CreativeTabs.tabTools);
 		setMaxStackSize(1);
 		setUnlocalizedName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED);
-		setTextureName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED);
-	}
-
-	@SideOnly(Side.CLIENT)
-	public void registerItemIcons(IIconRegister register)
-	{
-		itemIcon = register.registerIcon(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_WANDZONE_UNLOCALIZED);
+		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_WANDZONE_UNLOCALIZED);
 	}
 
 	@Override
