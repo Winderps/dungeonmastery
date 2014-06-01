@@ -1,5 +1,7 @@
 package com.fingersome.dungeonmastery.item;
 
+import com.fingersome.dungeonmastery.lib.ModInfo;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -17,12 +19,7 @@ public class ItemWandDM extends Item
 		setCreativeTab(CreativeTabs.tabTools);
 		setMaxStackSize(1);
 		setUnlocalizedName(ItemInfo.ITEM_WANDDM_UNLOCALIZED);
-	}
-	
-	@SideOnly(Side.CLIENT)
-	public void RegisterIcons(IIconRegister registericons)
-	{
-		itemIcon = registericons.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.ITEM_WANDDM_ICON);
+		setTextureName(getUnlocalizedName());
 	}
 	
 }

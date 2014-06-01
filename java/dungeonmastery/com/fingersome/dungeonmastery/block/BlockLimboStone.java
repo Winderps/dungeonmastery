@@ -1,5 +1,7 @@
 package com.fingersome.dungeonmastery.block;
 
+import com.fingersome.dungeonmastery.lib.ModInfo;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -19,17 +21,7 @@ public class BlockLimboStone extends Block
 		setStepSound(soundTypeStone);
 		setHardness(2.0F);
 		setBlockName(BlockInfo.BLOCK_LIMBOSTONE_UNLOCALIZED);
-		setBlockTextureName(BlockInfo.BLOCK_LIMBOSTONE_UNLOCALIZED);
-	}
-	
-	@SideOnly(Side.CLIENT)
-	private IIcon icon;
-
-	@SideOnly(Side.CLIENT)
-	public void registerIcons(IIconRegister register)
-	{
-		icon = register.registerIcon(BlockInfo.TEXTURE_LOCATION + ":" + BlockInfo.BLOCK_LIMBOSTONE_UNLOCALIZED);
-		
+		setBlockTextureName(ModInfo.MOD_ID + ":" + BlockInfo.BLOCK_LIMBOSTONE_UNLOCALIZED);
 	}
 	
 }
