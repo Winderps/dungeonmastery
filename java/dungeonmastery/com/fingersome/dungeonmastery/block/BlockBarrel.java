@@ -1,20 +1,20 @@
 package com.fingersome.dungeonmastery.block;
 
-import net.minecraft.block.Block;
+import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
+import com.fingersome.dungeonmastery.TileEntity.TileEntityBlockBarrel;
 import com.fingersome.dungeonmastery.lib.BlockInfo;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class BlockBarrel extends Block
+public class BlockBarrel extends BlockContainer
 {
 
 	protected BlockBarrel(Material material)
@@ -49,10 +49,11 @@ public class BlockBarrel extends Block
 		{return sideIcon;}
 		
 	}
-	
-	public TileEntity createNewTileentity(World world, EntityPlayer player)
+
+	@Override
+	public TileEntity createNewTileEntity(World var1, int var2)
 	{
-		return null;
+		return new TileEntityBlockBarrel();
 	}
 	
 }

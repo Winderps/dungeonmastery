@@ -45,7 +45,8 @@ public class DungeonMastery
 	@EventHandler
 	public void Init(FMLInitializationEvent event) 
 	{
-	
+
+		blocks.RegisterTileEntities();
 	}
 	
 	@EventHandler

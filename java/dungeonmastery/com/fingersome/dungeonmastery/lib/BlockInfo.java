@@ -13,6 +13,7 @@ public static final String TEXTURE_LOCATION = "assets/dungeonmastery/textures/bl
 	public static final String BLOCK_BARREL_UNLOCALIZED			= "blockBarrel";
 	public static final String ICON_BARREL_TOP					= "blockBarrelTop";
 	public static final String ICON_BARREL_SIDE					= "blockBarrelSide";
+	public static final String TILE_BARREL_KEY					= "tileEntityBarrel";
 	public static final String BLOCK_CATAGORY_MISC		 	= "MISC";
 
 	

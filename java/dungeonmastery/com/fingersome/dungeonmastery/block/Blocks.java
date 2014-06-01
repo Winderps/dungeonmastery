@@ -1,5 +1,6 @@
 package com.fingersome.dungeonmastery.block;
 
+import com.fingersome.dungeonmastery.TileEntity.TileEntityBlockBarrel;
 import com.fingersome.dungeonmastery.lib.BlockInfo;
 
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -19,8 +20,11 @@ public class Blocks
 		
 		BlockLimbostone = new BlockLimboStone(Material.rock);
 		GameRegistry.registerBlock(BlockLimbostone, BlockInfo.BLOCK_LIMBOSTONE_UNLOCALIZED);
-		
-		
+	}
+	
+	public static void RegisterTileEntities()
+	{
+		GameRegistry.registerTileEntity(TileEntityBlockBarrel.class, BlockInfo.TILE_BARREL_KEY);
 	}
 	
 }
