@@ -4,7 +4,10 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IIcon;
+import net.minecraft.world.World;
 
 import com.fingersome.dungeonmastery.lib.BlockInfo;
 
@@ -45,6 +48,11 @@ public class BlockBarrel extends Block
 		else
 		{return sideIcon;}
 		
+	}
+	
+	public TileEntity createNewTileentity(World world, EntityPlayer player)
+	{
+		return null;
 	}
 	
 }
