@@ -4,16 +4,33 @@ import com.fingersome.dungeonmastery.item.ItemWandDM;
 
 import net.minecraft.entity.player.EntityPlayer;
 
-public class PlayerStats extends PlayerInfo
+public class PlayerCharacter extends PlayerInfo
 {
 
-	public void SetPlayerGameRole(EntityPlayer player)
+	public void SetDMGameRole(EntityPlayer player)
 	{
 		if (PLAYER_IS_DM == true)
 		{System.out.println("You're already the DM!");}
+		/**
+		 * else if (player.isathing)
+		 * {do the thing}
+		 * 
+		 **/
 		else
 		{player.setInvisible(true);/**&& player.setGameType() && player.setCurrentItemOrArmor(0, null);**/}
-		
+	}
+	
+	public void SetCharacterGameRole(EntityPlayer player)
+	{
+		if(PLAYER_IS_CHARACTER == true)
+		{System.out.println("You are already a Character!");}
+		/**
+		 * else if (player.isathing)
+		 * {do the thing}
+		 * 
+		 * else
+		 * {}
+		 **/
 	}
 	
 	public void CalculateMoralAlignment()
