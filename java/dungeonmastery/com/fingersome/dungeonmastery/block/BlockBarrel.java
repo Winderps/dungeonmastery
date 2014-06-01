@@ -31,10 +31,10 @@ public class BlockBarrel extends BlockContainer
 		
 	
 	@SideOnly(Side.CLIENT)
-	public void registerBlockIcons(IIconRegister icon)
+	public void registerBlockIcons(IIconRegister register)
 	{
-		topIcon = icon.registerIcon(ModInfo.MOD_ID + ":" + BlockInfo.ICON_BARREL_TOP);
-		sideIcon = icon.registerIcon(ModInfo.MOD_ID + ":" + BlockInfo.ICON_BARREL_SIDE);
+		topIcon = register.registerIcon(ModInfo.MOD_ID + ":" + BlockInfo.ICON_BARREL_TOP);
+		sideIcon = register.registerIcon(ModInfo.MOD_ID + ":" + BlockInfo.ICON_BARREL_SIDE);
 	}
 	
 	@SideOnly(Side.CLIENT)
