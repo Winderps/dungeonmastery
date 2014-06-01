@@ -1,4 +1,4 @@
-package com.fingersome.dungeonmastery.lib;
+package com.fingersome.dungeonmastery.block;
 
 public class BlockInfo
 {

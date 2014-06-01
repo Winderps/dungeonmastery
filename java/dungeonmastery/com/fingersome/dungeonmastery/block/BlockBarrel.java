@@ -9,7 +9,6 @@ import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
 import com.fingersome.dungeonmastery.TileEntity.TileEntityBlockBarrel;
-import com.fingersome.dungeonmastery.lib.BlockInfo;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

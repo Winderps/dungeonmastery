@@ -1,7 +1,5 @@
 package com.fingersome.dungeonmastery.item;
 
-import com.fingersome.dungeonmastery.lib.ItemInfo;
-
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;

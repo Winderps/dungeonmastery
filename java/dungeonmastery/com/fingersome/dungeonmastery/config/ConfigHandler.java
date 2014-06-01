@@ -2,7 +2,7 @@ package com.fingersome.dungeonmastery.config;
 
 import java.io.File;
 
-import com.fingersome.dungeonmastery.lib.ItemInfo;
+import com.fingersome.dungeonmastery.item.ItemInfo;
 
 import net.minecraftforge.common.config.Configuration;
 

@@ -1,8 +1,8 @@
 package com.fingersome.dungeonmastery;
 
-import com.fingersome.dungeonmastery.block.Blocks;
+import com.fingersome.dungeonmastery.block.BlockList;
 import com.fingersome.dungeonmastery.config.ConfigHandler;
-import com.fingersome.dungeonmastery.item.Items;
+import com.fingersome.dungeonmastery.item.ItemList;
 import com.fingersome.dungeonmastery.lib.ModInfo;
 import com.fingersome.dungeonmastery.proxy.CommonProxy;
 
@@ -27,8 +27,8 @@ public class DungeonMastery
 				serverSide = "com.fingersome.dungeonmastery.proxy.CommonProxy")
 	
 	public static CommonProxy proxy;
-	public static Items items;
-	public static Blocks blocks;
+	public static ItemList items;
+	public static BlockList blocks;
 
 	
 	@EventHandler
