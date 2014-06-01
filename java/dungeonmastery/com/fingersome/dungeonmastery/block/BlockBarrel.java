@@ -29,8 +29,9 @@ public class BlockBarrel extends BlockContainer
 		setBlockName(BlockInfo.BLOCK_BARREL_UNLOCALIZED);
 	}
 		
+	
 	@SideOnly(Side.CLIENT)
-	public void registerIcons(IIconRegister icon)
+	public void registerBlockIcons(IIconRegister icon)
 	{
 		topIcon = icon.registerIcon(ModInfo.MOD_ID + ":" + BlockInfo.ICON_BARREL_TOP);
 		sideIcon = icon.registerIcon(ModInfo.MOD_ID + ":" + BlockInfo.ICON_BARREL_SIDE);
@@ -41,9 +42,10 @@ public class BlockBarrel extends BlockContainer
 	public IIcon getIcon(int side, int meta)
 	{
 		if(side == 0)
-		{return topIcon;}
+			{return topIcon;}
 		else if(side == 1)
-		{return topIcon;}
+			{return topIcon;}
+		
 		else
 		{return sideIcon;}
 	}
