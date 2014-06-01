@@ -16,7 +16,7 @@ public class PlayerInfo extends CharacterInfo
 	public static String STAT_TRAIT_RACE;
 	public static String STAT_TRAIT_CREATURETYPE;
 	public static String STAT_TRAIT_CLASS;
-	
+
 	
 
 	public static final int STAT_ABILITY_POINTS_TOTAL = 73;

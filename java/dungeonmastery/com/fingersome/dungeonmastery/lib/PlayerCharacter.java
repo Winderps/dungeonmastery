@@ -6,8 +6,17 @@ import net.minecraft.entity.player.EntityPlayer;
 
 public class PlayerCharacter extends PlayerInfo
 {
-
-	public void SetDMGameRole(EntityPlayer player)
+	public PlayerCharacter()
+	{
+		
+	}
+	
+	public void onJoinNewWorld()
+	{
+		
+	}
+	
+	public void setDMGameRole(EntityPlayer player)
 	{
 		if (PLAYER_IS_DM == true)
 		{System.out.println("You're already the DM!");}
@@ -20,7 +29,7 @@ public class PlayerCharacter extends PlayerInfo
 		{player.setInvisible(true);/**&& player.setGameType() && player.setCurrentItemOrArmor(0, null);**/}
 	}
 	
-	public void SetCharacterGameRole(EntityPlayer player)
+	public void setCharacterGameRole(EntityPlayer player)
 	{
 		if(PLAYER_IS_CHARACTER == true)
 		{System.out.println("You are already a Character!");}
@@ -33,7 +42,7 @@ public class PlayerCharacter extends PlayerInfo
 		 **/
 	}
 	
-	public void CalculateMoralAlignment()
+	public void calculateMoralAlignment()
 	{	
 		if (STAT_TRAIT_ALIGNMENT_MORAL_NUMERIC > 0)
 		{STAT_TRAIT_ALIGNMENT_MORAL = "Good";}
@@ -45,7 +54,7 @@ public class PlayerCharacter extends PlayerInfo
 		{STAT_TRAIT_ALIGNMENT_MORAL = "Neutral";}
 	}
 	
-	public void CalculateLegalAlignment()
+	public void calculateLegalAlignment()
 	{	
 		if (STAT_TRAIT_ALIGNMENT_LEGAL_NUMERIC > 0)
 		{STAT_TRAIT_ALIGNMENT_LEGAL = "Lawful";}
