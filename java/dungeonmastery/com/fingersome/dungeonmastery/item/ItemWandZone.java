@@ -16,22 +16,22 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
-public class ItemWandZones extends Item
+public class ItemWandZone extends Item
 {
 	private IIcon itemIcon;
 	
-	public ItemWandZones()
+	public ItemWandZone()
 	{
 		setCreativeTab(CreativeTabs.tabTools);
 		setMaxStackSize(1);
-		setUnlocalizedName(ItemInfo.ITEM_WANDZONES_UNLOCALIZED);
-		setTextureName(ItemInfo.ITEM_WANDZONES_UNLOCALIZED);
+		setUnlocalizedName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED);
+		setTextureName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED);
 	}
 
 	@SideOnly(Side.CLIENT)
 	public void registerItemIcons(IIconRegister register)
 	{
-		itemIcon = register.registerIcon(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_WANDZONES_UNLOCALIZED);
+		itemIcon = register.registerIcon(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_WANDZONE_UNLOCALIZED);
 	}
 
 	@Override

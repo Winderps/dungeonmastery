@@ -11,7 +11,7 @@ public static final String ITEM_CATAGORY_ITEM 			= "ITEMS";
 	
 	public static final String ITEM_CATAGORY_TOOLS 			= "DM TOOLS";	
 		public static final String ITEM_WANDBUILD_UNLOCALIZED			= "itemWandBuild";
-		public static final String ITEM_WANDZONES_UNLOCALIZED			= "itemWandZones";
+		public static final String ITEM_WANDZONE_UNLOCALIZED			= "itemWandZone";
 		public static final String ITEM_WANDMONSTER_UNLOCALIZED			= "itemWandMonster";
 		public static final String ITEM_WANDNPC_UNLOCALIZED				= "itemWandNPC";
 		

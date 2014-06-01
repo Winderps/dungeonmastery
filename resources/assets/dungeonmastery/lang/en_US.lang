@@ -1,6 +1,9 @@
 itemGroup.dungeonmasterycoretab=Dungeon Mastery: Core
 
-item.itemWandDM.name=Dungeon Master's Wand
+item.itemWandBuild.name=Building Wand
+item.itemWandZone.name=Zoning Wand
+item.itemWandMonster.name=Monster Wand
+item.itemWandNPC.name=NPC Wand
 
 item.itemAstralDiamondLarge.name=Large Astral Diamond
 item.itemCoinPlatinumLarge.name=Platinum Coin
