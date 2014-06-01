@@ -14,15 +14,18 @@ public static final String STAT_CATAGORY_TRAITS = "CHARACTER TRAITS";
 															119000, 143000, 175000, 210000, 255000, 310000, 375000, 
 															450000, 550000,	675000, 825000, 1000000};
 	
-	public static final String[] STAT_TRAIT_RACES = {"Human", "Elf", "Dwarf", "Gnome", "Halfling", "Pixie", "Half-Elf",
-														"Half-Orc", "Dragonborn", "Tiefling", "Warforged"};
+	public static final String[] STAT_TRAIT_RACES = {"Human", "Elf", "Dwarf", "Gnome", "Halfling", "Half-Elf",
+														"Half-Orc", "Dragonborn", "Tiefling", "Warforged", "Shifter",
+														"Goliath", "Deva"};
+	
 	public static String[] STAT_TRAIT_CREATURETYPES = {"Ancient", "Animal","Aberrant", "Celestial", "Construct", "Dragon", 
 														"Elemental", "Fey", "Fiend", "Giant", "Humanoid", 
 														"Magical Beast", "Monstrous Creature", "Ooze", "Outsider", 
 														"Plant", "Undead", "Vermin"};
 	
-	public static final String[] STAT_TRAIT_CLASSES = {"Fighter", "Rogue", "Ranger", "Monk", "Warlord", "Bard",
-														"Wizard", "Sorcerer", "Druid", "Warlock", "Cleric", "Paladin"};
+	public static final String[] STAT_TRAIT_CLASSES = {"Fighter", "Rogue", "Ranger", "Monk", "Barbarian", "Warlord", 
+														"Warden", "Bard", "Wizard", "Sorcerer", "Druid", "Shaman", 
+														"Warlock", "Invoker", "Cleric", "Paladin"};
 	
 	public static final int[] STAT_TRAIT_CLASSES_BASE_HEALTH = {10, 12, 15, 17};
 	
