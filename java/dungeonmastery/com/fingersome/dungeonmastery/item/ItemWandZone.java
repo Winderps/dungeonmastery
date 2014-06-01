@@ -41,7 +41,16 @@ public class ItemWandZone extends Item
       			{itemstack.setItemDamage(itemstack.getItemDamage() +1);}
 	       
 	       else if (player.isSneaking() && itemstack.getItemDamage() == 3)
- 			{itemstack.setItemDamage(itemstack.getItemDamage() -3);}
+	       		{itemstack.setItemDamage(itemstack.getItemDamage() + 1);}	
+	       
+	       else if (player.isSneaking() && itemstack.getItemDamage() == 4)
+ 				{itemstack.setItemDamage(itemstack.getItemDamage() + 1);}
+	       
+	       else if (player.isSneaking() && itemstack.getItemDamage() == 5)
+ 				{itemstack.setItemDamage(itemstack.getItemDamage() + 1);}
+	       
+	       else if (player.isSneaking() && itemstack.getItemDamage() == 6)
+ 				{itemstack.setItemDamage(itemstack.getItemDamage() - 6);}
 	       
 	        return itemstack;
 	    }
@@ -58,6 +67,12 @@ public class ItemWandZone extends Item
 			{info.add("Encounter Mode");}	
 		else if (itemstack.getItemDamage() == 3)
 			{info.add("Quest Mode");}
+		else if (itemstack.getItemDamage() == 4)
+			{info.add("Effect Mode");}
+		else if (itemstack.getItemDamage() == 5)
+			{info.add("Senses Mode");}
+		else if (itemstack.getItemDamage() == 6)
+			{info.add("Warp Mode");}
 	}
 
 	
