@@ -25,7 +25,7 @@ public class ItemWandZone extends Item
 		setCreativeTab(CreativeTabs.tabTools);
 		setMaxStackSize(1);
 		setUnlocalizedName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED);
-		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_WANDZONE_UNLOCALIZED);
+		setHasSubtypes(true);
 	}
 
 	@Override
@@ -75,6 +75,24 @@ public class ItemWandZone extends Item
 			{info.add("Warp Mode");}
 	}
 
+	@SideOnly(Side.CLIENT)
+	public void setIconByDamage(ItemStack itemstack)
+	{
+		if(itemstack.getItemDamage() == 0)
+			{setTextureName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED + ":_" + itemstack.getItemDamage());}
+		else if (itemstack.getItemDamage() == 1)
+			{setTextureName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED + ":_" + itemstack.getItemDamage());}
+		else if (itemstack.getItemDamage() == 2)
+			{setTextureName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED + ":_" + itemstack.getItemDamage());}
+		else if (itemstack.getItemDamage() == 3)
+			{setTextureName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED + ":_" + itemstack.getItemDamage());}
+		else if (itemstack.getItemDamage() == 4)
+			{setTextureName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED + ":_" + itemstack.getItemDamage());}
+		else if (itemstack.getItemDamage() == 5)
+			{setTextureName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED + ":_" + itemstack.getItemDamage());}
+		else if (itemstack.getItemDamage() == 6)
+			{setTextureName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED + ":_" + itemstack.getItemDamage());}
+	}
 	
 	
 }
