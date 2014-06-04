@@ -79,19 +79,19 @@ public class ItemWandZone extends Item
 	public void setIconByDamage(ItemStack itemstack)
 	{
 		if(itemstack.getItemDamage() == 0)
-			{setTextureName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED + ":_" + itemstack.getItemDamage());}
+			{setTextureName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED);}
 		else if (itemstack.getItemDamage() == 1)
-			{setTextureName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED + ":_" + itemstack.getItemDamage());}
+			{setTextureName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED + "_1");}
 		else if (itemstack.getItemDamage() == 2)
-			{setTextureName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED + ":_" + itemstack.getItemDamage());}
+			{setTextureName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED + "_2");}
 		else if (itemstack.getItemDamage() == 3)
-			{setTextureName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED + ":_" + itemstack.getItemDamage());}
+			{setTextureName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED + "_3");}
 		else if (itemstack.getItemDamage() == 4)
-			{setTextureName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED + ":_" + itemstack.getItemDamage());}
+			{setTextureName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED + "_4");}
 		else if (itemstack.getItemDamage() == 5)
-			{setTextureName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED + ":_" + itemstack.getItemDamage());}
+			{setTextureName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED + "_5");}
 		else if (itemstack.getItemDamage() == 6)
-			{setTextureName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED + ":_" + itemstack.getItemDamage());}
+			{setTextureName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED + "_6");}
 	}
 	
 	
