@@ -10,5 +10,11 @@ public class EntityParticleDummyFX extends EntityFX
 	{
 		super(world, x, y, z, motionX, motionY, motionZ);
 	}
+	
+	@Override
+	public int getFXLayer() 
+	{
+		return 1;
+	}
 
 }
