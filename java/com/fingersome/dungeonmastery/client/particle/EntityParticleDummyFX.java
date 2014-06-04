@@ -11,6 +11,8 @@ public class EntityParticleDummyFX extends EntityFX
 		super(world, x, y, z, motionX, motionY, motionZ);
 	}
 	
+	//register icon for particle code... when I figure out what the method is ._.
+	
 	@Override
 	public int getFXLayer() 
 	{
