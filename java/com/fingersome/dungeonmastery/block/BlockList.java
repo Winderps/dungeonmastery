@@ -11,6 +11,7 @@ public class BlockList
 {
 	public static BlockLimbostone BlockLimbostone;
 	public static BlockLimbosand BlockLimbosand;
+	public static BlockWorldstone BlockWorldstone;
 	public static BlockBarrel BlockBarrel;
 	public static BlockPot BlockPot;
 	public static BlockCrate BlockCrate;
@@ -19,9 +20,12 @@ public class BlockList
 	{
 		BlockLimbostone = new BlockLimbostone(Material.rock);
 		GameRegistry.registerBlock(BlockLimbostone, BlockInfo.BLOCK_LIMBOSTONE_UNLOCALIZED);
-		
+
 		BlockLimbosand = new BlockLimbosand(Material.sand);
 		GameRegistry.registerBlock(BlockLimbosand, BlockInfo.BLOCK_LIMBOSAND_UNLOCALIZED);
+		
+		BlockWorldstone = new BlockWorldstone(Material.rock);
+		GameRegistry.registerBlock(BlockWorldstone, BlockInfo.BLOCK_WORLDSTONE_UNLOCALIZED);
 		
 		BlockBarrel = new BlockBarrel(Material.wood);
 		GameRegistry.registerBlock(BlockBarrel, BlockInfo.BLOCK_BARREL_UNLOCALIZED);

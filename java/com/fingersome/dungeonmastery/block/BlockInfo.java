@@ -10,6 +10,7 @@ public static final String TEXTURE_LOCATION = "assets/dungeonmastery/textures/bl
 	public static final String BLOCK_CATAGORY_DECORATIVE 	= "DECORATIVE";
 	public static final String BLOCK_LIMBOSTONE_UNLOCALIZED		= "blockLimboStone";
 	public static final String BLOCK_LIMBOSAND_UNLOCALIZED		= "blockLimboSand";
+	public static final String BLOCK_WORLDSTONE_UNLOCALIZED		= "blockWorldstone";
 	public static final String BLOCK_CATAGORY_STORAGE 		= "STORAGE";
 	public static final String BLOCK_BARREL_UNLOCALIZED			= "blockBarrel";
 	public static final String ICON_BARREL_TOP					= "blockBarrel_Top";

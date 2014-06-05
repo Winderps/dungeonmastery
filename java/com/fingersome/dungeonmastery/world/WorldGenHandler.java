@@ -14,13 +14,16 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 public class WorldGenHandler implements IWorldGenerator
 {
-
+	private WorldGenerator modOverworldGen;
+	private WorldGenerator modLimboGen;
+	
 	private WorldGenerator copperGen;
 	private WorldGenerator tinGen;
 	private WorldGenerator ironGen;
 	private WorldGenerator silverGen;
 	private WorldGenerator goldGen;
 	private WorldGenerator platinumGen;
+	
 	
 	public WorldGenHandler()
 	{

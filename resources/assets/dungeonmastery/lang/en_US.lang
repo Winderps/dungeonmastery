@@ -19,7 +19,7 @@ item.itemBlockBackpack.name=Backpack
 
 tile.blockLimboSand.name=Limbo Sand
 tile.blockLimboStone.name=Limbo Stone
-tile.blockWorldStone.name=Worldstone
+tile.blockWorldstone.name=Worldstone
 tile.blockBarrel.name=Barrel
 tile.blockCrate.name=Crate
 tile.blockPot.name=Urn
