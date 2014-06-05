@@ -23,6 +23,8 @@ tile.blockWorldstone.name=Worldstone
 tile.blockBarrel.name=Barrel
 tile.blockCrate.name=Crate
 tile.blockPot.name=Urn
+tile.blockPot.name=Bookcase
+
 tile.blockCorpseSkeleton.name=Corpse
 tile.blockCorpseGrave.name=Grave
 tile.blockCampfire.name=Campfire

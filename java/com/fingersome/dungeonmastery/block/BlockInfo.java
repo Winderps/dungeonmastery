@@ -22,7 +22,11 @@ public static final String TEXTURE_LOCATION = "assets/dungeonmastery/textures/bl
 	public static final String ICON_POT_SIDE					= "blockPot_Side";
 	public static final String TILE_POT_KEY						= "tileEntityPot";
 	public static final String BLOCK_CRATE_UNLOCALIZED			= "blockCrate";
-	public static final String TILE_CRATE_KEY					= "tileEntityBarrel";
+	public static final String TILE_CRATE_KEY					= "tileEntityCrate";
+	public static final String BLOCK_BOOKCASE_UNLOCALIZED		= "blockBookcase";
+	public static final String ICON_BOOKCASE_TOP				= "blockBookcase_Top";
+	public static final String ICON_BOOKCASE_SIDE				= "blockBookcase_Side";
+	public static final String TILE_BOOKCASE_KEY				= "tileEntityBookcase";
 	public static final String BLOCK_CATAGORY_MISC		 	= "MISC";
 	
 	

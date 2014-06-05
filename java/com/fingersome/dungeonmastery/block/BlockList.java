@@ -15,6 +15,7 @@ public class BlockList
 	public static BlockBarrel BlockBarrel;
 	public static BlockPot BlockPot;
 	public static BlockCrate BlockCrate;
+	public static BlockBookcase BlockBookcase;
 	
 	public static void Init()
 	{
@@ -35,6 +36,9 @@ public class BlockList
 
 		BlockCrate = new BlockCrate(Material.wood);
 		GameRegistry.registerBlock(BlockCrate, BlockInfo.BLOCK_CRATE_UNLOCALIZED);
+		
+		BlockBookcase = new BlockBookcase(Material.wood);
+		GameRegistry.registerBlock(BlockBookcase, BlockInfo.BLOCK_BOOKCASE_UNLOCALIZED);
 	}
 	
 	public static void RegisterTileEntities()
