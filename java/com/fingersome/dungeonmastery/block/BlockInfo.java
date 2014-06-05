@@ -23,7 +23,7 @@ public static final String TEXTURE_LOCATION = "assets/dungeonmastery/textures/bl
 	public static final String BLOCK_CRATE_UNLOCALIZED			= "blockCrate";
 	public static final String TILE_CRATE_KEY					= "tileEntityBarrel";
 	public static final String BLOCK_CATAGORY_MISC		 	= "MISC";
-
+	
 	
 	public static final String BLOCK_CATAGORY_SKILLBLOCK 	= "SKILL BLOCKS";
 	
@@ -45,5 +45,10 @@ public static final String TEXTURE_LOCATION = "assets/dungeonmastery/textures/bl
 	public static final String BLOCK_CATAGORY_STREETWISE 	= "STREETWISE";
 	public static final String BLOCK_CATAGORY_RELIGION 		= "RELIGION";
 	public static final String BLOCK_CATAGORY_THIEVERY 		= "THIEVERY";
+	
+	
+	public static final String PARTICLE_CATAGORY		 	= "PARTICLES";
+	public static final String PARTICLE_TEXTURE_DUMMY			= "particleDummy";
+	
 		
 }
