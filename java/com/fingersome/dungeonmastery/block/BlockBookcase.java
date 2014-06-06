@@ -11,7 +11,6 @@ import net.minecraft.world.World;
 import com.fingersome.dungeonmastery.lib.ModInfo;
 import com.fingersome.dungeonmastery.tileentity.TileEntityBlockBarrel;
 import com.fingersome.dungeonmastery.tileentity.TileEntityBlockBookcase;
-import com.fingersome.dungeonmastery.tileentity.TileEntityBlockPot;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -28,7 +27,7 @@ public class BlockBookcase extends BlockContainer
 		setCreativeTab(CreativeTabs.tabBlock);
 		setStepSound(soundTypeStone);
 		setHardness(2.0F);
-		setBlockName(BlockInfo.BLOCK_POT_UNLOCALIZED);
+		setBlockName(BlockInfo.BLOCK_BOOKCASE_UNLOCALIZED);
 	}
 		
 	
