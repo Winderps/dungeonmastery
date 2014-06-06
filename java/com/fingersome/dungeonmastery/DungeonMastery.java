@@ -1,6 +1,7 @@
 package com.fingersome.dungeonmastery;
 
 import com.fingersome.dungeonmastery.block.BlockList;
+import com.fingersome.dungeonmastery.client.gui.GuiHandler;
 import com.fingersome.dungeonmastery.config.ConfigHandler;
 import com.fingersome.dungeonmastery.item.ItemList;
 import com.fingersome.dungeonmastery.lib.ModInfo;
@@ -47,6 +48,8 @@ public class DungeonMastery
 	public void Init(FMLInitializationEvent event) 
 	{
 		blocks.RegisterTileEntities();
+		
+		new GuiHandler();
 	}
 	
 	@EventHandler

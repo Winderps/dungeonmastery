@@ -41,7 +41,7 @@ public class TileEntityBlockBarrel extends TileEntity implements IInventory
 	@Override
 	public String getInventoryName() 
 	{
-		return "Clay Urn";
+		return "Barrel";
 	}
 
 	@Override

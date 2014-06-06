@@ -41,7 +41,7 @@ public class TileEntityBlockCrate extends TileEntity implements IInventory
 	@Override
 	public String getInventoryName() 
 	{
-		return "Clay Urn";
+		return "Crate";
 	}
 
 	@Override

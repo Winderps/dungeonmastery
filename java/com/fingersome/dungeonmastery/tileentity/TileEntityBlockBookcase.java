@@ -1,47 +1,82 @@
 package com.fingersome.dungeonmastery.tileentity;
 
+import com.fingersome.dungeonmastery.item.ItemInfo;
+
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemBook;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityBlockBookcase extends TileEntity implements IInventory
 {
 
+	private ItemStack[] items;
+	
+	public TileEntityBlockBookcase()
+	{
+		items = new ItemStack[3];
+	}
+	
+	
 	@Override
 	public int getSizeInventory() 
 	{
-		return 0;
+		return items.length;
 	}
 
 	@Override
-	public ItemStack getStackInSlot(int var1) 
+	public ItemStack getStackInSlot(int i) 
 	{
-		return null;
+		return items[i];
 	}
 
 	@Override
-	public ItemStack decrStackSize(int var1, int var2) 
+	public ItemStack decrStackSize(int i, int count) 
 	{
-		return null;
-	}
-
-	@Override
-	public ItemStack getStackInSlotOnClosing(int var1) 
-	{
-		return null;
-	}
-
-	@Override
-	public void setInventorySlotContents(int var1, ItemStack itemstack) 
-	{
+		ItemStack itemstack = getStackInSlot(i);
 		
+		if (itemstack != null)
+		{
+			if (itemstack.stackSize <= count)
+			{
+			setInventorySlotContents(i, null);
+			}
+				else
+				{
+					itemstack = itemstack.splitStack(count);
+					//onInventoryChanged();
+				}
+		}
+		return itemstack;
+	}
+
+	@Override
+	public ItemStack getStackInSlotOnClosing(int i) 
+	{
+		ItemStack item = getStackInSlot(i);
+		setInventorySlotContents(i, null);
+		return item;
+	}
+
+	@Override
+	public void setInventorySlotContents(int i, ItemStack itemstack) 
+	{
+		items[i] = itemstack;
+		
+		if (itemstack != null && itemstack.stackSize > getInventoryStackLimit())
+		{
+			itemstack.stackSize = getInventoryStackLimit();
+		}
+
+		//onInventoryChanged();
 	}
 
 	@Override
 	public String getInventoryName() 
 	{
-		return "Clay Urn";
+		return "Bookcase";
 	}
 
 	@Override
@@ -53,7 +88,7 @@ public class TileEntityBlockBookcase extends TileEntity implements IInventory
 	@Override
 	public int getInventoryStackLimit() 
 	{
-		return 64;
+		return 1;
 	}
 
 	@Override
@@ -63,27 +98,21 @@ public class TileEntityBlockBookcase extends TileEntity implements IInventory
 	}
 
 	@Override
-	public boolean isUseableByPlayer(EntityPlayer var1) 
+	public boolean isUseableByPlayer(EntityPlayer player) 
 	{
-		return false;
+		return player.getDistanceSq(xCoord + 0.5F, yCoord +0.5F, zCoord + 0.5F) <= 64;
 	}
 
 	@Override
-	public void openInventory() 
-	{
-		
-	}
+	public void openInventory() {}
 
 	@Override
-	public void closeInventory() 
-	{
-		
-	}
+	public void closeInventory() {}
 
 	@Override
-	public boolean isItemValidForSlot(int var1, ItemStack var2) 
+	public boolean isItemValidForSlot(int i, ItemStack itemstack) 
 	{
-		return false;
+		return itemstack.getItem().getUnlocalizedName() == ItemInfo.ITEM_WANDZONE_UNLOCALIZED;
 	}
 	
 }
