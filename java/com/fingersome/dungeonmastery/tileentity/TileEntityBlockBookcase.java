@@ -16,7 +16,7 @@ public class TileEntityBlockBookcase extends TileEntity implements IInventory
 	
 	public TileEntityBlockBookcase()
 	{
-		items = new ItemStack[3];
+		items = new ItemStack[6];
 	}
 	
 	
@@ -112,7 +112,7 @@ public class TileEntityBlockBookcase extends TileEntity implements IInventory
 	@Override
 	public boolean isItemValidForSlot(int i, ItemStack itemstack) 
 	{
-		return itemstack.getItem().getUnlocalizedName() == ItemInfo.ITEM_WANDZONE_UNLOCALIZED;
+		return itemstack.getItem().getUnlocalizedName() == ItemInfo.ITEM_ORECOPPER_UNLOCALIZED;
 	}
 	
 }

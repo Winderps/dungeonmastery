@@ -32,7 +32,8 @@ public class BlockBookcase extends BlockContainer
 		setBlockName(BlockInfo.BLOCK_BOOKCASE_UNLOCALIZED);
 	}
 	
-	public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY)
+	@Override
+	public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY, float hitZ)
 	{
 		if (!world.isRemote)
 		{

@@ -1,5 +1,9 @@
 package com.fingersome.dungeonmastery;
 
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
+
 import com.fingersome.dungeonmastery.block.BlockList;
 import com.fingersome.dungeonmastery.client.gui.GuiHandler;
 import com.fingersome.dungeonmastery.config.ConfigHandler;
@@ -15,6 +19,8 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 @Mod(modid = ModInfo.MOD_ID, name = ModInfo.NAME, version = ModInfo.VERSION)
 
@@ -25,7 +31,7 @@ public class DungeonMastery
 	public static DungeonMastery instance;
 
 	@SidedProxy(clientSide = "com.fingersome.dungeonmastery.proxy.ClientProxy", 
-				serverSide = "com.fingersome.dungeonmastery.proxy.CommonProxy")
+				serverSide = "com.fingersome.dungeonmastery.proxy.CommonProxy")     
 	
 	public static CommonProxy proxy;
 	public static ItemList items;
