@@ -27,7 +27,7 @@ public class BlockBookcase extends BlockContainer
 		super(material);
 		
 		setCreativeTab(CreativeTabs.tabBlock);
-		setStepSound(soundTypeStone);
+		setStepSound(soundTypeWood);
 		setHardness(2.0F);
 		setBlockName(BlockInfo.BLOCK_BOOKCASE_UNLOCALIZED);
 	}

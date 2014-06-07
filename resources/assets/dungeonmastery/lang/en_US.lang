@@ -1,7 +1,7 @@
 itemGroup.dungeonmasterycoretab=Dungeon Mastery: Core
 
-item.itemWandBuild.name=Building Wand
-item.itemWandZone.name=Zoning Wand
+item.itemWandBuild.name=Build Wand
+item.itemWandZone.name=Zone Wand
 item.itemWandMonster.name=Monster Wand
 item.itemWandNPC.name=NPC Wand
 
@@ -15,17 +15,27 @@ item.itemCoinPlatinumSmall.name=Platinum Piece
 item.itemCoinGoldSmall.name=Gold Piece
 item.itemCoinSilverSmall.name=Silver Piece
 item.itemCoinCopperSmall.name=Copper Piece
-item.itemBlockBackpack.name=Backpack
+
+item.itemOreCopper.name=Malachite
+item.itemOreTin.name=Cassiterite
+item.itemOreLead.name=Lead Ore
+item.itemOreNickel.name=Sphalerite
+item.itemOreIron.name=Hematite
+item.itemOreSilver.name=Native Silver
+item.itemOreGold.name=Native Gold
+item.itemOrePlatinum.name=Native Platinum
+
+item.itemWispSoul.name=Soul Wisp
+item.itemWispLimbo.name=Limbo Soul
+item.itemWandDead.name=Rod of the Dead
 
 tile.blockLimboSand.name=Limbo Sand
 tile.blockLimboStone.name=Limbo Stone
+tile.blockDeathstone.name=Deathstone
 tile.blockWorldstone.name=Worldstone
+
 tile.blockBarrel.name=Barrel
 tile.blockCrate.name=Crate
 tile.blockPot.name=Urn
 tile.blockBookcase.name=Bookcase
-
-tile.blockCorpseSkeleton.name=Corpse
-tile.blockCorpseGrave.name=Grave
-tile.blockCampfire.name=Campfire
 

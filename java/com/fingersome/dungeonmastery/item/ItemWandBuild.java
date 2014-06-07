@@ -18,20 +18,16 @@ import net.minecraft.world.World;
 
 public class ItemWandBuild extends Item
 {
-	private IIcon itemIcon;
+	private IIcon groupIcon;
+	private IIcon roomIcon;
+	private IIcon objectIcon;
+	private IIcon restoreIcon;
 	
 	public ItemWandBuild()
 	{
 		setCreativeTab(CreativeTabs.tabTools);
 		setMaxStackSize(1);
 		setUnlocalizedName(ItemInfo.ITEM_WANDBUILD_UNLOCALIZED);
-		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_WANDBUILD_UNLOCALIZED);
-	}
-
-	@SideOnly(Side.CLIENT)
-	public void registerItemIcons(IIconRegister register)
-	{
-		itemIcon = register.registerIcon(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_WANDBUILD_UNLOCALIZED);
 	}
 
 	@Override
@@ -57,15 +53,42 @@ public class ItemWandBuild extends Item
 	public void addInformation(ItemStack itemstack, EntityPlayer player, List info, boolean useExtraInformation)
 	{
 		if(itemstack.getItemDamage() == 0)
-			{info.add("Town Mode");}
+			{info.add("Group Mode");}
 		else if (itemstack.getItemDamage() == 1)
-			{info.add("Dungeon Mode");}
+			{info.add("Room Mode");}
 		else if (itemstack.getItemDamage() == 2)
 			{info.add("Object Mode");}	
 		else if (itemstack.getItemDamage() == 3)
 			{info.add("Restore Mode");}
 	}
 
+	@SideOnly(Side.CLIENT)
+	@Override
+	public void registerIcons(IIconRegister register)
+	{
+		groupIcon 		= register.registerIcon(ModInfo.MOD_ID + ":" 
+							+ ItemInfo.ITEM_WANDBUILD_UNLOCALIZED); 
+		roomIcon 	= register.registerIcon(ModInfo.MOD_ID + ":" 
+							+ ItemInfo.ITEM_WANDBUILD_UNLOCALIZED + "_1"); 
+		objectIcon 	= register.registerIcon(ModInfo.MOD_ID + ":" 
+							+ ItemInfo.ITEM_WANDBUILD_UNLOCALIZED + "_2"); 
+		restoreIcon 		= register.registerIcon(ModInfo.MOD_ID + ":" 
+							+ ItemInfo.ITEM_WANDBUILD_UNLOCALIZED + "_3"); 
+	}
+	
+	@SideOnly(Side.CLIENT)
+	@Override
+	public IIcon getIconFromDamage(int dmg)
+	{
+		if 		(dmg == 0)
+			{return groupIcon;}
+		else if (dmg == 1)
+			{return roomIcon;}
+		else if (dmg == 2)
+			{return objectIcon;}
+		
+		else return restoreIcon;
+	}
 	
 	
 }

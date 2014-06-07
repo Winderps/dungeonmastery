@@ -18,20 +18,18 @@ import net.minecraft.world.World;
 
 public class ItemWandNPC extends Item
 {
-	private IIcon itemIcon;
+	private IIcon createIcon;
+	private IIcon deleteIcon;
+	private IIcon editIcon;
+	private IIcon selectIcon;
 	
 	public ItemWandNPC()
 	{
 		setCreativeTab(CreativeTabs.tabTools);
 		setMaxStackSize(1);
 		setUnlocalizedName(ItemInfo.ITEM_WANDNPC_UNLOCALIZED);
-		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_WANDNPC_UNLOCALIZED);
-	}
+		setHasSubtypes(true);
 
-	@SideOnly(Side.CLIENT)
-	public void registerItemIcons(IIconRegister register)
-	{
-		itemIcon = register.registerIcon(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_WANDNPC_UNLOCALIZED);
 	}
 
 	@Override
@@ -47,7 +45,7 @@ public class ItemWandNPC extends Item
       			{itemstack.setItemDamage(itemstack.getItemDamage() +1);}
 	       
 	       else if (player.isSneaking() && itemstack.getItemDamage() == 3)
- 				{itemstack.setItemDamage(itemstack.getItemDamage() -3);}
+ 			{itemstack.setItemDamage(itemstack.getItemDamage() -3);}
 	       
 	        return itemstack;
 	    }
@@ -66,6 +64,33 @@ public class ItemWandNPC extends Item
 			{info.add("Select Mode");}
 	}
 
+	@SideOnly(Side.CLIENT)
+	@Override
+	public void registerIcons(IIconRegister register)
+	{
+		createIcon 		= register.registerIcon(ModInfo.MOD_ID + ":" 
+							+ ItemInfo.ITEM_WANDNPC_UNLOCALIZED); 
+		deleteIcon 	= register.registerIcon(ModInfo.MOD_ID + ":" 
+							+ ItemInfo.ITEM_WANDNPC_UNLOCALIZED + "_1"); 
+		editIcon 	= register.registerIcon(ModInfo.MOD_ID + ":" 
+							+ ItemInfo.ITEM_WANDNPC_UNLOCALIZED + "_2"); 
+		selectIcon 		= register.registerIcon(ModInfo.MOD_ID + ":" 
+							+ ItemInfo.ITEM_WANDNPC_UNLOCALIZED + "_3"); 
+	}
+	
+	@SideOnly(Side.CLIENT)
+	@Override
+	public IIcon getIconFromDamage(int dmg)
+	{
+		if 		(dmg == 0)
+			{return createIcon;}
+		else if (dmg == 1)
+			{return deleteIcon;}
+		else if (dmg == 2)
+			{return editIcon;}
+		
+		else return selectIcon;
+	}
 	
 	
 }

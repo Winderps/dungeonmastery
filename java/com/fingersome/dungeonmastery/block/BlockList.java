@@ -12,6 +12,8 @@ public class BlockList
 	public static BlockLimbostone BlockLimbostone;
 	public static BlockLimbosand BlockLimbosand;
 	public static BlockWorldstone BlockWorldstone;
+	public static BlockDeathstone BlockDeathstone;
+	
 	public static BlockBarrel BlockBarrel;
 	public static BlockPot BlockPot;
 	public static BlockCrate BlockCrate;
@@ -24,6 +26,9 @@ public class BlockList
 
 		BlockLimbosand = new BlockLimbosand(Material.sand);
 		GameRegistry.registerBlock(BlockLimbosand, BlockInfo.BLOCK_LIMBOSAND_UNLOCALIZED);
+		
+		BlockDeathstone = new BlockDeathstone(Material.rock);
+		GameRegistry.registerBlock(BlockDeathstone, BlockInfo.BLOCK_DEATHSTONE_UNLOCALIZED);
 		
 		BlockWorldstone = new BlockWorldstone(Material.rock);
 		GameRegistry.registerBlock(BlockWorldstone, BlockInfo.BLOCK_WORLDSTONE_UNLOCALIZED);

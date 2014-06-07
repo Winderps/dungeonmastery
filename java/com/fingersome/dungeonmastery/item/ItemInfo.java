@@ -5,21 +5,33 @@ import net.minecraftforge.common.config.Property;
 public class ItemInfo
 {
 
-public static final String TEXTURE_LOCATION = "assets/dungeonmastery/textures/items";
-
 public static final String ITEM_CATAGORY_ITEM 			= "ITEMS";
 	
 	public static final String ITEM_CATAGORY_TOOLS 			= "DM TOOLS";	
-		public static final String ITEM_WANDBUILD_UNLOCALIZED			= "itemWandBuild";
-		public static final String ITEM_WANDZONE_UNLOCALIZED			= "itemWandZone";
-		public static final String ITEM_WANDMONSTER_UNLOCALIZED			= "itemWandMonster";
-		public static final String ITEM_WANDNPC_UNLOCALIZED				= "itemWandNPC";
-		
+		public static final String ITEM_WANDBUILD_UNLOCALIZED		= "itemWandBuild";
+		public static final String ITEM_WANDZONE_UNLOCALIZED		= "itemWandZone";
+		public static final String ITEM_WANDMONSTER_UNLOCALIZED		= "itemWandMonster";
+		public static final String ITEM_WANDNPC_UNLOCALIZED			= "itemWandNPC";
 		
 	public static final String ITEM_CATAGORY_EQUIPMENT 		= "PLAYER EQUIPMENT";
 	public static final String ITEM_CATAGORY_CONSUMABLES	= "CONSUMABLES";
 	public static final String ITEM_CATAGORY_ABILITIES 		= "SPELLS & ABILITIES";
 	public static final String ITEM_CATAGORY_ARTIFACTS 		= "ARTIFACTS";
+	public static final String ITEM_CATAGORY_CRAFTING 		= "CRAFTING";
+	public static final String ITEM_WISPLIMBO_UNLOCALIZED			= "itemWispLimbo";
+	public static final String ITEM_ORECOPPER_UNLOCALIZED			= "itemOreCopper";
+	public static final String ITEM_ORETIN_UNLOCALIZED				= "itemOreTin";
+	public static final String ITEM_ORELEAD_UNLOCALIZED				= "itemOreLead";
+	public static final String ITEM_ORENICKEL_UNLOCALIZED			= "itemOreNickel";
+	public static final String ITEM_OREIRON_UNLOCALIZED				= "itemOreIron";
+	public static final String ITEM_ORESILVER_UNLOCALIZED			= "itemOreSilver";
+	public static final String ITEM_OREGOLD_UNLOCALIZED				= "itemOreGold";
+	public static final String ITEM_OREPLATINUM_UNLOCALIZED			= "itemOrePlatinum";
+	
+	public static final String ITEM_CATAGORY_MISC 			= "MISC";
+	public static final String ITEM_WISPSOUL_UNLOCALIZED	= "itemWispSoul";
+	public static final String ITEM_WANDDEAD_UNLOCALIZED	= "itemWandDead";
+	
 	
 	
 public static final String ITEM_CATAGORY_SKILLITEM 		= "SKILL ITEMS";
