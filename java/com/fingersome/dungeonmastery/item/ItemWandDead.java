@@ -23,16 +23,19 @@ public class ItemWandDead extends Item
 		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_WANDDEAD_UNLOCALIZED);
 	}
 
-	public void directionToNearestDeathstone(EntityPlayer player, World world)
+	public String directionToNearestWorldstone(EntityPlayer player, World world)
 	{
+	
 		//logic outputs north, south, east or west
+		//return direction;
+		
+		return null;
 	}
 	
 	@Override
 	public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer player)
 	    {
-	       	//"The rod pulls you to the " + directionToNearestDeathstone();
-			//
+	       	//player.addChatMessage("The rod pulls you towards the " + directionToNearestDeathstone(player, world));
 	        return itemstack;
 	    }
 	

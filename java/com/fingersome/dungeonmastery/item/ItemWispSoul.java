@@ -23,10 +23,19 @@ public class ItemWispSoul extends Item
 		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_WISPSOUL_UNLOCALIZED);
 	}
 
+	public String directionToNearestWorldstone(EntityPlayer player, World world)
+	{
+	
+		//logic outputs north, south, east or west
+		//return direction;
+		
+		return null;
+	}
+	
 	@Override
 	public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer player)
 	    {
-	       //return itemstack && "Your soul wisp pulls you to the" + directionToNearestWorldstone();
+	       	//player.addChatMessage("The wisp pulls you towards the " + directionToNearestWorldstone(player, world));
 	        return itemstack;
 	    }
 	
