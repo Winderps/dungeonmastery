@@ -18,7 +18,7 @@ public class ItemOreGold extends Item
 	public ItemOreGold()
 	{
 		setCreativeTab(CreativeTabs.tabMaterials);
-		setMaxStackSize(16);
+		setMaxStackSize(ItemInfo.ITEM_SIZE_MEDIUM);
 		setUnlocalizedName(ItemInfo.ITEM_OREGOLD_UNLOCALIZED);
 		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_OREGOLD_UNLOCALIZED);
 	}

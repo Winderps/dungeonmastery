@@ -12,22 +12,15 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class ItemOreLead extends Item 
+public class ItemIngotNickel extends Item 
 {
 
-	public ItemOreLead()
+	public ItemIngotNickel()
 	{
 		setCreativeTab(CreativeTabs.tabMaterials);
 		setMaxStackSize(ItemInfo.ITEM_SIZE_MEDIUM);
-		setUnlocalizedName(ItemInfo.ITEM_ORELEAD_UNLOCALIZED);
-		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_ORELEAD_UNLOCALIZED);
-	}
-
-	@SideOnly(Side.CLIENT)
-	@Override
-	public void addInformation(ItemStack itemstack, EntityPlayer player, List info, boolean useExtraInformation)
-	{
-		info.add("A hunk of lead ore");
+		setUnlocalizedName(ItemInfo.ITEM_INGOTNICKEL_UNLOCALIZED);
+		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_INGOTNICKEL_UNLOCALIZED);
 	}
 	
 }

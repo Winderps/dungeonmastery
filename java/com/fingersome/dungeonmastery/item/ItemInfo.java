@@ -5,6 +5,14 @@ import net.minecraftforge.common.config.Property;
 public class ItemInfo
 {
 
+	
+public static final int ITEM_SIZE_VSMALL 	= 32;
+public static final int ITEM_SIZE_SMALL 	= 16;
+public static final int ITEM_SIZE_MEDIUM 	= 8;
+public static final int ITEM_SIZE_LARGE 	= 1;
+
+
+
 public static final String ITEM_CATAGORY_ITEM 			= "ITEMS";
 	
 	public static final String ITEM_CATAGORY_TOOLS 			= "DM TOOLS";	

@@ -18,16 +18,9 @@ public class ItemOreCopper extends Item
 	public ItemOreCopper()
 	{
 		setCreativeTab(CreativeTabs.tabMaterials);
-		setMaxStackSize(16);
+		setMaxStackSize(ItemInfo.ITEM_SIZE_MEDIUM);
 		setUnlocalizedName(ItemInfo.ITEM_ORECOPPER_UNLOCALIZED);
 		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_ORECOPPER_UNLOCALIZED);
 	}
 
-	@SideOnly(Side.CLIENT)
-	@Override
-	public void addInformation(ItemStack itemstack, EntityPlayer player, List info, boolean useExtraInformation)
-	{
-		info.add("A hunk of copper ore");
-	}
-	
 }

@@ -18,7 +18,7 @@ public class ItemOreNickel extends Item
 	public ItemOreNickel()
 	{
 		setCreativeTab(CreativeTabs.tabMaterials);
-		setMaxStackSize(16);
+		setMaxStackSize(ItemInfo.ITEM_SIZE_MEDIUM);
 		setUnlocalizedName(ItemInfo.ITEM_ORENICKEL_UNLOCALIZED);
 		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_ORENICKEL_UNLOCALIZED);
 	}

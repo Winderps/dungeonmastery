@@ -18,7 +18,7 @@ public class ItemOrePlatinum extends Item
 	public ItemOrePlatinum()
 	{
 		setCreativeTab(CreativeTabs.tabMaterials);
-		setMaxStackSize(16);
+		setMaxStackSize(ItemInfo.ITEM_SIZE_MEDIUM);
 		setUnlocalizedName(ItemInfo.ITEM_OREPLATINUM_UNLOCALIZED);
 		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_OREPLATINUM_UNLOCALIZED);
 	}

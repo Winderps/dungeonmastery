@@ -18,7 +18,7 @@ public class ItemOreSilver extends Item
 	public ItemOreSilver()
 	{
 		setCreativeTab(CreativeTabs.tabMaterials);
-		setMaxStackSize(16);
+		setMaxStackSize(ItemInfo.ITEM_SIZE_MEDIUM);
 		setUnlocalizedName(ItemInfo.ITEM_ORESILVER_UNLOCALIZED);
 		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_ORESILVER_UNLOCALIZED);
 	}

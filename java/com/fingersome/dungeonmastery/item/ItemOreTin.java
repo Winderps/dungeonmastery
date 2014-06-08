@@ -18,7 +18,7 @@ public class ItemOreTin extends Item
 	public ItemOreTin()
 	{
 		setCreativeTab(CreativeTabs.tabMaterials);
-		setMaxStackSize(16);
+		setMaxStackSize(ItemInfo.ITEM_SIZE_MEDIUM);
 		setUnlocalizedName(ItemInfo.ITEM_ORETIN_UNLOCALIZED);
 		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_ORETIN_UNLOCALIZED);
 	}

@@ -32,6 +32,25 @@ public class ItemList
 	public static Item ItemOreGold;
 	public static Item ItemOrePlatinum;  
 	
+	public static Item ItemNuggetCopper;
+	public static Item ItemNuggetTin;
+	public static Item ItemNuggetLead;
+	public static Item ItemNuggetNickel;
+	public static Item ItemNuggetIron;
+	public static Item ItemNuggetSilver;
+	public static Item ItemNuggetGold;
+	public static Item ItemNuggetPlatinum;
+	
+	public static Item ItemIngotCopper;
+	public static Item ItemIngotTin;
+	public static Item ItemIngotLead;
+	public static Item ItemIngotNickel;
+	public static Item ItemIngotIron;
+	public static Item ItemIngotSilver;
+	public static Item ItemIngotGold;
+	public static Item ItemIngotPlatinum;  
+	
+	
 	
 	public static void Init()
 	{
@@ -59,6 +78,24 @@ public class ItemList
 			ItemOreSilver 	= new ItemOreSilver();
 			ItemOreGold 	= new ItemOreGold();
 			ItemOrePlatinum = new ItemOrePlatinum();
+
+			ItemNuggetCopper 	= new ItemNuggetCopper();
+			ItemNuggetTin 		= new ItemNuggetTin();
+			ItemNuggetLead 		= new ItemNuggetLead();
+			ItemNuggetNickel 	= new ItemNuggetNickel();
+			ItemNuggetIron 		= new ItemNuggetIron();
+			ItemNuggetSilver 	= new ItemNuggetSilver();
+			ItemNuggetGold 		= new ItemNuggetGold();
+			ItemNuggetPlatinum 	= new ItemNuggetPlatinum();
+			
+			ItemIngotCopper 	= new ItemIngotCopper();
+			ItemIngotTin 		= new ItemIngotTin();
+			ItemIngotLead 		= new ItemIngotLead();
+			ItemIngotNickel 	= new ItemIngotNickel();
+			ItemIngotIron 		= new ItemIngotIron();
+			ItemIngotSilver 	= new ItemIngotSilver();
+			ItemIngotGold 		= new ItemIngotGold();
+			ItemIngotPlatinum 	= new ItemIngotPlatinum();
 			
 			
 			
@@ -86,6 +123,24 @@ public class ItemList
 			GameRegistry.registerItem(ItemOreSilver, ItemInfo.ITEM_ORESILVER_UNLOCALIZED, ModInfo.MOD_ID);
 			GameRegistry.registerItem(ItemOreGold, ItemInfo.ITEM_OREGOLD_UNLOCALIZED, ModInfo.MOD_ID);
 			GameRegistry.registerItem(ItemOrePlatinum, ItemInfo.ITEM_OREPLATINUM_UNLOCALIZED, ModInfo.MOD_ID);
+			
+			GameRegistry.registerItem(ItemNuggetCopper, ItemInfo.ITEM_NUGGETCOPPER_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemNuggetTin, ItemInfo.ITEM_NUGGETTIN_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemNuggetLead, ItemInfo.ITEM_NUGGETLEAD_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemNuggetNickel, ItemInfo.ITEM_NUGGETNICKEL_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemNuggetIron, ItemInfo.ITEM_NUGGETIRON_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemNuggetSilver, ItemInfo.ITEM_NUGGETSILVER_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemNuggetGold, ItemInfo.ITEM_NUGGETGOLD_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemNuggetPlatinum, ItemInfo.ITEM_NUGGETPLATINUM_UNLOCALIZED, ModInfo.MOD_ID);
+			
+			GameRegistry.registerItem(ItemIngotCopper, ItemInfo.ITEM_INGOTCOPPER_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemIngotTin, ItemInfo.ITEM_INGOTTIN_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemIngotLead, ItemInfo.ITEM_INGOTLEAD_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemIngotNickel, ItemInfo.ITEM_INGOTNICKEL_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemIngotIron, ItemInfo.ITEM_INGOTIRON_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemIngotSilver, ItemInfo.ITEM_INGOTSILVER_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemIngotGold, ItemInfo.ITEM_INGOTGOLD_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemIngotPlatinum, ItemInfo.ITEM_INGOTPLATINUM_UNLOCALIZED, ModInfo.MOD_ID);
 	}
 	
 }
