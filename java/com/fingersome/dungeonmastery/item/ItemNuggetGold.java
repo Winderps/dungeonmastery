@@ -20,11 +20,12 @@ public class ItemNuggetGold extends Item
 	public static final String ITEM_WEIGHT_KEY	= ItemInfo.ITEM_WEIGHT_LIGHT_KEY;
 	public static final int ITEM_STACK_LIMIT	= ITEM_SIZE / ITEM_WEIGHT;
 	
-	
+	@SuppressWarnings("unused")
 	public ItemNuggetGold()
 	{
 		setCreativeTab(CreativeTabs.tabMaterials);
-		setMaxStackSize(ItemInfo.ITEM_SIZE_SMALL);
+			if(ITEM_STACK_LIMIT < 1) {setMaxStackSize(1);}
+			else {setMaxStackSize(ITEM_STACK_LIMIT);}
 		setUnlocalizedName(ItemInfo.ITEM_NUGGETGOLD_UNLOCALIZED);
 		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_NUGGETGOLD_UNLOCALIZED);
 	}

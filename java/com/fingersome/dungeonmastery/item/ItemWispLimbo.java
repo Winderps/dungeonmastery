@@ -18,14 +18,14 @@ public class ItemWispLimbo extends Item
 	public static final int ITEM_WEIGHT				= ItemInfo.ITEM_WEIGHT_HEAVY;
 	public static final	String ITEM_SIZE_KEY		= ItemInfo.ITEM_SIZE_SMALL_KEY;
 	public static final String ITEM_WEIGHT_KEY		= ItemInfo.ITEM_WEIGHT_HEAVY_KEY;
-	public static final int ITEM_STACK_LIMIT_BASE	= ITEM_SIZE / ITEM_WEIGHT;
-	public static int itemStackLimit;
+	public static final int ITEM_STACK_LIMIT		= ITEM_SIZE / ITEM_WEIGHT;
 	
-	
+	@SuppressWarnings("unused")
 	public ItemWispLimbo()
 	{
 		setCreativeTab(CreativeTabs.tabTools);
-		setMaxStackSize(itemStackLimit);
+			if(ITEM_STACK_LIMIT < 1) {setMaxStackSize(1);}
+			else {setMaxStackSize(ITEM_STACK_LIMIT);}
 		setUnlocalizedName(ItemInfo.ITEM_WISPLIMBO_UNLOCALIZED);
 		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_WISPLIMBO_UNLOCALIZED);
 	}

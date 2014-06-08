@@ -18,13 +18,15 @@ public class ItemWandDead extends Item
 	public static final int ITEM_WEIGHT				= ItemInfo.ITEM_WEIGHT_MEDIUM;
 	public static final	String ITEM_SIZE_KEY		= ItemInfo.ITEM_SIZE_MEDIUM_KEY;
 	public static final String ITEM_WEIGHT_KEY		= ItemInfo.ITEM_WEIGHT_MEDIUM_KEY;
-	public static final int ITEM_STACK_LIMIT_BASE	= ITEM_SIZE / ITEM_WEIGHT;
+	public static final int ITEM_STACK_LIMIT		= ITEM_SIZE / ITEM_WEIGHT;
 
 	
+	@SuppressWarnings("unused")
 	public ItemWandDead()
 	{
 		setCreativeTab(CreativeTabs.tabTools);
-		setMaxStackSize(ITEM_STACK_LIMIT_BASE);
+			if(ITEM_STACK_LIMIT < 1) {setMaxStackSize(1);}
+			else {setMaxStackSize(ITEM_STACK_LIMIT);}
 		setUnlocalizedName(ItemInfo.ITEM_WANDDEAD_UNLOCALIZED);
 		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_WANDDEAD_UNLOCALIZED);
 	}

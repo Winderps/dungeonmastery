@@ -18,13 +18,14 @@ public class ItemIngotGold extends Item
 	public static final int ITEM_WEIGHT			= ItemInfo.ITEM_WEIGHT_HEAVY;
 	public static final	String ITEM_SIZE_KEY	= ItemInfo.ITEM_SIZE_SMALL_KEY;
 	public static final String ITEM_WEIGHT_KEY	= ItemInfo.ITEM_WEIGHT_HEAVY_KEY;
-	public static final int ITEM_STACK_LIMIT	= ITEM_SIZE / ITEM_WEIGHT;
+	public static final int ITEM_STACK_LIMIT		= ITEM_SIZE / ITEM_WEIGHT;
 	
-	
+	@SuppressWarnings("unused")
 	public ItemIngotGold()
 	{
 		setCreativeTab(CreativeTabs.tabMaterials);
-		setMaxStackSize(ItemInfo.ITEM_SIZE_MEDIUM);
+			if(ITEM_STACK_LIMIT < 1) {setMaxStackSize(1);}
+			else {setMaxStackSize(ITEM_STACK_LIMIT);}
 		setUnlocalizedName(ItemInfo.ITEM_INGOTGOLD_UNLOCALIZED);
 		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_INGOTGOLD_UNLOCALIZED);
 	}

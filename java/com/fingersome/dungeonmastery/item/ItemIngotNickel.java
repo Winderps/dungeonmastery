@@ -20,11 +20,12 @@ public class ItemIngotNickel extends Item
 	public static final String ITEM_WEIGHT_KEY	= ItemInfo.ITEM_WEIGHT_MEDIUM_KEY;
 	public static final int ITEM_STACK_LIMIT	= ITEM_SIZE / ITEM_WEIGHT;
 	
-	
+	@SuppressWarnings("unused")
 	public ItemIngotNickel()
 	{
 		setCreativeTab(CreativeTabs.tabMaterials);
-		setMaxStackSize(ItemInfo.ITEM_SIZE_MEDIUM);
+			if(ITEM_STACK_LIMIT < 1) {setMaxStackSize(1);}
+			else {setMaxStackSize(ITEM_STACK_LIMIT);}
 		setUnlocalizedName(ItemInfo.ITEM_INGOTNICKEL_UNLOCALIZED);
 		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_INGOTNICKEL_UNLOCALIZED);
 	}
