@@ -112,7 +112,7 @@ public class TileEntityBlockBookcase extends TileEntity implements IInventory
 	@Override
 	public boolean isItemValidForSlot(int i, ItemStack itemstack) 
 	{
-		return itemstack.getItem().getUnlocalizedName() == ItemInfo.ITEM_ORECOPPER_UNLOCALIZED;
+		return true; //itemstack.getItem().getUnlocalizedName() == ItemInfo.ITEM_LOREBOOK_UNLOCALIZED;
 	}
 	
 }

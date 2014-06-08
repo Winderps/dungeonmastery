@@ -8,18 +8,20 @@ import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 
 import com.fingersome.dungeonmastery.container.ContainerBlockBookcase;
+import com.fingersome.dungeonmastery.container.ContainerBlockCrate;
 import com.fingersome.dungeonmastery.tileentity.TileEntityBlockBookcase;
+import com.fingersome.dungeonmastery.tileentity.TileEntityBlockCrate;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 @SideOnly(Side.CLIENT)
-public class GuiBlockBookcase extends GuiContainer
+public class GuiBlockCrate extends GuiContainer
 {
 
-	public GuiBlockBookcase(InventoryPlayer invplayer, TileEntityBlockBookcase bookcase) 
+	public GuiBlockCrate(InventoryPlayer invplayer, TileEntityBlockCrate crate) 
 	{
-		super(new ContainerBlockBookcase(invplayer, bookcase));
+		super(new ContainerBlockCrate(invplayer, crate));
 		
 		xSize = 174;
 		ySize = 79;
@@ -27,7 +29,7 @@ public class GuiBlockBookcase extends GuiContainer
 	}
 	
 	private static final ResourceLocation texture = new ResourceLocation
-			("dungeonmastery", "textures/gui/storage/guiStorageLarge.png");
+			("dungeonmastery", "textures/gui/storage/guiStorageSmall.png");
 
 	@Override
 	protected void drawGuiContainerBackgroundLayer(float f, int x, int y) 

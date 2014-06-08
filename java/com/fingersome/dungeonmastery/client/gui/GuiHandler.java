@@ -2,8 +2,10 @@ package com.fingersome.dungeonmastery.client.gui;
 
 import com.fingersome.dungeonmastery.DungeonMastery;
 import com.fingersome.dungeonmastery.container.ContainerBlockBookcase;
+import com.fingersome.dungeonmastery.container.ContainerBlockCrate;
 import com.fingersome.dungeonmastery.lib.ModInfo;
 import com.fingersome.dungeonmastery.tileentity.TileEntityBlockBookcase;
+import com.fingersome.dungeonmastery.tileentity.TileEntityBlockCrate;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
@@ -24,9 +26,14 @@ public class GuiHandler implements IGuiHandler
 	{
 		switch(ID)
 		{
-		case 0: TileEntity te = world.getTileEntity(x, y, z);
-			if(te != null && te instanceof TileEntityBlockBookcase)
-				{return new ContainerBlockBookcase(player.inventory, (TileEntityBlockBookcase)te);}
+		case 0: TileEntity bookcase = world.getTileEntity(x, y, z);
+			if(bookcase != null && bookcase instanceof TileEntityBlockBookcase)
+				{return new ContainerBlockBookcase(player.inventory, (TileEntityBlockBookcase)bookcase);}
+			break;
+			
+		case 1: TileEntity crate = world.getTileEntity(x, y, z);
+			if(crate != null && crate instanceof TileEntityBlockCrate)
+				{return new ContainerBlockCrate(player.inventory, (TileEntityBlockCrate)crate);}
 			break;
 		}
 		
@@ -38,9 +45,14 @@ public class GuiHandler implements IGuiHandler
 	{
 		switch(ID)
 		{
-		case 0: TileEntity te = world.getTileEntity(x, y, z);
-			if(te != null && te instanceof TileEntityBlockBookcase)
-				{return new GuiBlockBookcase(player.inventory, (TileEntityBlockBookcase)te);}
+		case 0: TileEntity bookcase = world.getTileEntity(x, y, z);
+			if(bookcase != null && bookcase instanceof TileEntityBlockBookcase)
+				{return new GuiBlockBookcase(player.inventory, (TileEntityBlockBookcase)bookcase);}
+			break;
+			
+		case 1: TileEntity crate = world.getTileEntity(x, y, z);
+			if(crate != null && crate instanceof TileEntityBlockCrate)
+				{return new GuiBlockCrate(player.inventory, (TileEntityBlockCrate)crate);}
 			break;
 		}
 		
