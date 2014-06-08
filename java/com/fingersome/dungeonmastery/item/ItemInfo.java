@@ -10,11 +10,19 @@ public static final int ITEM_SIZE_VSMALL 		= 32;
 public static final int ITEM_SIZE_SMALL 		= 16;
 public static final int ITEM_SIZE_MEDIUM 		= 8;
 public static final int ITEM_SIZE_LARGE 		= 1;
+public static final int ITEM_WEIGHT_VLIGHT 		= 1;
+public static final int ITEM_WEIGHT_LIGHT 		= 8;
+public static final int ITEM_WEIGHT_MEDIUM 		= 16;
+public static final int ITEM_WEIGHT_HEAVY 		= 32;
+
 public static final String ITEM_SIZE_VSMALL_KEY 	= "Very small";
 public static final String ITEM_SIZE_SMALL_KEY 		= "Small";
 public static final String ITEM_SIZE_MEDIUM_KEY 	= "Medium";
 public static final String ITEM_SIZE_LARGE_KEY 		= "Large";
-
+public static final String ITEM_WEIGHT_VLIGHT_KEY 	= "Very light";
+public static final String ITEM_WEIGHT_LIGHT_KEY 	= "Light";
+public static final String ITEM_WEIGHT_MEDIUM_KEY 	= "Medium";
+public static final String ITEM_WEIGHT_HEAVY_KEY 	= "Heavy";
 
 
 public static final String ITEM_CATAGORY_ITEM 			= "ITEMS";

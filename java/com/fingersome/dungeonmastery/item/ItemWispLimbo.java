@@ -14,11 +14,18 @@ import net.minecraft.world.World;
 
 public class ItemWispLimbo extends Item 
 {
-
+	public static final int ITEM_SIZE 				= ItemInfo.ITEM_SIZE_SMALL;
+	public static final int ITEM_WEIGHT				= ItemInfo.ITEM_WEIGHT_HEAVY;
+	public static final	String ITEM_SIZE_KEY		= ItemInfo.ITEM_SIZE_SMALL_KEY;
+	public static final String ITEM_WEIGHT_KEY		= ItemInfo.ITEM_WEIGHT_HEAVY_KEY;
+	public static final int ITEM_STACK_LIMIT_BASE	= ITEM_SIZE / ITEM_WEIGHT;
+	public static int itemStackLimit;
+	
+	
 	public ItemWispLimbo()
 	{
 		setCreativeTab(CreativeTabs.tabTools);
-		setMaxStackSize(1);
+		setMaxStackSize(itemStackLimit);
 		setUnlocalizedName(ItemInfo.ITEM_WISPLIMBO_UNLOCALIZED);
 		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_WISPLIMBO_UNLOCALIZED);
 	}
@@ -30,4 +37,12 @@ public class ItemWispLimbo extends Item
 	        return itemstack;
 	    }
 	
+	@SideOnly(Side.CLIENT)
+	@Override
+	public void addInformation(ItemStack itemstack, EntityPlayer player, List info, boolean useExtraInformation)
+	{
+		info.add("A lost soul... it's warm.");
+		
+		info.add(ITEM_SIZE_KEY + ", " + ITEM_WEIGHT_KEY);
+	}
 }

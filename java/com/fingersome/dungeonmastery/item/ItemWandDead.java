@@ -14,11 +14,17 @@ import net.minecraft.world.World;
 
 public class ItemWandDead extends Item 
 {
+	public static final int ITEM_SIZE 				= ItemInfo.ITEM_SIZE_MEDIUM;
+	public static final int ITEM_WEIGHT				= ItemInfo.ITEM_WEIGHT_MEDIUM;
+	public static final	String ITEM_SIZE_KEY		= ItemInfo.ITEM_SIZE_MEDIUM_KEY;
+	public static final String ITEM_WEIGHT_KEY		= ItemInfo.ITEM_WEIGHT_MEDIUM_KEY;
+	public static final int ITEM_STACK_LIMIT_BASE	= ITEM_SIZE / ITEM_WEIGHT;
 
+	
 	public ItemWandDead()
 	{
 		setCreativeTab(CreativeTabs.tabTools);
-		setMaxStackSize(1);
+		setMaxStackSize(ITEM_STACK_LIMIT_BASE);
 		setUnlocalizedName(ItemInfo.ITEM_WANDDEAD_UNLOCALIZED);
 		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_WANDDEAD_UNLOCALIZED);
 	}
@@ -39,11 +45,14 @@ public class ItemWandDead extends Item
 	        return itemstack;
 	    }
 	
+	
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void addInformation(ItemStack itemstack, EntityPlayer player, List info, boolean useExtraInformation)
 	{
 		info.add("The rod whispers quietly...");
+		
+		info.add(ITEM_SIZE_KEY + ", " + ITEM_WEIGHT_KEY);
 	}
 	
 }

@@ -16,30 +16,35 @@ import net.minecraft.world.World;
 
 public class ItemWispSoul extends Item 
 {
+	public static final int ITEM_SIZE 			= ItemInfo.ITEM_SIZE_SMALL;
+	public static final int ITEM_WEIGHT			= ItemInfo.ITEM_WEIGHT_HEAVY;
+	public static final	String ITEM_SIZE_KEY	= ItemInfo.ITEM_SIZE_SMALL_KEY;
+	public static final String ITEM_WEIGHT_KEY	= ItemInfo.ITEM_WEIGHT_HEAVY_KEY;
+	public static final int ITEM_STACK_LIMIT	= ITEM_SIZE / ITEM_WEIGHT;
+	
 	private IIcon wispIcon;
 	private IIcon bladeIcon;
+	
 	
 	public ItemWispSoul()
 	{
 		setCreativeTab(CreativeTabs.tabTools);
-		setMaxStackSize(1);
+		setMaxStackSize(ITEM_STACK_LIMIT);
 		setUnlocalizedName(ItemInfo.ITEM_WISPSOUL_UNLOCALIZED);
 		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_WISPSOUL_UNLOCALIZED);
 	}
 	
-    @SideOnly(Side.CLIENT)
-    public boolean isFull3D()
-    {
-    	return true;
-    }
-
-	public String directionToNearestWorldstone(EntityPlayer player, World world, ItemStack itemstack)
+    public String directionToNearestWorldstone(EntityPlayer player, World world, ItemStack itemstack)
 	{
-		//if(itemstack.getItemDamage() == 0)
-		//	{}
-		//logic outputs north, south, east or west
-		//return direction;
-		//else {return null;}
+		/**	
+		 * if(itemstack.getItemDamage() == 0)
+		 * {
+		 * logic outputs north, south, east or west
+		 * 		return direction;
+		 * }
+		 * else 
+		 * 		{return null;}
+    	*/
 		return null;
 	}
 	
@@ -64,6 +69,8 @@ public class ItemWispSoul extends Item
 			{info.add("A small wisp of your soul floats before your eyes...");}
 		else if (itemstack.getItemDamage() == 1)
 			{info.add("Even the dead can bleed.");}
+		
+		info.add(ITEM_SIZE_KEY + ", " + ITEM_WEIGHT_KEY);
 	}
 	
 	@SideOnly(Side.CLIENT)

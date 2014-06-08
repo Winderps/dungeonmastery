@@ -14,13 +14,28 @@ import net.minecraft.world.World;
 
 public class ItemIngotNickel extends Item 
 {
-
+	public static final int ITEM_SIZE 			= ItemInfo.ITEM_SIZE_SMALL;
+	public static final int ITEM_WEIGHT			= ItemInfo.ITEM_WEIGHT_MEDIUM;
+	public static final	String ITEM_SIZE_KEY	= ItemInfo.ITEM_SIZE_SMALL_KEY;
+	public static final String ITEM_WEIGHT_KEY	= ItemInfo.ITEM_WEIGHT_MEDIUM_KEY;
+	public static final int ITEM_STACK_LIMIT	= ITEM_SIZE / ITEM_WEIGHT;
+	
+	
 	public ItemIngotNickel()
 	{
 		setCreativeTab(CreativeTabs.tabMaterials);
 		setMaxStackSize(ItemInfo.ITEM_SIZE_MEDIUM);
 		setUnlocalizedName(ItemInfo.ITEM_INGOTNICKEL_UNLOCALIZED);
 		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_INGOTNICKEL_UNLOCALIZED);
+	}
+	
+	@SideOnly(Side.CLIENT)
+	@Override
+	public void addInformation(ItemStack itemstack, EntityPlayer player, List info, boolean useExtraInformation)
+	{
+		
+		
+		info.add(ITEM_SIZE_KEY + ", " + ITEM_WEIGHT_KEY);
 	}
 	
 }
