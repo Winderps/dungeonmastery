@@ -21,13 +21,13 @@ public class GuiBlockBookcase extends GuiContainer
 	{
 		super(new ContainerBlockBookcase(invplayer, bookcase));
 		
-		xSize = 176;
-		ySize = 154;
-		
-		
+		xSize = 174;
+		ySize = 79;
+
 	}
 	
-	private static final ResourceLocation texture = new ResourceLocation("dungeonmastery", "texures/gui/container/guiContainerMedium.png");
+	private static final ResourceLocation texture = new ResourceLocation
+			("dungeonmastery", "textures/gui/container/guiContainerMedium.png");
 
 	@Override
 	protected void drawGuiContainerBackgroundLayer(float f, int x, int y) 
@@ -36,6 +36,7 @@ public class GuiBlockBookcase extends GuiContainer
 		
 		Minecraft.getMinecraft().getTextureManager().bindTexture(texture);
 		drawTexturedModalRect(guiLeft, guiTop, 0, 0, xSize, ySize);
+		
 	}
 
 }

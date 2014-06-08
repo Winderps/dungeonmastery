@@ -18,8 +18,8 @@ item.itemCoinCopperSmall.name=Copper Piece
 
 item.itemOreCopper.name=Malachite
 item.itemOreTin.name=Cassiterite
-item.itemOreLead.name=Lead Ore
-item.itemOreNickel.name=Sphalerite
+item.itemOreLead.name=Garnierite
+item.itemOreNickel.name=Limonite
 item.itemOreIron.name=Hematite
 item.itemOreSilver.name=Native Silver
 item.itemOreGold.name=Native Gold
