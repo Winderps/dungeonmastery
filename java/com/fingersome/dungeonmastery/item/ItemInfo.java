@@ -21,7 +21,7 @@ public static final String ITEM_SIZE_MEDIUM_KEY 	= "Medium";
 public static final String ITEM_SIZE_LARGE_KEY 		= "Large";
 public static final String ITEM_WEIGHT_VLIGHT_KEY 	= "Very light";
 public static final String ITEM_WEIGHT_LIGHT_KEY 	= "Light";
-public static final String ITEM_WEIGHT_MEDIUM_KEY 	= "Medium";
+public static final String ITEM_WEIGHT_MEDIUM_KEY 	= "Weighty";
 public static final String ITEM_WEIGHT_HEAVY_KEY 	= "Heavy";
 
 
