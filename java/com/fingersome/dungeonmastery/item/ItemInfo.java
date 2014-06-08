@@ -12,6 +12,7 @@ public static final String ITEM_CATAGORY_ITEM 			= "ITEMS";
 		public static final String ITEM_WANDZONE_UNLOCALIZED		= "itemWandZone";
 		public static final String ITEM_WANDMONSTER_UNLOCALIZED		= "itemWandMonster";
 		public static final String ITEM_WANDNPC_UNLOCALIZED			= "itemWandNPC";
+		public static final String ITEM_TOMEQUEST_UNLOCALIZED		= "itemTomeQuest";
 		
 	public static final String ITEM_CATAGORY_EQUIPMENT 		= "PLAYER EQUIPMENT";
 	public static final String ITEM_CATAGORY_CONSUMABLES	= "CONSUMABLES";

@@ -4,6 +4,7 @@ item.itemWandBuild.name=Build Wand
 item.itemWandZone.name=Zone Wand
 item.itemWandMonster.name=Monster Wand
 item.itemWandNPC.name=NPC Wand
+item.itemTomeQuest.name=Quest Tome
 
 item.itemAstralDiamondLarge.name=Large Astral Diamond
 item.itemCoinPlatinumLarge.name=Platinum Coin
