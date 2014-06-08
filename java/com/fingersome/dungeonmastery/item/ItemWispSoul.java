@@ -26,6 +26,12 @@ public class ItemWispSoul extends Item
 		setUnlocalizedName(ItemInfo.ITEM_WISPSOUL_UNLOCALIZED);
 		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_WISPSOUL_UNLOCALIZED);
 	}
+	
+    @SideOnly(Side.CLIENT)
+    public boolean isFull3D()
+    {
+    	return true;
+    }
 
 	public String directionToNearestWorldstone(EntityPlayer player, World world, ItemStack itemstack)
 	{
