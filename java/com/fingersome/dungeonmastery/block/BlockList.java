@@ -9,6 +9,7 @@ import net.minecraft.item.Item;
 
 public class BlockList
 {
+	//DECLARE ITEMS
 	public static BlockLimbostone BlockLimbostone;
 	public static BlockLimbosand BlockLimbosand;
 	public static BlockWorldstone BlockWorldstone;
@@ -21,34 +22,40 @@ public class BlockList
 	
 	public static void Init()
 	{
-		BlockLimbostone = new BlockLimbostone(Material.rock);
-		GameRegistry.registerBlock(BlockLimbostone, BlockInfo.BLOCK_LIMBOSTONE_UNLOCALIZED);
-
-		BlockLimbosand = new BlockLimbosand(Material.sand);
-		GameRegistry.registerBlock(BlockLimbosand, BlockInfo.BLOCK_LIMBOSAND_UNLOCALIZED);
+		//INITIALISE ITEMS
+		//Death
+			BlockLimbosand 	= new BlockLimbosand(Material.sand);
+			BlockLimbostone = new BlockLimbostone(Material.rock);
+			BlockDeathstone = new BlockDeathstone(Material.rock);
+			BlockWorldstone = new BlockWorldstone(Material.rock);
+			
+		//Storage
+			BlockBarrel 	= new BlockBarrel(Material.wood);
+			BlockPot 		= new BlockPot(Material.rock);
+			BlockCrate 		= new BlockCrate(Material.wood);
+			BlockBookcase = new BlockBookcase(Material.wood);
 		
-		BlockDeathstone = new BlockDeathstone(Material.rock);
-		GameRegistry.registerBlock(BlockDeathstone, BlockInfo.BLOCK_DEATHSTONE_UNLOCALIZED);
+			
+			
+		//REGISTER ITEMS
+		//Death
+			GameRegistry.registerBlock(BlockLimbosand, BlockInfo.BLOCK_LIMBOSAND_UNLOCALIZED);
+			GameRegistry.registerBlock(BlockLimbostone, BlockInfo.BLOCK_LIMBOSTONE_UNLOCALIZED);
+			GameRegistry.registerBlock(BlockDeathstone, BlockInfo.BLOCK_DEATHSTONE_UNLOCALIZED);
+			GameRegistry.registerBlock(BlockWorldstone, BlockInfo.BLOCK_WORLDSTONE_UNLOCALIZED);
 		
-		BlockWorldstone = new BlockWorldstone(Material.rock);
-		GameRegistry.registerBlock(BlockWorldstone, BlockInfo.BLOCK_WORLDSTONE_UNLOCALIZED);
-		
-		BlockBarrel = new BlockBarrel(Material.wood);
-		GameRegistry.registerBlock(BlockBarrel, BlockInfo.BLOCK_BARREL_UNLOCALIZED);
-
-		BlockPot = new BlockPot(Material.rock);
-		GameRegistry.registerBlock(BlockPot, BlockInfo.BLOCK_POT_UNLOCALIZED);
-
-		BlockCrate = new BlockCrate(Material.wood);
-		GameRegistry.registerBlock(BlockCrate, BlockInfo.BLOCK_CRATE_UNLOCALIZED);
-		
-		BlockBookcase = new BlockBookcase(Material.wood);
-		GameRegistry.registerBlock(BlockBookcase, BlockInfo.BLOCK_BOOKCASE_UNLOCALIZED);
+		//Storage
+			GameRegistry.registerBlock(BlockBarrel, BlockInfo.BLOCK_BARREL_UNLOCALIZED);
+			GameRegistry.registerBlock(BlockPot, BlockInfo.BLOCK_POT_UNLOCALIZED);
+			GameRegistry.registerBlock(BlockCrate, BlockInfo.BLOCK_CRATE_UNLOCALIZED);
+			GameRegistry.registerBlock(BlockBookcase, BlockInfo.BLOCK_BOOKCASE_UNLOCALIZED);
 	}
 	
 	public static void RegisterTileEntities()
 	{
-		GameRegistry.registerTileEntity(TileEntityBlockBarrel.class, BlockInfo.TILE_BARREL_KEY);
+		//REGISTER TILEENTITIES
+		//Storage
+			GameRegistry.registerTileEntity(TileEntityBlockBarrel.class, BlockInfo.TILE_BARREL_KEY);
 	}
 	
 }

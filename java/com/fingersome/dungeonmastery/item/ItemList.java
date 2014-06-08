@@ -12,6 +12,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class ItemList
 {
+	//DECLARE ITEMS
 	public static Item ItemWandBuild; 
 	public static Item ItemWandZone;
 	public static Item ItemWandMonster; 
@@ -33,50 +34,55 @@ public class ItemList
 	
 	public static void Init()
 	{
-		ItemWandBuild = new ItemWandBuild();
-		GameRegistry.registerItem(ItemWandBuild, ItemInfo.ITEM_WANDBUILD_UNLOCALIZED, ModInfo.MOD_ID);
+		//INITIALISE ITEMS
+		//DM Tools
+			ItemWandBuild 	= new ItemWandBuild();
+			ItemWandZone 	= new ItemWandZone();
+			ItemWandMonster = new ItemWandMonster();
+			ItemWandNPC 	= new ItemWandNPC();
 		
-		ItemWandZone = new ItemWandZone();
-		GameRegistry.registerItem(ItemWandZone, ItemInfo.ITEM_WANDZONE_UNLOCALIZED, ModInfo.MOD_ID);
+		//Consumables
+			ItemWispLimbo 	= new ItemWispLimbo();
 		
-		ItemWandMonster = new ItemWandMonster();
-		GameRegistry.registerItem(ItemWandMonster, ItemInfo.ITEM_WANDMONSTER_UNLOCALIZED, ModInfo.MOD_ID);
+		//Death
+			ItemWispSoul 	= new ItemWispSoul();
+			ItemWandDead 	= new ItemWandDead();
 		
-		ItemWandNPC = new ItemWandNPC();
-		GameRegistry.registerItem(ItemWandNPC, ItemInfo.ITEM_WANDNPC_UNLOCALIZED, ModInfo.MOD_ID);
-
-		ItemWispSoul = new ItemWispSoul();
-		GameRegistry.registerItem(ItemWispSoul, ItemInfo.ITEM_WISPSOUL_UNLOCALIZED, ModInfo.MOD_ID);
-
-		ItemWispLimbo = new ItemWispLimbo();
-		GameRegistry.registerItem(ItemWispLimbo, ItemInfo.ITEM_WISPLIMBO_UNLOCALIZED, ModInfo.MOD_ID);
+		//Crafting and Materials
+			ItemOreCopper 	= new ItemOreCopper();
+			ItemOreTin 		= new ItemOreTin();
+			ItemOreLead 	= new ItemOreLead();
+			ItemOreNickel 	= new ItemOreNickel();
+			ItemOreIron 	= new ItemOreIron();
+			ItemOreSilver 	= new ItemOreSilver();
+			ItemOreGold 	= new ItemOreGold();
+			ItemOrePlatinum = new ItemOrePlatinum();
+			
+			
+			
+		//REGISTER ITEMS
+		//DM Tools
+			GameRegistry.registerItem(ItemWandBuild, ItemInfo.ITEM_WANDBUILD_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemWandZone, ItemInfo.ITEM_WANDZONE_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemWandMonster, ItemInfo.ITEM_WANDMONSTER_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemWandNPC, ItemInfo.ITEM_WANDNPC_UNLOCALIZED, ModInfo.MOD_ID);
 		
-		ItemWandDead = new ItemWandDead();
-		GameRegistry.registerItem(ItemWandDead, ItemInfo.ITEM_WANDDEAD_UNLOCALIZED, ModInfo.MOD_ID);
-
-		ItemOreCopper = new ItemOreCopper();
-		GameRegistry.registerItem(ItemOreCopper, ItemInfo.ITEM_ORECOPPER_UNLOCALIZED, ModInfo.MOD_ID);
+		//Consumables
+			GameRegistry.registerItem(ItemWispLimbo, ItemInfo.ITEM_WISPLIMBO_UNLOCALIZED, ModInfo.MOD_ID);
 		
-		ItemOreTin = new ItemOreTin();
-		GameRegistry.registerItem(ItemOreTin, ItemInfo.ITEM_ORETIN_UNLOCALIZED, ModInfo.MOD_ID);
+		//Death
+			GameRegistry.registerItem(ItemWispSoul, ItemInfo.ITEM_WISPSOUL_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemWandDead, ItemInfo.ITEM_WANDDEAD_UNLOCALIZED, ModInfo.MOD_ID);
 		
-		ItemOreLead = new ItemOreLead();
-		GameRegistry.registerItem(ItemOreLead, ItemInfo.ITEM_ORELEAD_UNLOCALIZED, ModInfo.MOD_ID);
-		
-		ItemOreNickel = new ItemOreNickel();
-		GameRegistry.registerItem(ItemOreNickel, ItemInfo.ITEM_ORENICKEL_UNLOCALIZED, ModInfo.MOD_ID);
-		
-		ItemOreIron = new ItemOreIron();
-		GameRegistry.registerItem(ItemOreIron, ItemInfo.ITEM_OREIRON_UNLOCALIZED, ModInfo.MOD_ID);
-		
-		ItemOreSilver = new ItemOreSilver();
-		GameRegistry.registerItem(ItemOreSilver, ItemInfo.ITEM_ORESILVER_UNLOCALIZED, ModInfo.MOD_ID);
-		
-		ItemOreGold = new ItemOreGold();
-		GameRegistry.registerItem(ItemOreGold, ItemInfo.ITEM_OREGOLD_UNLOCALIZED, ModInfo.MOD_ID);
-		
-		ItemOrePlatinum = new ItemOrePlatinum();
-		GameRegistry.registerItem(ItemOrePlatinum, ItemInfo.ITEM_OREPLATINUM_UNLOCALIZED, ModInfo.MOD_ID);
+		//Crafting and Materials
+			GameRegistry.registerItem(ItemOreCopper, ItemInfo.ITEM_ORECOPPER_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemOreTin, ItemInfo.ITEM_ORETIN_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemOreLead, ItemInfo.ITEM_ORELEAD_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemOreNickel, ItemInfo.ITEM_ORENICKEL_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemOreIron, ItemInfo.ITEM_OREIRON_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemOreSilver, ItemInfo.ITEM_ORESILVER_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemOreGold, ItemInfo.ITEM_OREGOLD_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemOrePlatinum, ItemInfo.ITEM_OREPLATINUM_UNLOCALIZED, ModInfo.MOD_ID);
 	}
 	
 }
