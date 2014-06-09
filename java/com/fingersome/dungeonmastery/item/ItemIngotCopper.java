@@ -15,9 +15,9 @@ import net.minecraft.world.World;
 public class ItemIngotCopper extends Item 
 {
 	public static final int ITEM_SIZE 			= ItemInfo.ITEM_SIZE_SMALL;
-	public static final int ITEM_WEIGHT			= ItemInfo.ITEM_WEIGHT_MEDIUM;
+	public static final int ITEM_WEIGHT			= ItemInfo.ITEM_WEIGHT_LIGHT;
 	public static final	String ITEM_SIZE_KEY	= ItemInfo.ITEM_SIZE_SMALL_KEY;
-	public static final String ITEM_WEIGHT_KEY	= ItemInfo.ITEM_WEIGHT_MEDIUM_KEY;
+	public static final String ITEM_WEIGHT_KEY	= ItemInfo.ITEM_WEIGHT_LIGHT_KEY;
 	public static final int ITEM_STACK_LIMIT		= ITEM_SIZE / ITEM_WEIGHT;
 	
 	@SuppressWarnings("unused")

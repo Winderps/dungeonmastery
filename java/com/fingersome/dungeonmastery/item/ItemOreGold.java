@@ -14,11 +14,18 @@ import net.minecraft.world.World;
 
 public class ItemOreGold extends Item 
 {
-
+	public static final int ITEM_SIZE 				= ItemInfo.ITEM_SIZE_SMALL;
+	public static final int ITEM_WEIGHT				= ItemInfo.ITEM_WEIGHT_LIGHT;
+	public static final	String ITEM_SIZE_KEY		= ItemInfo.ITEM_SIZE_SMALL_KEY;
+	public static final String ITEM_WEIGHT_KEY		= ItemInfo.ITEM_WEIGHT_LIGHT_KEY;
+	public static final int ITEM_STACK_LIMIT		= ITEM_SIZE / ITEM_WEIGHT;
+	
+	@SuppressWarnings("unused")
 	public ItemOreGold()
 	{
 		setCreativeTab(CreativeTabs.tabMaterials);
-		setMaxStackSize(ItemInfo.ITEM_SIZE_MEDIUM);
+			if(ITEM_STACK_LIMIT < 1) {setMaxStackSize(1);}
+			else {setMaxStackSize(ITEM_STACK_LIMIT);}
 		setUnlocalizedName(ItemInfo.ITEM_OREGOLD_UNLOCALIZED);
 		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_OREGOLD_UNLOCALIZED);
 	}
@@ -28,6 +35,8 @@ public class ItemOreGold extends Item
 	public void addInformation(ItemStack itemstack, EntityPlayer player, List info, boolean useExtraInformation)
 	{
 		info.add("A hunk of gold ore");
+		
+		info.add(ITEM_SIZE_KEY + ", " + ITEM_WEIGHT_KEY);
 	}
 	
 }
