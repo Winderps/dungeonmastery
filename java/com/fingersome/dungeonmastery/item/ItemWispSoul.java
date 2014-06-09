@@ -61,12 +61,6 @@ public class ItemWispSoul extends Item
 		 	
 			return itemstack;
 	    }
-	
-	 @SideOnly(Side.CLIENT)
-	    public boolean isFull3D()
-	    {
-	        return true;
-	    }
 	 
 	@SideOnly(Side.CLIENT)
 	@Override
