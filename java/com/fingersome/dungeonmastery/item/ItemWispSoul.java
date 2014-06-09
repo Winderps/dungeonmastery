@@ -20,7 +20,7 @@ public class ItemWispSoul extends Item
 	public static final int ITEM_WEIGHT				= ItemInfo.ITEM_WEIGHT_HEAVY;
 	public static final	String ITEM_SIZE_KEY		= ItemInfo.ITEM_SIZE_SMALL_KEY;
 	public static final String ITEM_WEIGHT_KEY		= ItemInfo.ITEM_WEIGHT_HEAVY_KEY;
-	public static final int ITEM_STACK_LIMIT		= ITEM_SIZE / ITEM_WEIGHT;
+	public static final int ITEM_STACK_LIMIT		= ITEM_SIZE / ITEM_WEIGHT *2;
 	
 	private IIcon wispIcon;
 	private IIcon bladeIcon;
@@ -52,7 +52,8 @@ public class ItemWispSoul extends Item
 	@Override
 	public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer player)
 	    {
-	       	//player.addChatMessage("The wisp pulls you towards the " + directionToNearestWorldstone(player, world));
+			//player.addChatComponentMessage(ChatComponentText(player.getDisplayName() + " is testing chat messages"));
+	       	//+ directionToNearestWorldstone(player, world)
 		 	if (player.isSneaking() && itemstack.getItemDamage() == 0)
 		 		{itemstack.setItemDamage(itemstack.getItemDamage() + 1);}
 		 	
