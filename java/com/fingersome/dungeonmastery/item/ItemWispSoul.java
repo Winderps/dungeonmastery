@@ -62,18 +62,12 @@ public class ItemWispSoul extends Item
 			return itemstack;
 	    }
 	
-	@SideOnly(Side.CLIENT)
-	@Override
-	public void addInformation(ItemStack itemstack, EntityPlayer player, List info, boolean useExtraInformation)
-	{
-		if (itemstack.getItemDamage() == 0)
-			{info.add("A small wisp of your soul floats before your eyes...");}
-		else if (itemstack.getItemDamage() == 1)
-			{info.add("Even the dead can bleed.");}
-		
-		info.add(ITEM_SIZE_KEY + ", " + ITEM_WEIGHT_KEY);
-	}
-	
+	 @SideOnly(Side.CLIENT)
+	    public boolean isFull3D()
+	    {
+	        return true;
+	    }
+	 
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerIcons(IIconRegister register)
@@ -92,6 +86,17 @@ public class ItemWispSoul extends Item
 			{return bladeIcon;}
 		else 
 			{return wispIcon;}
+	}
+	
+	@SideOnly(Side.CLIENT)
+	@Override
+	public void addInformation(ItemStack itemstack, EntityPlayer player, List info, boolean useExtraInformation)
+	{
+		if (itemstack.getItemDamage() == 0)
+			{info.add("A small wisp of your soul floats before your eyes...");}
+		else if (itemstack.getItemDamage() == 1)
+			{info.add("Even the dead can bleed.");}
 		
+		info.add(ITEM_SIZE_KEY + ", " + ITEM_WEIGHT_KEY);
 	}
 }
