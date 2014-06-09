@@ -30,6 +30,12 @@ public class ItemOreCopper extends Item
 		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_ORECOPPER_UNLOCALIZED);
 	}
 	
+	 @SideOnly(Side.CLIENT)
+	    public boolean isFull3D()
+	    {
+	        return true;
+	    }
+	
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void addInformation(ItemStack itemstack, EntityPlayer player, List info, boolean useExtraInformation)
