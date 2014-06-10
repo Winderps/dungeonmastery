@@ -8,7 +8,9 @@ import com.fingersome.dungeonmastery.block.BlockList;
 import com.fingersome.dungeonmastery.client.gui.GuiHandler;
 import com.fingersome.dungeonmastery.config.ConfigHandler;
 import com.fingersome.dungeonmastery.item.ItemList;
+import com.fingersome.dungeonmastery.lib.CreativeTabBuilding;
 import com.fingersome.dungeonmastery.lib.CreativeTabCharacter;
+import com.fingersome.dungeonmastery.lib.CreativeTabCrafting;
 import com.fingersome.dungeonmastery.lib.CreativeTabDM;
 import com.fingersome.dungeonmastery.lib.ModInfo;
 import com.fingersome.dungeonmastery.proxy.CommonProxy;
@@ -39,8 +41,10 @@ public class DungeonMastery
 	public static ItemList items;
 	public static BlockList blocks;
 
-	public static CreativeTabs tabDM = new CreativeTabDM(CreativeTabs.getNextID(), "dungeonmastertab");
-	public static CreativeTabs tabCharacter = new CreativeTabCharacter(CreativeTabs.getNextID(), "charactertab");
+	public static CreativeTabs tabDM = new CreativeTabDM(CreativeTabs.getNextID(), "dmtab");
+	public static CreativeTabs tabCharacter = new CreativeTabCharacter(CreativeTabs.getNextID(), "chartab");
+	public static CreativeTabs tabBuilding = new CreativeTabBuilding(CreativeTabs.getNextID(), "buildtab");
+	public static CreativeTabs tabCrafting = new CreativeTabCrafting(CreativeTabs.getNextID(), "crafttab");
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) 

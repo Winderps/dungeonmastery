@@ -1,5 +1,7 @@
-itemGroup.dungeonmastertab=Dungeon Master
-itemGroup.charactertab=Character
+itemGroup.dmtab=Dungeon Master
+itemGroup.chartab=Character
+itemGroup.buildtab=Building
+itemGroup.crafttab=Crafting
 
 item.itemWandBuild.name=Build Wand
 item.itemWandZone.name=Zone Wand
