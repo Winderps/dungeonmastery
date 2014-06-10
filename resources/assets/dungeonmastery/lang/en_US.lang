@@ -32,6 +32,7 @@ item.itemOreIron.name=Hematite
 item.itemOreSilver.name=Native Silver
 item.itemOreGold.name=Native Gold
 item.itemOrePlatinum.name=Native Platinum
+
 item.itemNuggetCopper.name=Copper Nugget
 item.itemNuggetTin.name=Tin Nugget
 item.itemNuggetLead.name=Lead Nugget
@@ -40,6 +41,7 @@ item.itemNuggetIron.name=Iron Nugget
 item.itemNuggetSilver.name=Silver Nugget
 item.itemNuggetGold.name=Gold Nugget
 item.itemNuggetPlatinum.name=Platinum Nugget
+
 item.itemIngotCopper.name=Copper Ingot
 item.itemIngotTin.name=Tin Ingot
 item.itemIngotLead.name=Lead Ingot
