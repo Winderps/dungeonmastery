@@ -8,6 +8,7 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
+import com.fingersome.dungeonmastery.DungeonMastery;
 import com.fingersome.dungeonmastery.lib.ModInfo;
 import com.fingersome.dungeonmastery.tileentity.TileEntityBlockBarrel;
 
@@ -23,7 +24,7 @@ public class BlockBarrel extends BlockContainer
 	{
 		super(material);
 		
-		setCreativeTab(CreativeTabs.tabBlock);
+		setCreativeTab(DungeonMastery.tabBuilding);
 		setStepSound(soundTypeStone);
 		setHardness(2.0F);
 		setBlockName(BlockInfo.BLOCK_BARREL_UNLOCALIZED);

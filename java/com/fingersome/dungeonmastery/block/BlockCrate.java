@@ -25,7 +25,7 @@ public class BlockCrate extends BlockContainer
 	{
 		super(material);
 		
-		setCreativeTab(CreativeTabs.tabBlock);
+		setCreativeTab(DungeonMastery.tabBuilding);
 		setStepSound(soundTypeWood);
 		setHardness(2.0F);
 		setBlockName(BlockInfo.BLOCK_CRATE_UNLOCALIZED);

@@ -2,6 +2,7 @@ package com.fingersome.dungeonmastery.item;
 
 import java.util.List;
 
+import com.fingersome.dungeonmastery.DungeonMastery;
 import com.fingersome.dungeonmastery.lib.ModInfo;
 
 import cpw.mods.fml.relauncher.Side;
@@ -23,7 +24,7 @@ public class ItemIngotPlatinum extends Item
 	@SuppressWarnings("unused")
 	public ItemIngotPlatinum()
 	{
-		setCreativeTab(CreativeTabs.tabMaterials);
+		setCreativeTab(DungeonMastery.tabCrafting);
 			if(ITEM_STACK_LIMIT < 1) {setMaxStackSize(1);}
 			else {setMaxStackSize(ITEM_STACK_LIMIT);}
 		setUnlocalizedName(ItemInfo.ITEM_INGOTPLATINUM_UNLOCALIZED);
