@@ -2,6 +2,7 @@ package com.fingersome.dungeonmastery.item;
 
 import java.util.List;
 
+import com.fingersome.dungeonmastery.DungeonMastery;
 import com.fingersome.dungeonmastery.block.BlockInfo;
 import com.fingersome.dungeonmastery.lib.ModInfo;
 
@@ -25,7 +26,7 @@ public class ItemWandNPC extends Item
 	
 	public ItemWandNPC()
 	{
-		setCreativeTab(CreativeTabs.tabTools);
+		setCreativeTab(DungeonMastery.tabDM);
 		setMaxStackSize(1);
 		setUnlocalizedName(ItemInfo.ITEM_WANDNPC_UNLOCALIZED);
 		setHasSubtypes(true);

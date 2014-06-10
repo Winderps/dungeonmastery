@@ -14,7 +14,7 @@ public class ItemTomeQuest extends Item
 {
 	public ItemTomeQuest()
 	{
-		setCreativeTab(CreativeTabs.tabTools);
+		setCreativeTab(DungeonMastery.tabDM);
 		setMaxStackSize(1);
 		setUnlocalizedName(ItemInfo.ITEM_TOMEQUEST_UNLOCALIZED);
 		setTextureName(ModInfo.MOD_ID + ":" + ItemInfo.ITEM_TOMEQUEST_UNLOCALIZED);

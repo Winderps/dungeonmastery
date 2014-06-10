@@ -2,6 +2,7 @@ package com.fingersome.dungeonmastery.item;
 
 import java.util.List;
 
+import com.fingersome.dungeonmastery.DungeonMastery;
 import com.fingersome.dungeonmastery.block.BlockInfo;
 import com.fingersome.dungeonmastery.lib.ModInfo;
 
@@ -30,7 +31,7 @@ public class ItemWandZone extends Item
 	
 	public ItemWandZone()
 	{
-		setCreativeTab(CreativeTabs.tabTools);
+		setCreativeTab(DungeonMastery.tabDM);
 		setMaxStackSize(1);
 		setUnlocalizedName(ItemInfo.ITEM_WANDZONE_UNLOCALIZED);
 		setHasSubtypes(true);

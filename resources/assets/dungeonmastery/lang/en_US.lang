@@ -1,10 +1,15 @@
-itemGroup.dungeonmasterycoretab=Dungeon Mastery: Core
+itemGroup.dungeonmastertab=Dungeon Master
+itemGroup.charactertab=Character
 
 item.itemWandBuild.name=Build Wand
 item.itemWandZone.name=Zone Wand
 item.itemWandMonster.name=Monster Wand
 item.itemWandNPC.name=NPC Wand
 item.itemTomeQuest.name=Quest Tome
+
+item.itemWispSoul.name=Soul Wisp
+item.itemWispLimbo.name=Limbo Soul
+item.itemWandDead.name=Rod of the Dead
 
 item.itemAstralDiamondLarge.name=Large Astral Diamond
 item.itemCoinPlatinumLarge.name=Platinum Coin
@@ -42,9 +47,7 @@ item.itemIngotSilver.name=Silver Ingot
 item.itemIngotGold.name=Gold Ingot
 item.itemIngotPlatinum.name=Platinum Ingot
 
-item.itemWispSoul.name=Soul Wisp
-item.itemWispLimbo.name=Limbo Soul
-item.itemWandDead.name=Rod of the Dead
+item.itemSpellAcidSplash.name=Acid Splash
 
 tile.blockLimboSand.name=Limbo Sand
 tile.blockLimboStone.name=Limbo Stone

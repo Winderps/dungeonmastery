@@ -92,6 +92,6 @@ public static final String ITEM_CATAGORY_SKILLITEM 		= "SKILL ITEMS";
 	public static final String ITEM_CATAGORY_RELIGION 		= "RELIGION";
 	public static final String ITEM_CATAGORY_THIEVERY 		= "THIEVERY";
 
-
+	public static final String ITEM_ACIDSPLASH_UNLOCALIZED	= "itemSpellAcidSplash";
 
 }

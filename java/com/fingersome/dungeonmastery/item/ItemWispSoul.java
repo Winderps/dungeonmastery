@@ -2,6 +2,7 @@ package com.fingersome.dungeonmastery.item;
 
 import java.util.List;
 
+import com.fingersome.dungeonmastery.DungeonMastery;
 import com.fingersome.dungeonmastery.lib.ModInfo;
 
 import cpw.mods.fml.relauncher.Side;
@@ -28,7 +29,7 @@ public class ItemWispSoul extends Item
 	@SuppressWarnings("unused")
 	public ItemWispSoul()
 	{
-		setCreativeTab(CreativeTabs.tabTools);
+		setCreativeTab(DungeonMastery.tabCharacter);
 			if(ITEM_STACK_LIMIT < 1) {setMaxStackSize(1);}
 			else {setMaxStackSize(ITEM_STACK_LIMIT);}
 		setUnlocalizedName(ItemInfo.ITEM_WISPSOUL_UNLOCALIZED);

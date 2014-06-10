@@ -50,6 +50,7 @@ public class ItemList
 	public static Item ItemIngotGold;
 	public static Item ItemIngotPlatinum;  
 	
+	public static Item ItemSpellAcidSplash;
 	
 	
 	public static void Init()
@@ -97,6 +98,9 @@ public class ItemList
 			ItemIngotGold 		= new ItemIngotGold();
 			ItemIngotPlatinum 	= new ItemIngotPlatinum();
 			
+			//Spells and Abilities
+			ItemSpellAcidSplash	= new ItemSpellAcidSplash();
+			
 			
 			
 		//REGISTER ITEMS
@@ -141,6 +145,9 @@ public class ItemList
 			GameRegistry.registerItem(ItemIngotSilver, ItemInfo.ITEM_INGOTSILVER_UNLOCALIZED, ModInfo.MOD_ID);
 			GameRegistry.registerItem(ItemIngotGold, ItemInfo.ITEM_INGOTGOLD_UNLOCALIZED, ModInfo.MOD_ID);
 			GameRegistry.registerItem(ItemIngotPlatinum, ItemInfo.ITEM_INGOTPLATINUM_UNLOCALIZED, ModInfo.MOD_ID);
+			
+			//Spells and Abilities
+			GameRegistry.registerItem(ItemSpellAcidSplash, ItemInfo.ITEM_ACIDSPLASH_UNLOCALIZED, ModInfo.MOD_ID);
 	}
 	
 }
