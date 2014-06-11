@@ -21,6 +21,10 @@ public class SlotBookcase extends Slot
 	public boolean isItemValid(ItemStack itemstack)
 	{
 		return true;
+		// if (itemstack.??? == itemIWantToLimitSlotToContain)
+		// 		{return true);
+		// else
+		// 		{return false);
 	}
 
 }
