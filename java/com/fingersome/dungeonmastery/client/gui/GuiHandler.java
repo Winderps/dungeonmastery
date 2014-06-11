@@ -6,6 +6,7 @@ import com.fingersome.dungeonmastery.container.ContainerBlockCrate;
 import com.fingersome.dungeonmastery.lib.ModInfo;
 import com.fingersome.dungeonmastery.tileentity.TileEntityBlockBookcase;
 import com.fingersome.dungeonmastery.tileentity.TileEntityBlockCrate;
+import com.fingersome.dungeonmastery.tileentity.TileEntityBlockDebugging;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
@@ -35,6 +36,7 @@ public class GuiHandler implements IGuiHandler
 			if(crate != null && crate instanceof TileEntityBlockCrate)
 				{return new ContainerBlockCrate(player.inventory, (TileEntityBlockCrate)crate);}
 			break;
+		
 		}
 		
 		return null;
@@ -54,6 +56,7 @@ public class GuiHandler implements IGuiHandler
 			if(crate != null && crate instanceof TileEntityBlockCrate)
 				{return new GuiBlockCrate(player.inventory, (TileEntityBlockCrate)crate);}
 			break;
+			
 		}
 		
 		return null;
