@@ -67,7 +67,7 @@ public class DungeonMastery
 	}
 	
 	@EventHandler
-	public void PostInit(FMLPostInitializationEvent event) 
+	public void PostInit(FMLPostInitializationEvent event)
 	{
 	
 	}
