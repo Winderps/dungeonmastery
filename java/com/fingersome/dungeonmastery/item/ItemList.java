@@ -18,6 +18,7 @@ public class ItemList
 	public static Item ItemWandMonster; 
 	public static Item ItemWandNPC;  
 	public static Item ItemJournalQuest;
+	public static Item ItemDebuggingWand;
 
 	public static Item ItemWispSoul;
 	public static Item ItemWispLimbo; 
@@ -62,6 +63,7 @@ public class ItemList
 			ItemWandMonster 	= new ItemWandMonster();
 			ItemWandNPC 		= new ItemWandNPC();
 			ItemJournalQuest 	= new ItemTomeQuest();
+			ItemDebuggingWand	= new ItemDebuggingWand();
 		
 		//Consumables
 			ItemWispLimbo 	= new ItemWispLimbo();
@@ -110,6 +112,8 @@ public class ItemList
 			GameRegistry.registerItem(ItemWandMonster, ItemInfo.ITEM_WANDMONSTER_UNLOCALIZED, ModInfo.MOD_ID);
 			GameRegistry.registerItem(ItemWandNPC, ItemInfo.ITEM_WANDNPC_UNLOCALIZED, ModInfo.MOD_ID);
 			GameRegistry.registerItem(ItemJournalQuest, ItemInfo.ITEM_TOMEQUEST_UNLOCALIZED, ModInfo.MOD_ID);
+			GameRegistry.registerItem(ItemDebuggingWand, ItemInfo.ITEM_WANDDEBUGGING_UNLOCALIZED, ModInfo.MOD_ID);
+			
 		
 		//Consumables
 			GameRegistry.registerItem(ItemWispLimbo, ItemInfo.ITEM_WISPLIMBO_UNLOCALIZED, ModInfo.MOD_ID);
