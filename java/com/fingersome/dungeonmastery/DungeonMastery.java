@@ -75,6 +75,6 @@ public class DungeonMastery
 	@EventHandler
 	public void ServerStart(FMLServerStartingEvent event)
 	{
-		
+		event.registerServerCommand(new com.winderps.dungeonmastery.commands.RollDice());
 	}
 }
