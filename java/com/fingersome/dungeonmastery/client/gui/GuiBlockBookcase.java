@@ -27,7 +27,7 @@ public class GuiBlockBookcase extends GuiContainer
 	}
 	
 	private static final ResourceLocation texture = new ResourceLocation
-			("dungeonmastery", "textures/gui/storage/guiStorageSmall.png");
+			("dungeonmastery", "textures/gui/storage/guiStorageLarge.png");
 
 	@Override
 	protected void drawGuiContainerBackgroundLayer(float f, int x, int y) 

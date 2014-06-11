@@ -4,6 +4,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.Slot;
+import net.minecraft.item.ItemStack;
 
 import com.fingersome.dungeonmastery.tileentity.TileEntityBlockBookcase;
 
@@ -20,9 +21,9 @@ public class ContainerBlockBookcase extends Container
 			addSlotToContainer(new Slot(invplayer, x, 7 + 18 * x, 55));
 		}
 		
-		for (int x = 0; x < 3; x++) 
+		for (int x = 0; x < 9; x++) 
 		{
-			addSlotToContainer(new Slot(bookcase, x, 61 + 18 * x, 8));
+			addSlotToContainer(new SlotBookcase(bookcase, x, 7 + 18 * x, 8));
 		}
 		
 	}
@@ -31,6 +32,12 @@ public class ContainerBlockBookcase extends Container
 	public boolean canInteractWith(EntityPlayer player) 
 	{
 		return bookcase.isUseableByPlayer(player);
+	}
+	
+	@Override
+	public ItemStack transferStackInSlot(EntityPlayer player, int i)
+	{
+		return null;
 	}
 
 }

@@ -16,7 +16,7 @@ public class TileEntityBlockBookcase extends TileEntity implements IInventory
 	
 	public TileEntityBlockBookcase()
 	{
-		items = new ItemStack[6];
+		items = new ItemStack[9];
 	}
 	
 	

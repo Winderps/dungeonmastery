@@ -4,6 +4,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.Slot;
+import net.minecraft.item.ItemStack;
 
 import com.fingersome.dungeonmastery.tileentity.TileEntityBlockBookcase;
 import com.fingersome.dungeonmastery.tileentity.TileEntityBlockCrate;
@@ -34,4 +35,11 @@ public class ContainerBlockCrate extends Container
 		return crate.isUseableByPlayer(player);
 	}
 
+	@Override
+	public ItemStack transferStackInSlot(EntityPlayer player, int i)
+	{
+		return null;
+	}
+
+	
 }
