@@ -14,8 +14,8 @@ public class RollDice implements ICommand
 	public RollDice()
 	{
 		this.aliases = new ArrayList();
-	    this.aliases.add("roll");
-	    this.aliases.add("r");
+	    	this.aliases.add("roll");
+	    	this.aliases.add("r");
 	}
 	
 	@Override
@@ -64,12 +64,28 @@ public class RollDice implements ICommand
 		int critCount = 0; // counter for number of crits
 		for (int i=0;i<num;i++) { //actually roll the dice
 			int roll = p.getRNG().nextInt(size)+1;
-			total += roll + mod;
-			if (roll == size+mod) { //did they roll max?
+			total += roll;
+			if (roll == size) { //did they roll max?
 				critCount++; // increment crit count
 			}
 		}
+		total += mod;
 		result = String.valueOf(total)+" - ("+String.valueOf(critCount)+" crits)";
+		return result;
+	}
+	//Use this to roll dice behind the scenes.
+	//dSize is the size of the dice being rolled.
+	//nDice is the number of dice to roll
+	//mod is the modifier to use
+	public static int numberRoll(int dSize, int nDice, int mod)
+	{
+		int result = 0;
+		for (int i=0;i<nDice;i++)
+		{
+			int roll = (int)Math.round((Math.random()*dSize)); //make a roll
+			result += roll; // add the result to the total
+		}
+		result += mod; // add the modifier at the end like a smart kid.
 		return result;
 	}
 	@Override
